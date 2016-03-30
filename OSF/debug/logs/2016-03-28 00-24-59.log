@@ -1,0 +1,83 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+14:24:58.0 (81135)|EXECUTION_STARTED
+14:24:58.0 (120116)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000006RnKY|InventoryController.getInventories
+14:24:58.0 (320544)|HEAP_ALLOCATE|[72]|Bytes:3
+14:24:58.0 (388663)|HEAP_ALLOCATE|[77]|Bytes:152
+14:24:58.0 (413728)|HEAP_ALLOCATE|[342]|Bytes:408
+14:24:58.0 (435637)|HEAP_ALLOCATE|[355]|Bytes:408
+14:24:58.0 (455108)|HEAP_ALLOCATE|[467]|Bytes:48
+14:24:58.0 (497017)|HEAP_ALLOCATE|[139]|Bytes:6
+14:24:58.0 (591798)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+14:24:58.0 (607273)|METHOD_ENTRY|[1]|01p36000006RnKY|InventoryController.InventoryController()
+14:24:58.0 (611202)|STATEMENT_EXECUTE|[1]
+14:24:58.0 (618738)|STATEMENT_EXECUTE|[1]
+14:24:58.0 (654319)|HEAP_ALLOCATE|[50]|Bytes:5
+14:24:58.0 (684073)|HEAP_ALLOCATE|[56]|Bytes:5
+14:24:58.0 (695143)|HEAP_ALLOCATE|[64]|Bytes:7
+14:24:58.0 (726151)|SYSTEM_MODE_ENTER|false
+14:24:58.0 (750138)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+14:24:58.0 (761361)|SYSTEM_MODE_EXIT|false
+14:24:58.0 (772806)|METHOD_EXIT|[1]|InventoryController
+14:24:58.0 (782176)|SYSTEM_MODE_ENTER|false
+14:24:58.0 (797615)|HEAP_ALLOCATE|[13]|Bytes:5
+14:24:58.0 (803391)|STATEMENT_EXECUTE|[12]
+14:24:58.0 (804877)|STATEMENT_EXECUTE|[13]
+14:24:58.0 (808216)|HEAP_ALLOCATE|[13]|Bytes:132
+14:24:58.0 (821568)|HEAP_ALLOCATE|[13]|Bytes:4
+14:24:58.0 (1279935)|SOQL_EXECUTE_BEGIN|[13]|Aggregations:0|SELECT id, name, Inventory_Number__c, Customer__c, Contact_Person__c, Value__c, LastModifiedDate FROM Computer_Inventory__c LIMIT 50
+14:24:58.0 (4003811)|SOQL_EXECUTE_END|[13]|Rows:6
+14:24:58.0 (4024624)|HEAP_ALLOCATE|[13]|Bytes:28
+14:24:58.0 (4063612)|HEAP_ALLOCATE|[13]|Bytes:1470
+14:24:58.0 (4164576)|HEAP_ALLOCATE|[13]|Bytes:28
+14:24:58.0 (4187310)|SYSTEM_MODE_EXIT|false
+14:24:58.4 (4229921)|CUMULATIVE_LIMIT_USAGE
+14:24:58.4 (4229921)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 6 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:24:58.4 (4229921)|CUMULATIVE_LIMIT_USAGE_END
+
+14:24:58.0 (4284252)|CODE_UNIT_FINISHED|InventoryController.getInventories
+14:24:58.0 (5740613)|EXECUTION_FINISHED
+14:24:58.8 (8046244)|EXECUTION_STARTED
+14:24:58.8 (8055145)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000006RnKY|InventoryController.getInventories
+14:24:58.8 (8096665)|SYSTEM_MODE_ENTER|false
+14:24:58.8 (8111627)|HEAP_ALLOCATE|[13]|Bytes:5
+14:24:58.8 (8118572)|STATEMENT_EXECUTE|[12]
+14:24:58.8 (8120270)|STATEMENT_EXECUTE|[13]
+14:24:58.8 (8124749)|HEAP_ALLOCATE|[13]|Bytes:4
+14:24:58.8 (8299627)|SOQL_EXECUTE_BEGIN|[13]|Aggregations:0|SELECT id, name, Inventory_Number__c, Customer__c, Contact_Person__c, Value__c, LastModifiedDate FROM Computer_Inventory__c LIMIT 50
+14:24:58.8 (10593019)|SOQL_EXECUTE_END|[13]|Rows:6
+14:24:58.8 (10606789)|HEAP_ALLOCATE|[13]|Bytes:28
+14:24:58.8 (10635579)|HEAP_ALLOCATE|[13]|Bytes:1470
+14:24:58.8 (10650193)|HEAP_ALLOCATE|[13]|Bytes:28
+14:24:58.8 (10669350)|SYSTEM_MODE_EXIT|false
+14:24:58.10 (10692596)|CUMULATIVE_LIMIT_USAGE
+14:24:58.10 (10692596)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 12 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:24:58.10 (10692596)|CUMULATIVE_LIMIT_USAGE_END
+
+14:24:58.8 (10733396)|CODE_UNIT_FINISHED|InventoryController.getInventories
+14:24:58.8 (12198353)|EXECUTION_FINISHED

@@ -1,0 +1,27 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004b8w5AAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004b8w5AAA",
+    "methods": [],
+    "name": "TrailheadVF",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "TrailheadVF",
+        "references": [],
+        "type": "TrailheadVF"
+    },
+    "variables": []
+}

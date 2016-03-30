@@ -1,0 +1,23 @@
+<apex:page sidebar="false"  standardController="Contact">
+
+
+       
+
+             
+
+             <p>
+               
+   		    First Name: {! Contact.FirstName } <br/>
+            Last Name: {! Contact.LastName } <br/>
+            Email: {! Contact.Owner.Email } <br/>
+
+
+
+            </p>
+
+             
+
+       
+
+  
+</apex:page>

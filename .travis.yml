@@ -1,0 +1,29 @@
+language: python
+python:
+  - "2.7"
+script: 
+  - "echo Hi world!"
+# blacklist
+branches:
+  except:
+    - dev
+before_deploy:
+  - sudo apt-get install python-keyring
+  - sudo apt-get install python-gnomekeyring
+  - cd ..
+  - curl "https://pypi.python.org/packages/source/P/PyInstaller/PyInstaller-2.1.tar.gz" >> PyInstaller-2.1.tar.gz
+  - tar -xzvf PyInstaller-2.1.tar.gz
+  - ls
+  - cd mm
+  - python ../PyInstaller-2.1/pyinstaller.py mm.spec
+  - ls
+  - tar -zcvf mm-linux.tar.gz -C dist .
+  - ls 
+deploy:
+  provider: releases
+  api-key: "a41b873cd065adfcfa07dc0f3cef6c0e0ec6d9a3"
+  file: "mm-linux.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true

@@ -1,0 +1,631 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XJHhAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 5
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getValue",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                }
+            ],
+            "name": "doDivideResponseFuture",
+            "namespace": null,
+            "parentClass": "System.WebServiceCalloutFuture",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 4
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doDivideResponseFuture",
+                "references": [],
+                "type": "doDivideResponseFuture"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 6
+                    },
+                    "modifiers": [],
+                    "name": "response",
+                    "references": [],
+                    "type": "doDivideResponse"
+                }
+            ]
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 11
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getValue",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                }
+            ],
+            "name": "doSubtractResponseFuture",
+            "namespace": null,
+            "parentClass": "System.WebServiceCalloutFuture",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 10
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doSubtractResponseFuture",
+                "references": [],
+                "type": "doSubtractResponseFuture"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 12
+                    },
+                    "modifiers": [],
+                    "name": "response",
+                    "references": [],
+                    "type": "doSubtractResponse"
+                }
+            ]
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 17
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getValue",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                }
+            ],
+            "name": "doMultiplyResponseFuture",
+            "namespace": null,
+            "parentClass": "System.WebServiceCalloutFuture",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 16
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doMultiplyResponseFuture",
+                "references": [],
+                "type": "doMultiplyResponseFuture"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 18
+                    },
+                    "modifiers": [],
+                    "name": "response",
+                    "references": [],
+                    "type": "doMultiplyResponse"
+                }
+            ]
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 23
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getValue",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                }
+            ],
+            "name": "doAddResponseFuture",
+            "namespace": null,
+            "parentClass": "System.WebServiceCalloutFuture",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 22
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doAddResponseFuture",
+                "references": [],
+                "type": "doAddResponseFuture"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 46,
+                        "line": 24
+                    },
+                    "modifiers": [],
+                    "name": "response",
+                    "references": [],
+                    "type": "doAddResponse"
+                }
+            ]
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 63,
+                        "line": 34
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "beginDoDivide",
+                    "parameters": [
+                        {
+                            "name": "continuation",
+                            "type": "Continuation"
+                        },
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "doDivideResponseFuture",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 65,
+                        "line": 52
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "beginDoSubtract",
+                    "parameters": [
+                        {
+                            "name": "continuation",
+                            "type": "Continuation"
+                        },
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "doSubtractResponseFuture",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 65,
+                        "line": 70
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "beginDoMultiply",
+                    "parameters": [
+                        {
+                            "name": "continuation",
+                            "type": "Continuation"
+                        },
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "doMultiplyResponseFuture",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 60,
+                        "line": 88
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "beginDoAdd",
+                    "parameters": [
+                        {
+                            "name": "continuation",
+                            "type": "Continuation"
+                        },
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "doAddResponseFuture",
+                    "type": null
+                }
+            ],
+            "name": "AsyncCalculatorImplPort",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 29
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "endpoint_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 30
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "inputHttpHeaders_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 31
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "clientCertName_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 32
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "timeout_x",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 33
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "ns_map_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 28
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AsyncCalculatorImplPort",
+                "references": [],
+                "type": "AsyncCalculatorImplPort"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 97,
+                        "line": 34
+                    },
+                    "modifiers": [],
+                    "name": "continuation",
+                    "references": [],
+                    "type": "Continuation"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 117,
+                        "line": 34
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 129,
+                        "line": 34
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 35
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doDivide"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 101,
+                        "line": 52
+                    },
+                    "modifiers": [],
+                    "name": "continuation",
+                    "references": [],
+                    "type": "Continuation"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 121,
+                        "line": 52
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 133,
+                        "line": 52
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 53
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doSubtract"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 101,
+                        "line": 70
+                    },
+                    "modifiers": [],
+                    "name": "continuation",
+                    "references": [],
+                    "type": "Continuation"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 121,
+                        "line": 70
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 133,
+                        "line": 70
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 71
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doMultiply"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 91,
+                        "line": 88
+                    },
+                    "modifiers": [],
+                    "name": "continuation",
+                    "references": [],
+                    "type": "Continuation"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 111,
+                        "line": 88
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 123,
+                        "line": 88
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 89
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doAdd"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000004XJHhAAO",
+    "methods": [],
+    "name": "AsyncCalculatorServices",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 3
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "AsyncCalculatorServices",
+        "references": [],
+        "type": "AsyncCalculatorServices"
+    },
+    "variables": []
+}

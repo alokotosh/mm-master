@@ -1,0 +1,104 @@
+<aura:component controller="InventoryController">
+
+   <aura:attribute name="inventories" type="Computer_Inventory__c[]"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+   <!-- Use the Apex model and controller to fetch server side data -->
+
+         <div class="slds-m-top--medium large" data-select="multi" data-scope="single" data-typeahead="true">
+              <div class="slds-form-element">
+                <label class="slds-form-element__label" for="lookup"> Search Account</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+
+
+                    <c:svgIcon svgPath="/resource/slds100/assets/icons/utility-sprite/svg/symbols.svg#search" aria-hidden="true"   class="slds-input__icon slds-icon-text-default"  />
+
+
+                </div>
+              </div>
+             </div>
+
+
+
+
+
+
+    <h3 class="slds-section-title--divider" align="center">All inventories </h3>
+
+
+
+     <table class="slds-table slds-table--bordered">
+    <thead>
+      <tr class="slds-text-heading--label">
+        <th class="slds-cell-shrink">
+          <label class="slds-checkbox">
+            <input type="checkbox" name="options" />
+            <span class="slds-checkbox--faux"></span>
+            <span class="slds-assistive-text">Select All</span>
+          </label>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Name
+
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Number
+
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Customer
+
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Contact Person
+
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Value
+
+          </div>
+        </th>
+
+
+        <th class="slds-cell-shrink"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+          <aura:iteration items="{!v.inventories}" var="inv">
+
+
+
+
+      <tr class="slds-hint-parent">
+       <div onclick="{!c.gotoRecord}">
+           <force:recordView recordId="{!v.inv.Id}" type="MINI"/>
+        <td class="slds-cell-shrink" data-label="Select Row">
+          <label class="slds-checkbox">
+            <input type="checkbox" name="options" />
+            <span class="slds-checkbox--faux"></span>
+            <span class="slds-assistive-text">Select Row</span>
+          </label>
+        </td>
+
+           <td>{!inv.Name} </td>
+           <td>{!inv.Inventory_Number__c}</td>
+           <td>{!inv.Customer__c}</td>
+           <td>{!inv.Contact_Person__c}</td>
+           <td>{!inv.Value__c}</td>
+           <td>
+            <ui:button label="Edit" press="{!c.editRecord}"/>
+           </td>
+             </div>
+        </tr>
+
+
+        </aura:iteration>
+         </tbody>
+    </table>
+
+
+</aura:component>

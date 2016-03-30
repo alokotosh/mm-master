@@ -1,0 +1,180 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006RnKYAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000006RnKYAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findByName",
+            "parameters": [
+                {
+                    "name": "searchKey",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findById",
+            "parameters": [
+                {
+                    "name": "inventoryId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Computer_Inventory__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 26
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findByString",
+            "parameters": [
+                {
+                    "name": "searchKey",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 38
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getInventories",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "InventoryController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "InventoryController",
+        "references": [],
+        "type": "InventoryController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "searchKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "inventoryId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "searchKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "searchStr",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

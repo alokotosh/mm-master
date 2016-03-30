@@ -1,0 +1,218 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>Salesforce Employee applications</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="Employee__c" fields="Id,Name,LastModifiedDate,Email__c,Description__c"/>
+</apex:remoteObjects>
+
+<body>
+
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds">
+
+    <!-- MASTHEAD -->
+    <p class="slds-text-heading--label slds-m-bottom--small">Salesforce Employee applications</p>
+    <!-- / MASTHEAD -->
+
+<!-- PAGE HEADER -->
+
+<div class="slds-page-header" role="banner">
+
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid">
+
+    <!-- GRID COL -->
+    <div class="slds-col">
+
+
+<!-- HEADING AREA -->
+<!-- MEDIA OBJECT = FIGURE + BODY -->
+<div class="slds-media">
+
+  <div class="slds-media__figure">
+    <span class="slds-avatar slds-avatar--large">
+      <img src="{!URLFOR($Resource.SLDS100, 'assets/images/avatar2.jpg')}" alt="portrait" />
+    </span>
+  </div>
+
+  <div class="slds-media__body">
+    <p class="slds-text-heading--label">Employee</p>
+    <h1 class="slds-text-heading--medium">My Employee</h1>
+  </div>
+
+</div>
+<!-- / MEDIA OBJECT -->
+<!-- /HEADING AREA -->
+
+
+    </div>
+
+    <!-- GRID COL -->
+    <div class="slds-col slds-no-flex slds-align-middle">
+
+      <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button--neutral">
+          New Employee
+        </button>
+        <button class="slds-button slds-button--neutral">
+          More
+        </button>
+      </div>
+
+    </div>
+    <!-- / GRID COL -->
+
+  </div>
+  <!-- / LAYOUT GRID -->
+
+  <p class="slds-text-body--small slds-m-top--x-small">COUNT items</p>
+
+</div>
+<!-- / PAGE HEADER -->
+
+
+      <!-- PRIMARY CONTENT WRAPPER -->
+<div class="myapp">
+
+  <!-- CREATE NEW Employee -->
+  <div aria-labelledby="newaccountform">
+
+    <!-- BOXED AREA -->
+    <fieldset class="slds-box slds-theme--default slds-container--small">
+
+      <legend id="newemployeeform" class="slds-text-heading--medium slds-p-vertical--medium">Add a new employee</legend>
+
+      <!-- CREATE NEW ACCOUNT FORM -->
+      <form class="slds-form--stacked">
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="employeeName">Name</label>
+          <div class="slds-form-element__control">
+            <input id="employeeName" class="slds-input" type="text" placeholder="New employee" />
+          </div>
+          <label class="slds-form-element__label" for="employeeEmail">Email</label>
+          <div class="slds-form-element__control">
+            <input id="employeeEmail" class="slds-input" type="email" placeholder="example@exam.com" />
+          </div>
+            <label class="slds-form-element__label" for="employeeDescription">Description</label>
+            <div class="slds-form-element__control">
+            <input id="employeeDescription" class="slds-input" type="text" placeholder="Your descriprion" />
+            </div>
+        </div>
+        <button class="slds-button slds-button--brand slds-m-top--medium" type="button" onClick="createEmployee()">Create Employee</button>
+      </form>
+      <!-- CREATE NEW ACCOUNT FORM -->
+
+    </fieldset>
+    <!-- / BOXED AREA -->
+
+  </div>
+
+  <!-- / CREATE NEW ACCOUNT -->
+
+
+
+  <!-- ACCOUNT LIST TABLE -->
+  <div id="employeeList" class="slds-p-vertical--medium"></div>
+  <!-- / ACCOUNT LIST TABLE -->
+
+</div>
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer role="contentinfo" class="slds-p-around--large">
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid slds-grid--align-spread">
+    <p class="slds-col">Salesforce Lightning Design System </p>
+    <p class="slds-col">&copy; Andrew Lokotosh</p>
+  </div>
+  <!-- / LAYOUT GRID -->
+</footer>
+<!-- / FOOTER -->
+
+
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+  var employee = new SObjectModel.Employee__c();
+  var outputDiv = document.getElementById("employeeList");
+
+
+       function updateOutputDiv() {
+  employee.retrieve(
+    {orderby: [{LastModifiedDate: 'DESC'}], },
+    function(error, records) {
+      if (error) {
+        alert(error.message);
+      } else {
+        var accountIcon = '<span class="slds-icon__container slds-icon-standard-account">';
+        accountIcon += '<svg aria-hidden="true" class="slds-icon">';
+        accountIcon += '<use xlink:href="{!URLFOR($Resource.SLDS100, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>';
+        accountIcon += '</svg><span class="slds-assistive-text">Account</span></span>';
+
+        var html = '<div class="slds-scrollable--x"><table class="slds-table slds-table--bordered">';
+
+        html += '<thead><tr><th scope="col">Type</th>';
+        html += '<th scope="col">Employee name</th>';
+        html += '<th scope="col">Employee ID</th>';
+        html += '<th scope="col">Email</th>';
+        html += '<th scope="col">Description</th></tr></thead><tbody>';
+
+        records.forEach(function(record) {
+            html += '<tr><td>' + accountIcon + '</td>';
+            html += '<td>' + record.get("Name") + '</td>';
+            html += '<td>' + record.get("Id") + '</td>';
+            html += '<td>' + record.get("Email__c") + '</td>';
+            html += '<td>' + record.get("Description__c") + '</td></tr>';
+        });
+        html = html + '</tbody></table></div>';
+        outputDiv.innerHTML = html;
+      }
+    }
+  );
+}
+
+    function createEmployee() {
+  var employeeName = document.getElementById("employeeName").value;
+  var employeeEmail = document.getElementById("employeeEmail").value;
+  var employeeDescription = document.getElementById("employeeDescription").value;
+  var employee = new SObjectModel.Employee__c();
+  employee.create({Name: employeeName, Email__c: employeeEmail, Description__c: employeeDescription}, function(error, records) {
+    if (error) {
+      alert(error.message);
+    } else {
+      updateOutputDiv();
+      document.getElementById("employeeName")
+
+    }
+  });
+  return false;
+}
+
+  updateOutputDiv();
+  document.getElementById("employeeName").value=='';
+</script>
+<!-- / JAVASCRIPT -->
+
+
+</html>
+</apex:page>

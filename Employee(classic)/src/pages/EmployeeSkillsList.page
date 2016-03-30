@@ -1,0 +1,94 @@
+<!--
+
+File: EmployeeSkillList.page
+
+Project: Project Name
+
+Date: Creation Date (e.g.: January 10, 2016)
+
+Created By: Developer Name
+
+*************************************************************************
+Description: This page return table of Employee Skills field and alow sort it.
+
+*************************************************************************
+
+History: Used for any changes added to the page after first release.
+
+Date(same format as above) - Developer Name - what components were modified/added, what are the changes
+
+-->
+
+<apex:page controller="EmployeeSkillsListController">
+    <apex:form >
+        <apex:pageBlock title="Employee Skills List" id="empl_skills_list">
+                       
+                <!-- Employee Skills List -->
+                            
+                <apex:pageBlockTable value="{! EmployeeSkills}" var="es">
+                <!-- Linked Column Name --> 
+                    
+                    <apex:column headerValue="Name">
+                        <apex:outputLink value="/{!es.id}">
+                                <apex:outputText value="{!es.Name}" />
+                        </apex:outputLink>
+                    </apex:column>
+                    
+                   <!-- Sorted Column CreatedDate --> 
+                    <apex:column value="{! es.CreatedDate }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByCreatedDate }" 
+                                reRender="empl_skills_list">CreatedDate
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    
+                   <!-- Sorted Column Employee --> 
+                    <apex:column value="{! es.Employee__c }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByEmployee }" 
+                                reRender="empl_skills_list">Employee
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    
+                    <!-- Sorted Column Employee Email --> 
+                    <apex:column value="{! es.Employee_Email__c }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByEmail }" 
+                                reRender="empl_skills_list">Employee Email
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    
+                    <!-- Sorted Column Project --> 
+                    <apex:column value="{! es.Project__c }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByProject }" 
+                                reRender="empl_skills_list">Project
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                   <!-- Sorted Column Status --> 
+                    
+                    <apex:column value="{! es.Status__c }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByStatus }" 
+                                reRender="empl_skills_list">Status
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    
+                    <!-- Sorted Column Grade --> 
+                    
+                    <apex:column value="{! es.Grade__c }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{! sortByGrade }" 
+                                reRender="empl_skills_list">Grade
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,49 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000005GWr9AAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005GWr9AAG",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "RemoteAction"
+                }
+            ],
+            "location": {
+                "column": 34,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "findAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "HotelRemoter",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "HotelRemoter",
+        "references": [],
+        "type": "HotelRemoter"
+    },
+    "variables": []
+}

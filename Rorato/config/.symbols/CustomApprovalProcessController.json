@@ -1,0 +1,113 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "CustomApprovalProcessController", 
+    "tableDeclaration": {
+        "type": "CustomApprovalProcessController", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "CustomApprovalProcessController"
+    }, 
+    "key": "01p36000003RBAcAAO", 
+    "variables": [
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 5
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "User", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 8
+            }, 
+            "name": "user1"
+        }, 
+        {
+            "type": "ProcessSubmitRequest", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 11
+            }, 
+            "name": "req1"
+        }, 
+        {
+            "type": "ProcessResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 24
+            }, 
+            "name": "result"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 35
+            }, 
+            "name": "newWorkItemIds"
+        }, 
+        {
+            "type": "ProcessWorkitemRequest", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 38
+            }, 
+            "name": "req2"
+        }, 
+        {
+            "type": "ProcessResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 48
+            }, 
+            "name": "result2"
+        }
+    ], 
+    "id": "01p36000003RBAcAAO", 
+    "methods": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "submitAndProcessApprovalRequest", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 10, 
+                "line": 3
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

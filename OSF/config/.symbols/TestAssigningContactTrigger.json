@@ -1,0 +1,104 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006ROg1AAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000006ROg1AAG",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 36,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "createComputerInventory",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 78
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        }
+    ],
+    "name": "TestAssigningContactTrigger",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 47
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "TestAssigningContactTrigger",
+        "references": [],
+        "type": "TestAssigningContactTrigger"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "Computer_Inventory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

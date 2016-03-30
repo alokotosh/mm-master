@@ -1,0 +1,50 @@
+<aura:component controller="InventoryController">
+    <aura:handler event="c:SearchKeyChange" action="{!c.searchKeyChange}"/>
+    <aura:attribute name="inventories" type="Computer_Inventory__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+        <table class="slds-table slds-table--bordered">
+           <thead>
+                <tr class="slds-text-heading--label">
+                  <th class="slds-is-sortable" scope="col">
+                    <div class="slds-truncate">Name
+                    </div>
+                  </th>
+                  <th class="slds-is-sortable" scope="col">
+                    <div class="slds-truncate">Customer
+                    </div>
+                  </th>
+                  <th class="slds-is-sortable" scope="col">
+                    <div class="slds-truncate">Value
+                    </div>
+                  </th>
+                  <th class="slds-is-sortable" scope="col">
+                  </th>
+                  <th class="slds-is-sortable" scope="col">
+                    <div class="slds-truncate">
+                    </div>
+                  </th>
+                  <th class="slds-cell-shrink"></th>
+                </tr>
+         </thead>
+             <aura:iteration items="{!v.inventories}" var="inventory">
+                  <tbody class="slds-table slds-table--bordered slds-table--striped">
+                      <tr class="slds-hint-parent">
+                          <td>
+                                <a href="{! '#/sObject/' + inventory.Id + '/view'}">
+                                  {!inventory.Name}
+                                   </a>
+                          </td>
+                          <td>
+                                  {!inventory.Customer__r.Name}
+                          </td>
+                          <td>
+                                  {!inventory.Value__c}
+                          </td>
+                           <td>
+                             <ui:button label="Edit"   press="{!c.editRecord}"/>
+                          </td>
+                       </tr>
+                   </tbody>
+                 </aura:iteration>
+        </table>
+</aura:component>

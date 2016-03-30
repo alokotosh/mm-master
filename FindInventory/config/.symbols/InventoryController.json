@@ -1,0 +1,89 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006RnKYAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000006RnKYAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findByString",
+            "parameters": [
+                {
+                    "name": "searchKey",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "InventoryController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "InventoryController",
+        "references": [],
+        "type": "InventoryController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "searchKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "searchStr",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

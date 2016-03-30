@@ -1,0 +1,56 @@
+<!--
+
+File: EmployeeList.page
+
+Project: Developer Project 
+
+Date: Creation Date (e.g.: January 10, 2016)
+
+Created By: Andrew Lokotosh
+
+*************************************************************************
+Description: This page return Table of Employee and Employee Skills and alow paginate it.
+
+*************************************************************************
+
+History: Used for any changes added to the page after first release.
+
+Date(same format as above) - Developer Name - what components were modified/added, what are the changes
+
+-->
+<apex:page controller="EmployeeController">
+    <apex:form >
+        <apex:pageBlock title="Employee  List  Page  {!pageNumber} of {!totalPages}" id="pgBlock">
+            <apex:pageBlockTable value="{!Employee}" var="empl" id="pgTable" align="center">
+                <apex:column value="{!empl.Name}"/>
+ 
+                <apex:column headerValue="Number of Skills">
+                	<apex:pageBlock id="blockSkills">
+                  		  <style>
+           					 body .bPageBlock .pbBody .black .pbSubheader{
+                			 background-color:#6E6E6E;}
+         					  
+       					  </style>
+								<apex:outputPanel styleClass="black" layout="block">
+           							 <apex:pageblockSection id="SkillSection" title="{!empl.Number_Of_Skills__c}" columns="1" collapsible="true" >
+    				 				       <apex:pageBlockTable value="{!Employee[empl]}" var="listItem"  >
+        				      					  <apex:column value="{!listItem}" />
+       					     			   </apex:pageBlockTable>
+       								 </apex:pageblockSection>
+   								 </apex:outputPanel>          
+   							 <script>
+       							 twistSection(document.getElementById('{!$Component.blockSkills.SkillSection}').getElementsByTagName('img')[0])
+   							 </script>
+				     </apex:pageBlock>
+                </apex:column>
+  		    </apex:pageBlockTable>
+         		   <apex:pageBlockButtons >
+               			 <apex:commandButton value="Previous" action="{!Previous}" rerender="pgBlock,pgTable"
+                                    status="status" disabled="{!DisablePrevious}" />
+             		     <apex:commandButton value="Next" action="{!Next}" reRender="pgBlock,pgTable"
+                                    status="status" disabled="{!DisableNext}" />
+             				   <apex:actionStatus id="status" startText="...Please Wait..."/>
+           		   </apex:pageBlockButtons> 
+        </apex:pageBlock>  
+    </apex:form>
+</apex:page>

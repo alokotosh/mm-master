@@ -1,0 +1,243 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "TestEmployeeController", 
+    "tableDeclaration": {
+        "type": "TestEmployeeController", 
+        "modifiers": [
+            "public", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 22, 
+            "line": 47
+        }, 
+        "name": "TestEmployeeController"
+    }, 
+    "key": "01p36000003xfwwAAA", 
+    "variables": [
+        {
+            "type": "EmployeeController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 60
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 61
+            }, 
+            "name": "testMap"
+        }, 
+        {
+            "type": "EmployeeController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 74
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "PageReference", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 75
+            }, 
+            "name": "nextReference"
+        }, 
+        {
+            "type": "PageReference", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 77
+            }, 
+            "name": "previousReference"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 79
+            }, 
+            "name": "pageNumber"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 81
+            }, 
+            "name": "totalSize"
+        }, 
+        {
+            "type": "EmployeeController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 95
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 96
+            }, 
+            "name": "checkPrevios"
+        }, 
+        {
+            "type": "EmployeeController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 112
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 113
+            }, 
+            "name": "checkNext"
+        }, 
+        {
+            "type": "EmployeeController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 129
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 130
+            }, 
+            "name": "totalPages"
+        }
+    ], 
+    "id": "01p36000003xfwwAAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkMapEmployee", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 58
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkPaginations", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 34, 
+                "line": 72
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkDisablePrevious", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 33, 
+                "line": 93
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkDisableNext", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 110
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkTotalPages", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 127
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

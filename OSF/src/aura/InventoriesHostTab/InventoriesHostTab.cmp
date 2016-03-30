@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable">
+    <ltng:require styles="/resource/SLDS100/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <div class="slds" style="margin-top:10px;margin-left:10px;">
+
+        <c:InventoryHeader />
+
+
+
+
+
+    <!-- If you’re using a namespace, replace with myNamespace:contactList -->
+    <c:ContactsTrail/>
+
+
+
+
+        <!-- <c:Example/>
+
+<c:NewInventory/>
+-->
+
+
+
+    </div>
+
+
+
+
+
+
+</aura:component>

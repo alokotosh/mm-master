@@ -1,0 +1,129 @@
+<aura:component controller="InventoryController" implements="force:appHostable">
+    <aura:handler name="updateInventories" event="c:updateInventories" action="{!c.updateEvent}" />
+ <ltng:require styles="/resource/SLDS100/assets/styles/salesforce-lightning-design-system-ltng.css" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <aura:attribute name="inventory" type="Computer_Inventory__c[]"/>
+  <aura:attribute name="newInventory" type="Computer_Inventory__c"
+         default="{ 'sobjectType': 'Computer_Inventory__c',
+                         'Name': 'Mackbook',
+                         'Inventory_Number__c': 59000034,
+                         'Customer__c': '',
+                         'Contact_Person__c': '',
+                         'Value__c': '500'
+                       }"/>
+  <!-- If you registered a namespace, replace the previous aura:attribute tags with the following -->
+  <!-- <aura:attribute name="expenses" type="myNamespace.Expense__c[]"/>
+  <aura:attribute name="newExpense" type="myNamespace__Expense__c"
+               default="{ 'sobjectType': 'myNamespace__Expense__c',
+                          'Name': '',
+                          'myNamespace__Amount__c': 0,
+                          'myNamespace__Client__c': '',
+                          'myNamespace__Date__c': '',
+                          'myNamespace__Reimbursed__c': false
+                         }"/> -->
+  <!-- Attributes for Expense Counters -->
+  <aura:attribute name="totalValue" type="Double" default="0.00" />
+  <aura:attribute name="exp" type="Double" default="0" />
+
+  <!-- Input Form using components -->
+
+
+
+
+  <div class="container">
+    <form class="slds-form--stacked">
+      <div class="slds-form-element slds-is-required">
+        <div class="slds-form-element__control">
+
+       <!-- If you registered a namespace,
+            the attributes include your namespace.
+            For example, value="{!v.newExpense.myNamespace__Amount__c}" -->
+
+          <ui:inputText aura:id="invname" label="Inventory Name"
+                        class="slds-input"
+                        labelClass="slds-form-element__label"
+                        value="{!v.newInventory.Name}"
+                        required="true"/>
+         </div>
+       </div>
+       <div class="slds-form-element slds-is-required">
+         <div class="slds-form-element__control">
+           <ui:inputNumber aura:id="invNumber" label="Inventory Number"
+                           class="slds-input"
+                           labelClass="slds-form-element__label"
+                           value="{!v.newInventory.Inventory_Number__c}"
+                           placeholder="" required="true"/>
+          </div>
+        </div>
+
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+           <c:inputLookup type="Account"
+         value="{!v.id}"
+         className="form-control "/>
+           </div>
+         </div>
+
+                                  
+
+
+         <div class="slds-form-element">
+           <div class="slds-form-element__control">
+             <ui:inputText aura:id="client" label="Contact Person"
+                           class="slds-input"
+                           labelClass="slds-form-element__label"
+                           value="{!v.newInventory.Contact_Person__c}"
+                           placeholder="" />
+            </div>
+          </div>
+
+          <div class="slds-form-element slds-is-required">
+            <div class="slds-form-element__control">
+              <ui:inputNumber aura:id="invNumber" label="Value"
+                              class="slds-input"
+                              labelClass="slds-form-element__label"
+                              value="{!v.newInventory.Value__c}"
+                              placeholder="" />
+             </div>
+           </div>
+
+          <div class="slds-form-element">
+
+            <ui:button label="Save"
+                       class="slds-button slds-button--neutral"
+                       labelClass="label"
+                       press="{!c.createInventory}"/>
+           </div>
+    </form>
+  </div><!-- ./container-->
+
+  <!-- Expense Counters -->
+  <div class="container slds-p-top--medium">
+        <div class="row">
+            <div class="slds-tile ">
+                <!-- Make the counter red if total amount is more than 100 -->
+                <div class="{!v.total >= 100
+                     ? 'slds-notify slds-notify--toast slds-theme--error slds-theme--alert-texture'
+                     : 'slds-notify slds-notify--toast slds-theme--alert-texture'}">
+                    <p class="slds-tile__title slds-truncate">Total Expenses</p>
+                    $<ui:outputNumber class="slds-truncate" value="{!v.totalValue}" format=".00"/>
+                </div>
+            </div>
+            <div class="slds-tile ">
+                <div class="slds-notify slds-notify--toast slds-theme--alert-texture">
+                      <p class="slds-tile__title slds-truncate">No. of Expenses</p>
+                      <ui:outputNumber class="slds-truncate" value="{!v.exp}"/>
+                  </div>
+            </div>
+        </div>
+    </div>
+          <!-- Display expense records -->
+          <div class="container slds-p-top--medium">
+              <div id="list" class="row">
+                            <aura:iteration items="{!v.inventories}" var="inventory">
+                                <!--If you’re using a namespace, use myNamespace:expenseList instead-->
+                                <c:InventoryListL inventory="{!inventory}"/>
+                            </aura:iteration>
+              </div>
+          </div>
+</aura:component>

@@ -1,0 +1,71 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "displayPopup", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 2
+            }, 
+            "type": "Boolean"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "EmployeePopup", 
+    "tableDeclaration": {
+        "type": "EmployeePopup", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "EmployeePopup"
+    }, 
+    "key": "01p36000003QLFBAA4", 
+    "variables": [], 
+    "id": "01p36000003QLFBAA4", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "closePopup", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 4
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "showPopup", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 7
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "projectName": "OSF",
+    "username": "andriy.lokotosh@osf-global.com",
+    "id": "5618c290-df27-11e5-8768-05407f9b5ad8",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "",
+    "workspace": "/Users/kepler23/Downloads/mm-master",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "StaticResource"
+    ]
+}

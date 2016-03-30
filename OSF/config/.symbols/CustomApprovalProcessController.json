@@ -1,0 +1,122 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003RBAcAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003RBAcAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "submitAndProcessApprovalRequest",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "CustomApprovalProcessController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "CustomApprovalProcessController",
+        "references": [],
+        "type": "CustomApprovalProcessController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "user1",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "req1",
+            "references": [],
+            "type": "ProcessSubmitRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "ProcessResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "newWorkItemIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "req2",
+            "references": [],
+            "type": "ProcessWorkitemRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "result2",
+            "references": [],
+            "type": "ProcessResult"
+        }
+    ]
+}

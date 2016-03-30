@@ -1,0 +1,234 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "idToSize", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 53
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "employoeeSize", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 54
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "userName", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 55
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "userForReturn", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 56
+            }, 
+            "type": "Id"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "user", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 57
+            }, 
+            "type": "User"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "employeeName", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 58
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "userIdToEmployeeName", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 59
+            }, 
+            "type": "Map"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "GetUserId", 
+    "tableDeclaration": {
+        "type": "GetUserId", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 51
+        }, 
+        "name": "GetUserId"
+    }, 
+    "key": "01p36000003w7MJAAY", 
+    "variables": [
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 78
+            }, 
+            "name": "groupType"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 48, 
+                "line": 78
+            }, 
+            "name": "groupName"
+        }, 
+        {
+            "type": "Group", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 80
+            }, 
+            "name": "queueGroups"
+        }, 
+        {
+            "type": "Set", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 86
+            }, 
+            "name": "userOrGroupIds"
+        }, 
+        {
+            "type": "GroupMember", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 87
+            }, 
+            "name": "member"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 92
+            }, 
+            "name": "userId"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 97
+            }, 
+            "name": "userId"
+        }, 
+        {
+            "type": "Employee__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 99
+            }, 
+            "name": "e"
+        }, 
+        {
+            "type": "Id", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 111
+            }, 
+            "name": "uId"
+        }
+    ], 
+    "id": "01p36000003w7MJAAY", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getUserId", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "groupType"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "groupName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 78
+            }, 
+            "returnType": "Id", 
+            "type": null
+        }
+    ]
+}

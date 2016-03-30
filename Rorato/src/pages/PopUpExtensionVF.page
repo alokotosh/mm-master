@@ -1,0 +1,20 @@
+<apex:page showHeader="false" sidebar="false" standardController="Account" extensions="PopUpExtension">
+    <apex:form >
+        <apex:pageBlock title="{!Account.Name}" id="pageBlock">
+            Update the Account Name:<br/>
+            <b>Account Name</b><apex:inputField value="{!Account.Name}"/>
+            <apex:commandButton action="{!saveAccount}" value="Save" onComplete="closeAndRefresh();" status="actionStatus" reRender="pageBlock"/>
+            <apex:actionStatus id="actionStatus">
+                <apex:facet name="start"> 
+                    <img src="/img/loading.gif"/>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        function closeAndRefresh(){
+            console.log('clicked on the button');
+            window.top.location = '/{!$CurrentPage.parameters.id}';
+        }
+    </script>
+</apex:page>

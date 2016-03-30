@@ -1,0 +1,22 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+05:56:23.0 (458554)|EXECUTION_STARTED
+05:56:23.0 (490864)|CODE_UNIT_STARTED|[EXTERNAL]|06636000001UN9Y|VF: /apex/Maps
+05:56:23.41 (41721505)|CUMULATIVE_LIMIT_USAGE
+05:56:23.41 (41721505)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+05:56:23.41 (41721505)|CUMULATIVE_LIMIT_USAGE_END
+
+05:56:23.0 (41789761)|CODE_UNIT_FINISHED|VF: /apex/Maps
+05:56:23.0 (42841796)|EXECUTION_FINISHED

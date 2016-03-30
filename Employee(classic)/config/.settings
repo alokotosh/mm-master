@@ -1,0 +1,16 @@
+{
+    "projectName": "Employee(classic)",
+    "username": "andriy.lokotosh@osf-global.com",
+    "id": "c4a2e310-e528-11e5-9dfa-b716ab1893f7",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "/Users/kepler23/Downloads/mm-master",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

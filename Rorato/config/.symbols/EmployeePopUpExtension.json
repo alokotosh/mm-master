@@ -1,0 +1,84 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "empl", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 2
+            }, 
+            "type": "Employee__c"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "stdController", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 31, 
+                "line": 3
+            }, 
+            "type": "StandardController"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "EmployeePopUpExtension", 
+            "parameters": [
+                {
+                    "type": "StandardController", 
+                    "name": "stdController"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 5
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "EmployeePopUpExtension", 
+    "tableDeclaration": {
+        "type": "EmployeePopUpExtension", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "EmployeePopUpExtension"
+    }, 
+    "key": "01p36000003QOoTAAW", 
+    "variables": [
+        {
+            "type": "StandardController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 62, 
+                "line": 5
+            }, 
+            "name": "stdController"
+        }
+    ], 
+    "id": "01p36000003QOoTAAW", 
+    "methods": []
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>EmployeeController</members>
+        <members>EmployeeSkillsListController</members>
+        <members>GetUserId</members>
+        <members>TestEmployeeController</members>
+        <members>TestEmployeeRoundRobin</members>
+        <members>TestEmployeeSkillsListController</members>
+        <members>TestGetUserId</members>
+        <members>TestSubmitForApprovingESkills</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>EmployeeForm</members>
+        <members>EmployeeList</members>
+        <members>EmployeeSkillsList</members>
+        <members>MapsEmployee</members>
+        <members>RouteEmployee</members>
+        <members>popuppage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>EmployeeRoudRobin</members>
+        <members>EmployeeSkillsEmailTrigger</members>
+        <members>SubmitForApprovingESkills</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>mainjs</members>
+        <name>StaticResource</name>
+    </types>
+    <version>34.0</version>
+</Package>

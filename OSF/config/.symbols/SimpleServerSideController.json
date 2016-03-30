@@ -1,0 +1,62 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004YTvkAAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004YTvkAAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "serverEcho",
+            "parameters": [
+                {
+                    "name": "firstName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "SimpleServerSideController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SimpleServerSideController",
+        "references": [],
+        "type": "SimpleServerSideController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "firstName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

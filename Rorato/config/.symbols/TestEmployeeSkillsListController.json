@@ -1,0 +1,65 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "TestEmployeeSkillsListController", 
+    "tableDeclaration": {
+        "type": "TestEmployeeSkillsListController", 
+        "modifiers": [
+            "public", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 22, 
+            "line": 46
+        }, 
+        "name": "TestEmployeeSkillsListController"
+    }, 
+    "key": "01p36000003xitKAAQ", 
+    "variables": [
+        {
+            "type": "EmployeeSkillsListController", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 57
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 58
+            }, 
+            "name": "testList"
+        }
+    ], 
+    "id": "01p36000003xitKAAQ", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public", 
+                "testMethod"
+            ], 
+            "name": "checkEmployeeSkills", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 55
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

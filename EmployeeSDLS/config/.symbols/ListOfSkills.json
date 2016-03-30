@@ -1,0 +1,43 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ListOfSkills",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003QHoMAAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003QHoMAAW",
+    "methods": [],
+    "name": "ListOfSkills",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ListOfSkills",
+        "references": [],
+        "type": "ListOfSkills"
+    },
+    "variables": []
+}

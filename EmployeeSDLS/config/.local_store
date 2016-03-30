@@ -1,0 +1,46 @@
+{
+    "EmployeeDetailPage_SLDS.page": {
+        "createdById": "005360000011kEEAAY",
+        "createdByName": "Andrew Lokotosh",
+        "createdDate": "2016-03-08T20:49:23.000Z",
+        "fileName": "unpackaged/pages/EmployeeDetailPage_SLDS.page",
+        "fullName": "EmployeeDetailPage_SLDS",
+        "id": "0663600000268wVAAQ",
+        "lastModifiedById": "005360000011kEEAAY",
+        "lastModifiedByName": "Andrew Lokotosh",
+        "lastModifiedDate": "2016-03-08T20:49:23.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexPage",
+        "mmState": "clean"
+    },
+    "EmployeePageSDLS.page": {
+        "createdById": "005360000011kEEAAY",
+        "createdByName": "Andrew Lokotosh",
+        "createdDate": "2016-03-08T16:38:32.000Z",
+        "fileName": "unpackaged/pages/EmployeePageSDLS.page",
+        "fullName": "EmployeePageSDLS",
+        "id": "0663600000264dIAAQ",
+        "lastModifiedById": "005360000011kEEAAY",
+        "lastModifiedByName": "Andrew Lokotosh",
+        "lastModifiedDate": "2016-03-08T20:39:58.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexPage",
+        "mmState": "clean"
+    },
+    "EmployeeFormSDLS.page": {
+        "id": "0663600000274j4AAA",
+        "name": "EmployeeFormSDLS",
+        "createdDate": "2016-03-14T14:00:11.000+0000",
+        "createdById": "005360000011kEEAAY",
+        "namespacePrefix": null,
+        "lastModifiedById": "005360000011kEEAAY",
+        "lastModifiedDate": "2016-03-14T20:09:54.000+0000",
+        "fullName": "EmployeeFormSDLS",
+        "fileName": "unpackaged/pages/EmployeeFormSDLS.page",
+        "createdByName": "Andrew Lokotosh",
+        "lastModifiedByName": "Andrew Lokotosh",
+        "manageableState": "unmanaged",
+        "type": "ApexPage",
+        "mmState": "clean"
+    }
+}
