@@ -26,7 +26,7 @@
             "annotations": [],
             "location": {
                 "column": 47,
-                "line": 11
+                "line": 36
             },
             "modifiers": [
                 "static",
@@ -66,8 +66,41 @@
         {
             "annotations": [],
             "location": {
+                "column": 16,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "fields",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
                 "column": 67,
-                "line": 11
+                "line": 36
             },
             "modifiers": [],
             "name": "searchKey",
@@ -78,7 +111,7 @@
             "annotations": [],
             "location": {
                 "column": 14,
-                "line": 12
+                "line": 37
             },
             "modifiers": [],
             "name": "searchStr",
