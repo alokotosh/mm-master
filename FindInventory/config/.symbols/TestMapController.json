@@ -1,1 +1,41 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003w9zaAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003w9zaAAA",
+    "methods": [],
+    "name": "TestMapController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "myMap",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "TestMapController",
+        "references": [],
+        "type": "TestMapController"
+    },
+    "variables": []
+}

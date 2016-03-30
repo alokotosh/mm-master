@@ -1,1 +1,61 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004ZxaQAAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004ZxaQAAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAccounts",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "AccountController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "AccountController",
+        "references": [],
+        "type": "AccountController"
+    },
+    "variables": []
+}

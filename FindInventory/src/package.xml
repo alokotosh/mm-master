@@ -2,7 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>InventoryController</members>
+        <members>TestAssigningContactTrigger</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AssigningContactPersonTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>InventoriesList</members>

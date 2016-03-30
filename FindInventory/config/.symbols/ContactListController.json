@@ -1,1 +1,121 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006SFtzAAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000006SFtzAAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findByName",
+            "parameters": [
+                {
+                    "name": "searchKey",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "findById",
+            "parameters": [
+                {
+                    "name": "contactId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Contact",
+            "type": null
+        }
+    ],
+    "name": "ContactListController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ContactListController",
+        "references": [],
+        "type": "ContactListController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "searchKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "contactId",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

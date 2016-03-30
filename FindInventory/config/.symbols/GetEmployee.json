@@ -1,1 +1,67 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003xeyHAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003xeyHAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "OneEmployee",
+            "parameters": [],
+            "references": [],
+            "returnType": "Employee_Skills__c",
+            "type": null
+        }
+    ],
+    "name": "GetEmployee",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "GetEmployee",
+        "references": [],
+        "type": "GetEmployee"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "em",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "e",
+            "references": [],
+            "type": "Employee_Skills__c"
+        }
+    ]
+}

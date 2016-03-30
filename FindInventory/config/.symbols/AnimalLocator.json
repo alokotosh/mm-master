@@ -1,1 +1,227 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XIZwAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "Animal",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 3
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "id",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 4
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "name",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 5
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "eats",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 6
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "says",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 2
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "Animal",
+                "references": [],
+                "type": "Animal"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AnimalResult",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 10
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "animal",
+                    "references": [],
+                    "type": "Animal"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 9
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AnimalResult",
+                "references": [],
+                "type": "AnimalResult"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000004XIZwAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAnimalNameById",
+            "parameters": [
+                {
+                    "name": "id",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "AnimalLocator",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "AnimalLocator",
+        "references": [],
+        "type": "AnimalLocator"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "http",
+            "references": [],
+            "type": "Http"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "AnimalResult"
+        }
+    ]
+}

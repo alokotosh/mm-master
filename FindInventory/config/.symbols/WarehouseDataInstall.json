@@ -1,1 +1,152 @@
-null
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "WarehouseDataInstall",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000005pbkcAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005pbkcAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createData",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getHasData",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 35
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testWarehouseDataInstall",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "WarehouseDataInstall",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "WarehouseDataInstall",
+        "references": [],
+        "type": "WarehouseDataInstall"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "inv",
+            "references": [],
+            "type": "Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "li",
+            "references": [],
+            "type": "Line_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "wdi",
+            "references": [],
+            "type": "WarehouseDataInstall"
+        }
+    ]
+}

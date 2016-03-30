@@ -1,1 +1,235 @@
-null
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XLZMAA4",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 5
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getValue",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "LIST",
+                    "type": null
+                }
+            ],
+            "name": "byCountryResponseFuture",
+            "namespace": null,
+            "parentClass": "System.WebServiceCalloutFuture",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 4
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "byCountryResponseFuture",
+                "references": [],
+                "type": "byCountryResponseFuture"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 6
+                    },
+                    "modifiers": [],
+                    "name": "response",
+                    "references": [],
+                    "type": "byCountryResponse"
+                }
+            ]
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 57,
+                        "line": 16
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "beginByCountry",
+                    "parameters": [
+                        {
+                            "name": "continuation",
+                            "type": "Continuation"
+                        },
+                        {
+                            "name": "arg0",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "byCountryResponseFuture",
+                    "type": null
+                }
+            ],
+            "name": "AsyncParksImplPort",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 11
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "endpoint_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 12
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "inputHttpHeaders_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 13
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "clientCertName_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 14
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "timeout_x",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 15
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "ns_map_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 10
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AsyncParksImplPort",
+                "references": [],
+                "type": "AsyncParksImplPort"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 92,
+                        "line": 16
+                    },
+                    "modifiers": [],
+                    "name": "continuation",
+                    "references": [],
+                    "type": "Continuation"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 112,
+                        "line": 16
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 17
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "byCountry"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000004XLZMAA4",
+    "methods": [],
+    "name": "AsyncParkService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 3
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "AsyncParkService",
+        "references": [],
+        "type": "AsyncParkService"
+    },
+    "variables": []
+}
