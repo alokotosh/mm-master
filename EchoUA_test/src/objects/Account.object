@@ -131,6 +131,17 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>CustomerPriority__c</fullName>
         <externalId>false</externalId>
         <label>Customer Priority</label>
@@ -157,9 +168,7 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
     </fields>
-        <fields>
-
-    
+    <fields>
         <fullName>Description</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -318,16 +327,6 @@
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-            <fullName> Count__c</fullName>   
-            <scale>0</scale>
-            <precision>16</precision>
-            <externalId>false</externalId>
-            <label>Count</label>
-             <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Number</type>
     </fields>
     <fields>
         <fullName>Jigsaw</fullName>
