@@ -1,0 +1,100 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: Account a1 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: Account a2 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: Account a3 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: 
+Execute Anonymous: List<AggregateResult> results = 
+Execute Anonymous:     new List<AggregateResult>([SELECT  CALENDAR_MONTH(Active_Start_Date__c), 
+Execute Anonymous:                                		COUNT(id)  
+Execute Anonymous:                                       FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c)=2016
+Execute Anonymous: 									Group by CALENDAR_MONTH(Active_Start_Date__c)                                 
+Execute Anonymous:                                      ]);
+Execute Anonymous: //System.debug(results);
+Execute Anonymous: System.debug(a1);
+Execute Anonymous: System.debug(a2);
+Execute Anonymous: System.debug(a3);
+11:42:49.1 (1307762)|EXECUTION_STARTED
+11:42:49.1 (1323107)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+11:42:49.1 (1467359)|VARIABLE_SCOPE_BEGIN|[1]|a1|Account|true|false
+11:42:49.1 (1479060)|VARIABLE_SCOPE_BEGIN|[2]|a2|Account|true|false
+11:42:49.1 (1483733)|VARIABLE_SCOPE_BEGIN|[3]|a3|Account|true|false
+11:42:49.1 (1557499)|VARIABLE_SCOPE_BEGIN|[5]|results|List<AggregateResult>|true|false
+11:42:49.1 (1687641)|HEAP_ALLOCATE|[72]|Bytes:3
+11:42:49.1 (1732512)|HEAP_ALLOCATE|[77]|Bytes:152
+11:42:49.1 (1750514)|HEAP_ALLOCATE|[342]|Bytes:408
+11:42:49.1 (1769249)|HEAP_ALLOCATE|[355]|Bytes:408
+11:42:49.1 (1786196)|HEAP_ALLOCATE|[467]|Bytes:48
+11:42:49.1 (1823920)|HEAP_ALLOCATE|[139]|Bytes:6
+11:42:49.1 (1849617)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+11:42:49.1 (1987996)|STATEMENT_EXECUTE|[1]
+11:42:49.1 (1992106)|STATEMENT_EXECUTE|[1]
+11:42:49.1 (1995749)|HEAP_ALLOCATE|[1]|Bytes:77
+11:42:49.1 (2004492)|HEAP_ALLOCATE|[1]|Bytes:4
+11:42:49.1 (2046704)|HEAP_ALLOCATE|[50]|Bytes:5
+11:42:49.1 (2070914)|HEAP_ALLOCATE|[56]|Bytes:5
+11:42:49.1 (2079480)|HEAP_ALLOCATE|[64]|Bytes:7
+11:42:49.1 (2391788)|SOQL_EXECUTE_BEGIN|[1]|Aggregations:0|SELECT Id, Name, Active_Start_Date__c FROM Account WHERE Name = 'Super New 1'
+11:42:49.1 (7248333)|SOQL_EXECUTE_END|[1]|Rows:1
+11:42:49.1 (7264219)|HEAP_ALLOCATE|[1]|Bytes:8
+11:42:49.1 (7276688)|HEAP_ALLOCATE|[1]|Bytes:48
+11:42:49.1 (7319488)|HEAP_ALLOCATE|[1]|Bytes:8
+11:42:49.1 (7328484)|HEAP_ALLOCATE|[1]|Bytes:33
+11:42:49.1 (7394013)|HEAP_ALLOCATE|[1]|Bytes:12
+11:42:49.1 (7457426)|VARIABLE_ASSIGNMENT|[1]|a1|{"s":1,"v":{"Id":"0014E000003LntbQAC","Name":"Super New 1"}}|0x2019f624
+11:42:49.1 (7462819)|STATEMENT_EXECUTE|[2]
+11:42:49.1 (7468661)|HEAP_ALLOCATE|[2]|Bytes:4
+11:42:49.1 (7639584)|SOQL_EXECUTE_BEGIN|[2]|Aggregations:0|SELECT Id, Name, Active_Start_Date__c FROM Account WHERE Name = 'Super New 1'
+11:42:49.1 (24595436)|SOQL_EXECUTE_END|[2]|Rows:1
+11:42:49.1 (24611796)|HEAP_ALLOCATE|[2]|Bytes:8
+11:42:49.1 (24624577)|HEAP_ALLOCATE|[2]|Bytes:48
+11:42:49.1 (24639563)|HEAP_ALLOCATE|[2]|Bytes:8
+11:42:49.1 (24670246)|HEAP_ALLOCATE|[2]|Bytes:12
+11:42:49.1 (24699058)|VARIABLE_ASSIGNMENT|[2]|a2|{"s":1,"v":{"Id":"0014E000003LntbQAC","Name":"Super New 1"}}|0x706b6412
+11:42:49.1 (24703827)|STATEMENT_EXECUTE|[3]
+11:42:49.1 (24709920)|HEAP_ALLOCATE|[3]|Bytes:4
+11:42:49.1 (24882174)|SOQL_EXECUTE_BEGIN|[3]|Aggregations:0|SELECT Id, Name, Active_Start_Date__c FROM Account WHERE Name = 'Super New 1'
+11:42:49.1 (40247911)|SOQL_EXECUTE_END|[3]|Rows:1
+11:42:49.1 (40263672)|HEAP_ALLOCATE|[3]|Bytes:8
+11:42:49.1 (40276100)|HEAP_ALLOCATE|[3]|Bytes:48
+11:42:49.1 (40290475)|HEAP_ALLOCATE|[3]|Bytes:8
+11:42:49.1 (40320904)|HEAP_ALLOCATE|[3]|Bytes:12
+11:42:49.1 (40349508)|VARIABLE_ASSIGNMENT|[3]|a3|{"s":1,"v":{"Id":"0014E000003LntbQAC","Name":"Super New 1"}}|0x61b81061
+11:42:49.1 (40354603)|STATEMENT_EXECUTE|[5]
+11:42:49.1 (40361870)|HEAP_ALLOCATE|[6]|Bytes:4
+11:42:49.1 (40427179)|HEAP_ALLOCATE|[6]|Bytes:162
+11:42:49.1 (40433320)|HEAP_ALLOCATE|[6]|Bytes:4
+11:42:49.1 (40727732)|SOQL_EXECUTE_BEGIN|[6]|Aggregations:0|SELECT CALENDAR_MONTH(Active_Start_Date__c), COUNT(id) FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c) = 2016 GROUP BY CALENDAR_MONTH(Active_Start_Date__c)
+11:42:49.1 (61454149)|SOQL_EXECUTE_END|[6]|Rows:1
+11:42:49.1 (61476283)|HEAP_ALLOCATE|[6]|Bytes:8
+11:42:49.1 (61493705)|HEAP_ALLOCATE|[6]|Bytes:31
+11:42:49.1 (61525412)|HEAP_ALLOCATE|[6]|Bytes:8
+11:42:49.1 (61574708)|HEAP_ALLOCATE|[6]|Bytes:12
+11:42:49.1 (61582110)|HEAP_ALLOCATE|[6]|Bytes:12
+11:42:49.1 (61584882)|HEAP_ALLOCATE|[6]|Bytes:4
+11:42:49.1 (61602712)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:42:49.1 (61634593)|VARIABLE_ASSIGNMENT|[5]|results|{"s":1,"v":[{"s":2,"v":{"expr0":4,"expr1":2}}]}|0x376126d0
+11:42:49.1 (61640694)|STATEMENT_EXECUTE|[12]
+11:42:49.1 (61728526)|USER_DEBUG|[12]|DEBUG|Account:{Id=0014E000003LntbQAC, Name=Super New 1}
+11:42:49.1 (61738676)|STATEMENT_EXECUTE|[13]
+11:42:49.1 (61775062)|USER_DEBUG|[13]|DEBUG|Account:{Id=0014E000003LntbQAC, Name=Super New 1}
+11:42:49.1 (61782672)|STATEMENT_EXECUTE|[14]
+11:42:49.1 (61816062)|USER_DEBUG|[14]|DEBUG|Account:{Id=0014E000003LntbQAC, Name=Super New 1}
+11:42:49.61 (61872498)|CUMULATIVE_LIMIT_USAGE
+11:42:49.61 (61872498)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 4 out of 100
+  Number of query rows: 5 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:42:49.61 (61872498)|CUMULATIVE_LIMIT_USAGE_END
+
+11:42:49.1 (61913056)|CODE_UNIT_FINISHED|execute_anonymous_apex
+11:42:49.1 (62946433)|EXECUTION_FINISHED

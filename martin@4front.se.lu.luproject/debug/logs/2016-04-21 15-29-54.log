@@ -1,0 +1,51 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<String> phase = new List<String>{' 1','Contact','Idea','Verification','Development','Com','Lic'};
+Execute Anonymous:     
+Execute Anonymous:     
+Execute Anonymous:     System.debug(phase);
+14:29:53.1 (1542699)|EXECUTION_STARTED
+14:29:53.1 (1557049)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+14:29:53.1 (1809930)|VARIABLE_SCOPE_BEGIN|[1]|phase|List<String>|true|false
+14:29:53.1 (2018261)|HEAP_ALLOCATE|[72]|Bytes:3
+14:29:53.1 (2092684)|HEAP_ALLOCATE|[77]|Bytes:152
+14:29:53.1 (2125542)|HEAP_ALLOCATE|[342]|Bytes:408
+14:29:53.1 (2161689)|HEAP_ALLOCATE|[355]|Bytes:408
+14:29:53.1 (2196192)|HEAP_ALLOCATE|[467]|Bytes:48
+14:29:53.1 (2260421)|HEAP_ALLOCATE|[139]|Bytes:6
+14:29:53.1 (2302078)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+14:29:53.1 (2444149)|STATEMENT_EXECUTE|[1]
+14:29:53.1 (2447862)|STATEMENT_EXECUTE|[1]
+14:29:53.1 (2457151)|HEAP_ALLOCATE|[1]|Bytes:4
+14:29:53.1 (2528575)|HEAP_ALLOCATE|[1]|Bytes:2
+14:29:53.1 (2542940)|HEAP_ALLOCATE|[1]|Bytes:7
+14:29:53.1 (2549706)|HEAP_ALLOCATE|[1]|Bytes:4
+14:29:53.1 (2557279)|HEAP_ALLOCATE|[1]|Bytes:12
+14:29:53.1 (2564341)|HEAP_ALLOCATE|[1]|Bytes:11
+14:29:53.1 (2570805)|HEAP_ALLOCATE|[1]|Bytes:3
+14:29:53.1 (2579214)|HEAP_ALLOCATE|[1]|Bytes:3
+14:29:53.1 (2639221)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:32
+14:29:53.1 (2695866)|VARIABLE_ASSIGNMENT|[1]|phase|{"s":1,"v":"List of size 7 too large to display"}|0x12cd91f0
+14:29:53.1 (2702288)|STATEMENT_EXECUTE|[4]
+14:29:53.1 (2761870)|HEAP_ALLOCATE|[50]|Bytes:5
+14:29:53.1 (2798412)|HEAP_ALLOCATE|[56]|Bytes:5
+14:29:53.1 (2814754)|HEAP_ALLOCATE|[64]|Bytes:7
+14:29:53.1 (2918605)|USER_DEBUG|[4]|DEBUG|( 1, Contact, Idea, Verification, Development, Com, Lic)
+14:29:53.2 (2977597)|CUMULATIVE_LIMIT_USAGE
+14:29:53.2 (2977597)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+14:29:53.2 (2977597)|CUMULATIVE_LIMIT_USAGE_END
+
+14:29:53.1 (3025887)|CODE_UNIT_FINISHED|execute_anonymous_apex
+14:29:53.1 (4203792)|EXECUTION_FINISHED

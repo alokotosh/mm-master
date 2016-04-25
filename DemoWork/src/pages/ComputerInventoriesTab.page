@@ -1,0 +1,247 @@
+<apex:page showHeader="true" standardStylesheets="false" sidebar="false" applyHtmlTag="true" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>Inventory</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="whosf__Computer_Inventory__c" fields="Id,Name,whosf__Inventory_Number__c,whosf__Customer__c,whosf__Contact_Person__c,whosf__Value__c,LastModifiedDate"/>
+   <apex:remoteObjectModel name="Account" fields="Id,Name,LastModifiedDate"/>
+</apex:remoteObjects>
+
+<body>
+
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds">
+
+
+
+<!-- PAGE HEADER -->
+
+<div class="slds-page-header" role="banner">
+
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid">
+
+    <!-- GRID COL -->
+    <div class="slds-col">
+
+
+<!-- HEADING AREA -->
+<!-- MEDIA OBJECT = FIGURE + BODY -->
+<div class="slds-media">
+
+  <div class="slds-media__figure">
+    <span class="slds-avatar slds-avatar--large">
+      <img src="{!URLFOR($Resource.SLDS100, 'assets/images/avatar2.jpg')}" alt="portrait" />
+    </span>
+  </div>
+
+  <div class="slds-media__body">
+    <p class="slds-text-heading--label">Computer Inventories</p>
+    <h1 class="slds-text-heading--medium">Home</h1>
+  </div>
+
+</div>
+<!-- / MEDIA OBJECT -->
+<!-- /HEADING AREA -->
+
+
+    </div>
+
+    <!-- GRID COL -->
+    <div class="slds-col slds-no-flex slds-align-middle">
+
+      <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button--neutral">
+          New 
+        </button>
+        <button class="slds-button slds-button--neutral">
+          More
+        </button>
+      </div>
+
+    </div>
+    <!-- / GRID COL -->
+
+  </div>
+  <!-- / LAYOUT GRID -->
+
+
+
+</div>
+<!-- / PAGE HEADER -->
+
+
+      <!-- PRIMARY CONTENT WRAPPER -->
+<div class="myapp">
+
+    
+     
+   
+    
+  <!-- CREATE NEW Computer Inventory -->
+  <div aria-labelledby="newinventoryform">
+
+    <!-- BOXED AREA -->
+    <fieldset class="slds-box slds-theme--default slds-container--small">
+
+      <legend id="newinventoryform" class="slds-text-heading--medium slds-p-vertical--medium">Quick add</legend>
+
+      <!-- CREATE NEW Computer Inventory FORM -->
+      <form class="slds-form--stacked">
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="inventoryName">Name</label>
+          <div class="slds-form-element__control">
+            <input id="inventoryName" class="slds-input" type="text" placeholder="New inventory"/>
+          </div>
+        </div>
+          
+         <div class="slds-form-element">
+          <label class="slds-form-element__label" for="inventoryNumber">Number</label>
+          <div class="slds-form-element__control">
+            <input id="inventoryNumber" class="slds-input" type="number" placeholder="Number"/>
+          </div>
+        </div> 
+          
+		<div class="slds-form-element">
+          <label class="slds-form-element__label" for="inventoryValue">Value</label>
+          <div class="slds-form-element__control">
+            <input id="inventoryValue" class="slds-input" type="number" placeholder="500$"/>
+          </div>
+        </div> 
+          
+          <div class="slds-m-top--medium large" data-select="multi" data-scope="single" data-typeahead="true">
+              <div class="slds-form-element">
+                <label class="slds-form-element__label" for="inventoryCustomer">Customer</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+                  <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                  </svg>
+                  <input id="inventoryCustomer" class="slds-input" type="id" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="" />
+                </div>
+              </div>
+            </div>
+         
+          
+        <button class="slds-button slds-button--brand slds-m-top--medium" type="button" onClick="createInventory()">Create Inventory</button>
+      </form>
+      <!-- CREATE NEW Inventory FORM -->
+
+    </fieldset>
+    <!-- / BOXED AREA -->
+
+  </div>
+
+  <!-- / CREATE NEW ACCOUNT -->
+
+
+  
+  <!-- ACCOUNT LIST TABLE -->
+  <div id="inventoryList" class="slds-p-vertical--medium"></div>
+  <!-- / ACCOUNT LIST TABLE -->
+
+         
+
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer role="contentinfo" class="slds-p-around--large">
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid slds-grid--align-spread">
+    <p class="slds-col">INVENTORIES APP</p>
+    <p class="slds-col">&copy; Andrew Lokotosh</p>
+  </div>
+  <!-- / LAYOUT GRID -->
+</footer>
+<!-- / FOOTER -->
+
+
+  </div>
+      </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+  var inventory = new SObjectModel.Computer_Inventory__c();
+  var outputDiv = document.getElementById("inventoryList");
+
+
+       function updateOutputDiv() {
+  inventory.retrieve(
+    {orderby: [{LastModifiedDate: 'DESC'}]},
+    function(error, records) {
+      if (error) {
+        alert(error.message);
+      } else {
+        var accountIcon = '<span class="slds-icon__container slds-icon-standard-document">';
+        accountIcon += '<svg aria-hidden="true" class="slds-icon">';
+        accountIcon += '<use xlink:href="{!URLFOR($Resource.SLDS100, 'assets/icons/standard-sprite/svg/symbols.svg#document')}"></use>';
+        accountIcon += '</svg><span class="slds-assistive-text">Document</span></span>';
+
+        var html = '<div class="slds-scrollable--x"><table class="slds-table slds-table--bordered">';
+
+        html += '<thead><tr><th scope="col">Type</th>';
+        html += '<th scope="col">Name</th>';
+        html += '<th scope="col">Number</th>';
+        html += '<th scope="col">Customer</th>';
+        html += '<th scope="col">Contact Person</th>';
+        html += '<th scope="col">Value</th></tr></thead><tbody>';
+
+        records.forEach(function(record) {
+         
+            html += '<td> <a href="#">'+ accountIcon  +'</a></td>';
+            html += '<td> <a href="#">'+ record.get('Name') +'</a></td>';
+            html += '<td> <a href="#">'+ record.get('Inventory_Number__c') +'</a></td>';
+            html += '<td> <a href="#">'+ record.get('Customer__c') +'</a></td>';
+            html += '<td> <a href="#">'+ record.get('Contact_Person__c') +'</a></td>';
+            html += '<td>' + record.get("Value__c") + '</td></tr>';
+        });
+        html = html + '</tbody></table></div>';
+        outputDiv.innerHTML = html;
+      }
+    }
+  );
+}
+
+    function createInventory() {
+  var inventoryName = document.getElementById("inventoryName").value;
+       var inventoryNumber = document.getElementById("inventoryNumber").value;
+          var inventoryValue = document.getElementById("inventoryValue").value;
+          var inventoryCustomer = document.getElementById("inventoryCustomer").value;
+  var inventory = new SObjectModel.Computer_Inventory__c();
+  inventory.create({Name: inventoryName,
+                    Inventory_Number__c: inventoryNumber,
+                    Customer__c: inventoryCustomer,
+                    Value__c: inventoryValue}, function(error, records) {
+    if (error) {
+      alert(error.message);
+    } else {
+      updateOutputDiv();
+    }
+  });
+  return false;
+}
+
+  updateOutputDiv();
+</script>
+<!-- / JAVASCRIPT -->
+
+
+</html>
+</apex:page>

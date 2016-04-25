@@ -1,0 +1,163 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "FindAllProducts", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 2
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": "whosf", 
+    "name": "FindAllProducts", 
+    "tableDeclaration": {
+        "type": "FindAllProducts", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "FindAllProducts"
+    }, 
+    "key": "01p36000009Ljs3AAC", 
+    "variables": [
+        {
+            "type": "Pricebook2", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 14
+            }, 
+            "name": "pbook"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 16
+            }, 
+            "name": "pp"
+        }, 
+        {
+            "type": "Pricebook2", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 19
+            }, 
+            "name": "standardpb"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 21
+            }, 
+            "name": "prod"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 22
+            }, 
+            "name": "entryStandard"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 23
+            }, 
+            "name": "entryPbook"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 24
+            }, 
+            "name": "idx"
+        }, 
+        {
+            "type": "Product2", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 29
+            }, 
+            "name": "p"
+        }, 
+        {
+            "type": "Product2", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 37
+            }, 
+            "name": "p"
+        }
+    ], 
+    "id": "01p36000009Ljs3AAC", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getAllProducts", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 6
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "createPricebook", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 12
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }
+    ]
+}

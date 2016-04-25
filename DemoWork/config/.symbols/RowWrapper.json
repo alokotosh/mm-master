@@ -1,0 +1,89 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "RowWrapper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p360000072RxeAAE",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p360000072RxeAAE",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addValue",
+            "parameters": [
+                {
+                    "name": "value",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "RowWrapper",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "values",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "RowWrapper",
+        "references": [],
+        "type": "RowWrapper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

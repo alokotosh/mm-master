@@ -1,0 +1,16 @@
+{
+    "projectName": "ELIXE",
+    "username": "mhaagen@thirdwaveanalytics.com.hx.dev",
+    "id": "eb4b5a20-02e1-11e6-b457-692b5688241d",
+    "namespace": "",
+    "environment": "sandbox",
+    "loginUrl": "https://test.salesforce.com/",
+    "workspace": "/Users/kepler23/Downloads/mm-master",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

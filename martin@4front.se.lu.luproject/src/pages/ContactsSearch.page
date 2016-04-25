@@ -1,0 +1,106 @@
+<apex:page standardController="Contact" extensions="ContactSearchControllerExtension">
+    <apex:sectionHeader title="Ny kontakt" subtitle="Sök" />
+    <script>
+        function goSearch(e)
+        {
+            var key;
+
+            if(window.event)
+                key = window.event.keyCode; //IE
+            else if(e)
+                key = e.which;              //Firefox
+            else
+                return true;
+
+            if(key == 13)
+            {
+                var component = "{!$Component.frmMain.pbSearch.pbbSearch.btnSearch}";
+                document.getElementById(component).click();
+                return false;
+            }
+            else
+                return true;
+        }
+        function getQueryParams(qs)
+        {
+             qs = qs.split("+").join(" ");
+
+             var params = {}, tokens,
+             re = /[?&]?([^=]+)=([^&]*)/g;
+
+             while (tokens = re.exec(qs))
+             {
+                  params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+             }
+
+            return params;
+       }
+
+       var query = getQueryParams(document.location.search);
+
+       var url;
+       if (query.con9 == 'Datahug')
+       {
+            url = '/003/e?nooverride=1';
+            url += '&retURL=' + query.retURL;
+            url += '&saveURL=' + query.saveURL;
+            url += '&name_lastcon2=' + query.name_lastcon2;
+            url += '&name_firstcon2=' + query.name_firstcon2;
+            url += '&con15=' + query.con15;
+            url += '&con9=' + query.con9;
+            url += '&con4_lkid=' + query.con4_lkid;
+            location.href = url;
+        }
+        document.onkeypress = goSearch;
+    </script>
+    <apex:form id="frmMain">
+        <apex:pageblock id="pbSearch" title="Sök" mode="edit">
+            <apex:pageBlockButtons id="pbbSearch">
+                <apex:commandButton id="btnSearch" value="Sök" rerender="frmMain" action="{!searchContacts}" status="status"/>
+                <apex:commandButton value="Skapa Ny" action="{!newContact}" rendered="{!hasSearched}" onclick="return confirm('Är du säker på att du inte kan använda en befintlig kontakt?')"/>
+                <apex:commandButton value="Avbryt" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:inputField id="txtContactLastName" value="{!contact.LastName}" required="false"/>
+                <apex:selectRadio value="{!lastNameStartsWith}">
+                    <apex:selectOption itemValue="true" itemLabel="Börjar med"/>
+                    <apex:selectOption itemValue="false" itemLabel="Innehåller"/>
+                </apex:selectRadio>
+                <apex:inputField id="txtContactFirstName" value="{!contact.FirstName}"/>
+                <apex:selectRadio value="{!firstNameStartsWith}">
+                    <apex:selectOption itemValue="true" itemLabel="Börjar med"/>
+                    <apex:selectOption itemValue="false" itemLabel="Innehåller"/>
+                </apex:selectRadio>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Email" for="txtContactEmail"/>
+                    <apex:inputText id="txtContactEmail" value="{!contactEmail}"/>
+                </apex:pageBlockSectionItem>
+                <apex:selectRadio value="{!emailStartsWith}">
+                    <apex:selectOption itemValue="true" itemLabel="Börjar med"/>
+                    <apex:selectOption itemValue="false" itemLabel="Innehåller"/>
+                </apex:selectRadio>
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        <apex:pageBlock title="Sökresultat">
+            <apex:actionStatus id="status">
+                <apex:facet name="start">
+                    <apex:image alt="Laddar..." title="Laddar..." value="/img/waiting_dots.gif"/>
+                </apex:facet>
+                <apex:facet name="stop">
+                    <apex:pageBlockTable value="{!results}" var="result" rendered="{!resultsFound}">
+                        <apex:column headerValue="Namn">
+                            <apex:outputLink value="/{!result.id}" target="_blank">{!result.Name}</apex:outputLink>
+                        </apex:column>
+                        <apex:column value="{!result.Email}" />
+                        <apex:column headerValue="Projekt">
+                            <apex:outputLink value="/{!result.AccountId}" target="_blank">{!result.Account.Name}</apex:outputLink>
+                        </apex:column>
+                        <apex:column headerValue="Coach">
+                            <apex:outputLink value="/{!result.OwnerId}" target="_blank">{!result.Owner.Name}</apex:outputLink>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

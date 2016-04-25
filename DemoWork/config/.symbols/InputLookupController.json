@@ -1,0 +1,386 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006RyOZAA0",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "SearchResult",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 42
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "value",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 43
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "id",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 41
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "SearchResult",
+                "references": [],
+                "type": "SearchResult"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000006RyOZAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCurrentValue",
+            "parameters": [
+                {
+                    "name": "type",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 49
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getSobjectNameField",
+            "parameters": [
+                {
+                    "name": "sobjType",
+                    "type": "SObjectType"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 68
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "searchSObject",
+            "parameters": [
+                {
+                    "name": "type",
+                    "type": "String"
+                },
+                {
+                    "name": "searchString",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "InputLookupController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "InputLookupController",
+        "references": [],
+        "type": "InputLookupController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "type",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "lookupId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "objType",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "nameField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "oList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "sobjType",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "nameField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "dfrLkp",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "sotype",
+            "references": [],
+            "type": "SObjectField"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "fieldDescObj",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "type",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "searchString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "objType",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "nameField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "soslQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "output",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "sobj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "sr",
+            "references": [],
+            "type": "SearchResult"
+        }
+    ]
+}

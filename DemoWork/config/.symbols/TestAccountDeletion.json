@@ -1,0 +1,228 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003ONiLAAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003ONiLAAW",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "TestDeleteAccountWithOneOpportunity",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 22
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "TestDeleteAccountWithNoOpportunities",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 36
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "TestDeleteBulkAccountsWithOneOpportunity",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "TestDeleteBulkAccountsWithNoOpportunities",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "TestAccountDeletion",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "TestAccountDeletion",
+        "references": [],
+        "type": "TestAccountDeletion"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "accts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "DeleteResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "accts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "DeleteResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "accts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "dr",
+            "references": [],
+            "type": "DeleteResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "accts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "dr",
+            "references": [],
+            "type": "DeleteResult"
+        }
+    ]
+}

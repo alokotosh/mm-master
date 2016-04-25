@@ -1,0 +1,16 @@
+{
+    "projectName": "DemoWork",
+    "username": "andriy.lokotosh@osf-global.com",
+    "id": "6a45bc30-f680-11e5-ae5d-131896063769",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "/Users/kepler23/Downloads/mm-master",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

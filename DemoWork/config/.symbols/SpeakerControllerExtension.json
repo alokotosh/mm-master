@@ -1,0 +1,141 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SpeakerControllerExtension",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000005GWYqAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005GWYqAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "SpeakerControllerExtension",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "picture",
+            "references": [],
+            "type": "Blob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "errorMessage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "speaker",
+            "references": [],
+            "type": "whosf__Speaker__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 8
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SpeakerControllerExtension",
+        "references": [],
+        "type": "SpeakerControllerExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "attachment",
+            "references": [],
+            "type": "Attachment"
+        }
+    ]
+}

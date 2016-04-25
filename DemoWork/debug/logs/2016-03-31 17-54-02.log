@@ -1,0 +1,658 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+07:54:00.0 (66611)|EXECUTION_STARTED
+07:54:00.0 (98434)|CODE_UNIT_STARTED|[EXTERNAL]|06636000001VcbV|VF: /apex/AprooveWraper
+07:54:00.0 (3687225)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|WrapperEmployeeSkills <init>
+07:54:00.0 (3704684)|SYSTEM_MODE_ENTER|true
+07:54:00.0 (4245624)|HEAP_ALLOCATE|[72]|Bytes:3
+07:54:00.0 (4306032)|HEAP_ALLOCATE|[77]|Bytes:152
+07:54:00.0 (4328681)|HEAP_ALLOCATE|[342]|Bytes:408
+07:54:00.0 (4350795)|HEAP_ALLOCATE|[355]|Bytes:408
+07:54:00.0 (4375428)|HEAP_ALLOCATE|[467]|Bytes:48
+07:54:00.0 (4417776)|HEAP_ALLOCATE|[139]|Bytes:6
+07:54:00.0 (4443637)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:9
+07:54:00.0 (4449252)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:88
+07:54:00.0 (4452162)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+07:54:00.0 (4455313)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:2
+07:54:00.0 (4469800)|METHOD_ENTRY|[1]|01p360000072SS3|WrapperEmployeeSkills.WrapperEmployeeSkills()
+07:54:00.0 (4475149)|STATEMENT_EXECUTE|[1]
+07:54:00.0 (4483495)|STATEMENT_EXECUTE|[1]
+07:54:00.0 (4520847)|HEAP_ALLOCATE|[50]|Bytes:5
+07:54:00.0 (4547833)|HEAP_ALLOCATE|[56]|Bytes:5
+07:54:00.0 (4556227)|HEAP_ALLOCATE|[64]|Bytes:7
+07:54:00.0 (4581937)|SYSTEM_MODE_ENTER|false
+07:54:00.0 (4600948)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+07:54:00.0 (4605634)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (4612094)|SYSTEM_MODE_EXIT|false
+07:54:00.0 (4623914)|METHOD_EXIT|[1]|WrapperEmployeeSkills
+07:54:00.0 (4630648)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+07:54:00.0 (4641141)|VARIABLE_SCOPE_BEGIN|[1]|this|WrapperEmployeeSkills|true|false
+07:54:00.0 (4695175)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x10769e74
+07:54:00.0 (4706682)|SYSTEM_MODE_ENTER|false
+07:54:00.0 (4711035)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+07:54:00.0 (4720246)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+07:54:00.0 (4755328)|SYSTEM_MODE_EXIT|false
+07:54:00.0 (4760409)|STATEMENT_EXECUTE|[1]
+07:54:00.0 (4768757)|SYSTEM_MODE_ENTER|false
+07:54:00.0 (4773144)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+07:54:00.0 (4776664)|STATEMENT_EXECUTE|[4]
+07:54:00.0 (4780500)|SYSTEM_MODE_EXIT|false
+07:54:00.0 (4796439)|CODE_UNIT_FINISHED|WrapperEmployeeSkills <init>
+07:54:00.0 (4846305)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|WrapperEmployeeSkills get(EmployeeSkills)
+07:54:00.0 (4855906)|SYSTEM_MODE_ENTER|true
+07:54:00.0 (4876198)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|WrapperEmployeeSkills invoke(getEmployeeSkills)
+07:54:00.0 (4900573)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+07:54:00.0 (4906419)|VARIABLE_SCOPE_BEGIN|[7]|this|WrapperEmployeeSkills|true|false
+07:54:00.0 (4921740)|VARIABLE_ASSIGNMENT|[7]|this|{}|0x10769e74
+07:54:00.0 (4938478)|SYSTEM_MODE_ENTER|false
+07:54:00.0 (4942843)|HEAP_ALLOCATE|[8]|Bytes:5
+07:54:00.0 (4946423)|STATEMENT_EXECUTE|[7]
+07:54:00.0 (4990187)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x10769e74
+07:54:00.0 (5004150)|STATEMENT_EXECUTE|[8]
+07:54:00.0 (5006577)|STATEMENT_EXECUTE|[9]
+07:54:00.0 (5132898)|HEAP_ALLOCATE|[9]|Bytes:4
+07:54:00.0 (5271356)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x10769e74
+07:54:00.0 (5304092)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (5326538)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":[]}|0x452b9eae
+07:54:00.0 (5343518)|VARIABLE_ASSIGNMENT|[4]|this.skillsList|{"s":1,"v":[]}|0x10769e74
+07:54:00.0 (5354402)|HEAP_ALLOCATE|[10]|Bytes:85
+07:54:00.0 (5372944)|HEAP_ALLOCATE|[10]|Bytes:4
+07:54:00.0 (6407840)|SOQL_EXECUTE_BEGIN|[10]|Aggregations:0|SELECT Id, Name, Employee__r.Name, Project__r.Name, Status__c FROM Employee_Skills__c
+07:54:00.0 (14043474)|SOQL_EXECUTE_END|[10]|Rows:16
+07:54:00.0 (14069513)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:68
+07:54:00.0 (14270555)|HEAP_ALLOCATE|[10]|Bytes:49
+07:54:00.0 (14277957)|HEAP_ALLOCATE|[10]|Bytes:8
+07:54:00.0 (14291765)|SYSTEM_METHOD_ENTRY|[7]|QueryLocatorIterator.QueryLocatorIterator()
+07:54:00.0 (14295787)|STATEMENT_EXECUTE|[7]
+07:54:00.0 (14306984)|SYSTEM_METHOD_EXIT|[7]|QueryLocatorIterator
+07:54:00.0 (14313158)|HEAP_ALLOCATE|[10]|Bytes:28
+07:54:00.0 (14404509)|HEAP_ALLOCATE|[10]|Bytes:68
+07:54:00.0 (14422066)|HEAP_ALLOCATE|[10]|Bytes:8
+07:54:00.0 (14425460)|HEAP_ALLOCATE|[10]|Bytes:8
+07:54:00.0 (14430043)|VARIABLE_SCOPE_BEGIN|[15]|this|Database.QueryLocatorIterator|true|false
+07:54:00.0 (14454088)|VARIABLE_ASSIGNMENT|[15]|this|{}|0x2c8649de
+07:54:00.0 (14457797)|VARIABLE_SCOPE_BEGIN|[15]|values|List<SObject>|true|false
+07:54:00.0 (14474800)|VARIABLE_ASSIGNMENT|[15]|values|{"s":1,"v":"List of size 16 too large to display"}|0x26e384db
+07:54:00.0 (14477547)|VARIABLE_SCOPE_BEGIN|[15]|ql|Database.QueryLocator|true|false
+07:54:00.0 (14493604)|VARIABLE_ASSIGNMENT|[15]|ql|{"query":"SELECT Id, Name, Emp (65 more) ..."}|0x9805679
+07:54:00.0 (14496512)|VARIABLE_SCOPE_BEGIN|[15]|totalNumRecords|Integer|false|false
+07:54:00.0 (14500972)|VARIABLE_ASSIGNMENT|[15]|totalNumRecords|16
+07:54:00.0 (14503286)|VARIABLE_SCOPE_BEGIN|[15]|queryMoreSize|Integer|false|false
+07:54:00.0 (14505955)|VARIABLE_ASSIGNMENT|[15]|queryMoreSize|49984
+07:54:00.0 (14554906)|HEAP_ALLOCATE|[10]|Bytes:28
+07:54:00.0 (14577961)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (14661467)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (14670752)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (14767310)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (14777138)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (14806443)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000002n2pEAA","Name":"sdfsdfsdf","Employee__c":"a0A36000001yx5YEAQ","Project__c":"a0736000000Ew01AAC","Status__c":"Rejected","Employee__r":{"s":2,"v":{"Name":"dssdfsd","Id":"a0A36000001yx5YEAQ"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x69b22c42
+07:54:00.0 (14811434)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (14813180)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (14847061)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (14863648)|HEAP_ALLOCATE|[14]|Bytes:112
+07:54:00.0 (14868433)|HEAP_ALLOCATE|[14]|Bytes:8
+07:54:00.0 (14874563)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (14887414)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (14903831)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (14920840)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x75f288e4
+07:54:00.0 (14925096)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (14942449)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000002n2pEAA","Name":"sdfsdfsdf","Employee__c":"a0A36000001yx5YEAQ","Project__c":"a0736000000Ew01AAC","Status__c":"Rejected","Employee__r":{"s":2,"v":{"Name":"dssdfsd","Id":"a0A36000001yx5YEAQ"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x69b22c42
+07:54:00.0 (14947446)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (14948944)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (14950132)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (14962982)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (14964791)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (15034660)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x75f288e4
+07:54:00.0 (15054611)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000002n2pEAA","Name":"sdfsdfsdf","Employee__c":"a0A36000001yx5YEAQ","Project__c":"a0736000000Ew01AAC","Status__c":"Rejected","Employee__r":{"s":2,"v":{"Name":"dssdfsd","Id":"a0A36000001yx5YEAQ"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x69b22c42
+07:54:00.0 (15074264)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000002n2pEAA","Name":"sdfsdfsdf","Employee__c":"a0A36000001yx5YEAQ","Project__c":"a0736000000Ew01AAC","Status__c":"Rejected","Employee__r":{"s":2,"v":{"Name":"dssdfsd","Id":"a0A36000001yx5YEAQ"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x75f288e4
+07:54:00.0 (15083212)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (15133734)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x69b22c42"}|0x75f288e4
+07:54:00.0 (15142744)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (15147709)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (15155118)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x75f288e4
+07:54:00.0 (15165996)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15186091)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (15196359)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15215925)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15220573)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15278584)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15284569)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (15306346)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003sI7EAI","Name":"Test Skill","Employee__c":"a0A36000002STuDEAW","Project__c":"a07360000014vWtAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuDEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWtAAI"}}}}|0x441c42e
+07:54:00.0 (15310502)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (15311846)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (15331468)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (15340954)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (15349310)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15353590)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (15371603)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x48cb3895
+07:54:00.0 (15374184)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (15389584)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003sI7EAI","Name":"Test Skill","Employee__c":"a0A36000002STuDEAW","Project__c":"a07360000014vWtAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuDEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWtAAI"}}}}|0x441c42e
+07:54:00.0 (15393500)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (15394732)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (15395809)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (15406755)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (15408715)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (15424567)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x48cb3895
+07:54:00.0 (15439966)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003sI7EAI","Name":"Test Skill","Employee__c":"a0A36000002STuDEAW","Project__c":"a07360000014vWtAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuDEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWtAAI"}}}}|0x441c42e
+07:54:00.0 (15457044)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003sI7EAI","Name":"Test Skill","Employee__c":"a0A36000002STuDEAW","Project__c":"a07360000014vWtAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuDEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWtAAI"}}}}|0x48cb3895
+07:54:00.0 (15463977)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (15482105)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x441c42e"}|0x48cb3895
+07:54:00.0 (15488537)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (15492352)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (15498578)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x48cb3895
+07:54:00.0 (15508069)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15520614)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (15529744)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15548529)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15552979)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15608582)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15614459)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (15635510)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003I4VEAU","Name":"Design","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000F4iQAAS","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"dasdasd","Id":"a0736000000F4iQAAS"}}}}|0x4221e516
+07:54:00.0 (15639506)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (15640850)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (15660175)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (15669158)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (15677416)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15681791)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (15694540)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x18775ef5
+07:54:00.0 (15697284)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (15712633)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003I4VEAU","Name":"Design","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000F4iQAAS","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"dasdasd","Id":"a0736000000F4iQAAS"}}}}|0x4221e516
+07:54:00.0 (15716604)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (15717892)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (15719018)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (15729744)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (15731384)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (15746861)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x18775ef5
+07:54:00.0 (15761470)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003I4VEAU","Name":"Design","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000F4iQAAS","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"dasdasd","Id":"a0736000000F4iQAAS"}}}}|0x4221e516
+07:54:00.0 (15779056)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003I4VEAU","Name":"Design","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000F4iQAAS","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"dasdasd","Id":"a0736000000F4iQAAS"}}}}|0x18775ef5
+07:54:00.0 (15786033)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (15803758)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x4221e516"}|0x18775ef5
+07:54:00.0 (15810256)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (15814023)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (15820028)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x18775ef5
+07:54:00.0 (15829527)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15841756)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (15850379)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15868553)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (15872879)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15927304)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (15932938)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (15954117)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003VRsEAM","Name":"Designer","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x55b301b8
+07:54:00.0 (15958196)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (15959610)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (15978729)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (15987678)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (15995493)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (15999566)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (16012221)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x5564c7a
+07:54:00.0 (16015365)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (16030188)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003VRsEAM","Name":"Designer","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x55b301b8
+07:54:00.0 (16034389)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (16035673)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (16036748)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (16047278)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (16048873)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (16064015)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x5564c7a
+07:54:00.0 (16078932)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003VRsEAM","Name":"Designer","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x55b301b8
+07:54:00.0 (16095833)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003VRsEAM","Name":"Designer","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x5564c7a
+07:54:00.0 (16103398)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (16121000)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x55b301b8"}|0x5564c7a
+07:54:00.0 (16127160)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (16130817)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (16136874)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x5564c7a
+07:54:00.0 (16146049)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16157769)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (16166326)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16184326)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16188906)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16242676)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16248041)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (16267814)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003I4aEAE","Name":"QA","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x48a533a9
+07:54:00.0 (16271475)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (16272967)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (16291555)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (16300340)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (16308274)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16312285)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (16324883)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x4b51f0e9
+07:54:00.0 (16327250)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (16341456)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003I4aEAE","Name":"QA","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x48a533a9
+07:54:00.0 (16345341)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (16346649)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (16347738)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (16362607)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (16364600)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (16381304)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x4b51f0e9
+07:54:00.0 (16397075)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003I4aEAE","Name":"QA","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x48a533a9
+07:54:00.0 (16413838)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003I4aEAE","Name":"QA","Employee__c":"a0A36000001zhkPEAQ","Project__c":"a0736000000Ex6cAAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Robert Dobson","Id":"a0A36000001zhkPEAQ"}},"Project__r":{"s":3,"v":{"Name":"SolutionSoft","Id":"a0736000000Ex6cAAC"}}}}|0x4b51f0e9
+07:54:00.0 (16421051)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (16438650)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x48a533a9"}|0x4b51f0e9
+07:54:00.0 (16444619)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (16448295)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (16454221)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x4b51f0e9
+07:54:00.0 (16463492)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16475209)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (16483859)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16501687)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16505968)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16559644)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16565085)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (16585057)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003XRiEAM","Name":"Tomato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x4d576f82
+07:54:00.0 (16588867)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (16590159)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (16608783)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (16617587)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (16625452)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16629339)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (16641838)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x7ad5cfce
+07:54:00.0 (16644486)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (16658617)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003XRiEAM","Name":"Tomato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x4d576f82
+07:54:00.0 (16662442)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (16663654)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (16664740)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (16674927)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (16676549)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (16691791)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x7ad5cfce
+07:54:00.0 (16706219)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003XRiEAM","Name":"Tomato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x4d576f82
+07:54:00.0 (16723441)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003XRiEAM","Name":"Tomato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x7ad5cfce
+07:54:00.0 (16730474)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (16747826)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x4d576f82"}|0x7ad5cfce
+07:54:00.0 (16754068)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (16757616)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (16763649)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x7ad5cfce
+07:54:00.0 (16772820)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16784388)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (16792906)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16810363)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (16814636)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16867293)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (16872805)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (16892671)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003YCSEA2","Name":"Enpl","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1b8c9346
+07:54:00.0 (16896887)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (16898214)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (16917015)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (16925669)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (16933426)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (16937330)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (16949568)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x5f9eee66
+07:54:00.0 (16951891)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (16965746)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003YCSEA2","Name":"Enpl","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1b8c9346
+07:54:00.0 (16969817)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (16970976)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (16972039)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (16982293)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (16983919)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (16998933)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x5f9eee66
+07:54:00.0 (17013414)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003YCSEA2","Name":"Enpl","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1b8c9346
+07:54:00.0 (17030859)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003YCSEA2","Name":"Enpl","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x5f9eee66
+07:54:00.0 (17038040)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (17055147)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x1b8c9346"}|0x5f9eee66
+07:54:00.0 (17061146)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (17064637)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (17070420)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x5f9eee66
+07:54:00.0 (17079400)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17090956)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (17099381)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17117044)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17121415)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17174142)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17179508)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (17199106)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003XRnEAM","Name":"potato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2943b168
+07:54:00.0 (17202588)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (17203870)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (17222348)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (17230926)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (17238637)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17242643)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (17254907)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x7dbcb031
+07:54:00.0 (17257470)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (17271244)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003XRnEAM","Name":"potato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2943b168
+07:54:00.0 (17275062)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (17276310)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (17277392)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (17287608)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (17289274)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (17304310)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x7dbcb031
+07:54:00.0 (17318806)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003XRnEAM","Name":"potato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2943b168
+07:54:00.0 (17335426)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003XRnEAM","Name":"potato","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x7dbcb031
+07:54:00.0 (17342204)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (17364027)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x2943b168"}|0x7dbcb031
+07:54:00.0 (17370672)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (17374199)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (17380999)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x7dbcb031
+07:54:00.0 (17390763)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17402692)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (17411325)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17429128)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17433357)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17486212)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17491672)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (17511455)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003XTFEA2","Name":"ef","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2551a63
+07:54:00.0 (17515159)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (17516414)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (17535004)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (17543742)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (17551523)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17555479)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (17567975)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x2a102991
+07:54:00.0 (17570202)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (17584611)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003XTFEA2","Name":"ef","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2551a63
+07:54:00.0 (17588798)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (17590063)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (17591135)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (17601385)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (17603027)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (17617972)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x2a102991
+07:54:00.0 (17632124)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003XTFEA2","Name":"ef","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2551a63
+07:54:00.0 (17648789)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003XTFEA2","Name":"ef","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2a102991
+07:54:00.0 (17655560)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (17672576)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x2551a63"}|0x2a102991
+07:54:00.0 (17678561)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (17682079)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (17688129)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x2a102991
+07:54:00.0 (17697293)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17708853)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (17717110)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17734474)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (17738758)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17791214)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (17796469)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (17815856)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003XTGEA2","Name":"frgt","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1e6c054a
+07:54:00.0 (17819831)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (17821175)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (17839539)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (17848140)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (17855934)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (17859926)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (17872099)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x649038e
+07:54:00.0 (17874527)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (17888823)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003XTGEA2","Name":"frgt","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1e6c054a
+07:54:00.0 (17892880)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (17894127)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (17895245)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (17905496)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (17907105)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (17921941)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x649038e
+07:54:00.0 (17936211)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003XTGEA2","Name":"frgt","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x1e6c054a
+07:54:00.0 (17952449)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003XTGEA2","Name":"frgt","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x649038e
+07:54:00.0 (17959650)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (17976691)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x1e6c054a"}|0x649038e
+07:54:00.0 (17982667)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (17986134)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (17992052)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x649038e
+07:54:00.0 (18001104)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18013422)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (18021575)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18039135)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18043277)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18095719)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18101185)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (18120391)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003YGkEAM","Name":"Robert","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2c658726
+07:54:00.0 (18124121)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (18125414)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (18143608)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (18155817)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (18164019)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18168068)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (18180981)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x7126f9a
+07:54:00.0 (18183497)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (18197561)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003YGkEAM","Name":"Robert","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2c658726
+07:54:00.0 (18201809)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (18202983)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (18204059)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (18214390)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (18216131)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (18231247)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x7126f9a
+07:54:00.0 (18245335)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003YGkEAM","Name":"Robert","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x2c658726
+07:54:00.0 (18262462)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003YGkEAM","Name":"Robert","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x7126f9a
+07:54:00.0 (18269458)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (18291305)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x2c658726"}|0x7126f9a
+07:54:00.0 (18297694)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (18301290)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (18307267)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x7126f9a
+07:54:00.0 (18316890)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18328701)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (18337501)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18355381)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18363503)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18417613)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18423018)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (18442942)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003XRTEA2","Name":"logo","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x792a6c67
+07:54:00.0 (18446574)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (18447812)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (18466110)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (18474832)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (18482759)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18486810)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (18499143)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x373155bf
+07:54:00.0 (18501537)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (18515348)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003XRTEA2","Name":"logo","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x792a6c67
+07:54:00.0 (18519462)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (18520673)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (18521722)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (18531895)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (18533535)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (18548730)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x373155bf
+07:54:00.0 (18563421)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003XRTEA2","Name":"logo","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x792a6c67
+07:54:00.0 (18579919)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003XRTEA2","Name":"logo","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x373155bf
+07:54:00.0 (18586951)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (18604171)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x792a6c67"}|0x373155bf
+07:54:00.0 (18610054)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (18613563)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (18619476)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x373155bf
+07:54:00.0 (18628458)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18640102)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (18648541)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18666061)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18670242)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18722580)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (18728041)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (18748469)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C360000003sIHEAY","Name":"Test Skill","Employee__c":"a0A36000002STuIEAW","Project__c":"a07360000014vWyAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuIEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWyAAI"}}}}|0x37eda8c8
+07:54:00.0 (18752463)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (18753839)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (18772235)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (18780885)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (18788596)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18792541)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (18804922)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x34d5466d
+07:54:00.0 (18807231)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (18821609)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C360000003sIHEAY","Name":"Test Skill","Employee__c":"a0A36000002STuIEAW","Project__c":"a07360000014vWyAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuIEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWyAAI"}}}}|0x37eda8c8
+07:54:00.0 (18825419)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (18826657)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (18827731)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (18838200)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (18839782)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (18854717)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x34d5466d
+07:54:00.0 (18869108)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C360000003sIHEAY","Name":"Test Skill","Employee__c":"a0A36000002STuIEAW","Project__c":"a07360000014vWyAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuIEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWyAAI"}}}}|0x37eda8c8
+07:54:00.0 (18885637)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C360000003sIHEAY","Name":"Test Skill","Employee__c":"a0A36000002STuIEAW","Project__c":"a07360000014vWyAAI","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Jor","Id":"a0A36000002STuIEAW"}},"Project__r":{"s":3,"v":{"Name":"TestProj","Id":"a07360000014vWyAAI"}}}}|0x34d5466d
+07:54:00.0 (18892569)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (18909678)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x37eda8c8"}|0x34d5466d
+07:54:00.0 (18915927)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (18919369)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (18925264)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x34d5466d
+07:54:00.0 (18934229)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (18945759)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (18954160)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18971641)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (18975909)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19028296)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19034291)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (19053757)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C36000000ipqeEAA","Name":"Koloboc","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x6e2413d7
+07:54:00.0 (19057467)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (19058830)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (19077291)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (19085986)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (19093775)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19097756)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (19110457)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x76d39efc
+07:54:00.0 (19112777)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (19126694)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C36000000ipqeEAA","Name":"Koloboc","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x6e2413d7
+07:54:00.0 (19130516)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (19131813)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (19132930)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (19143179)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (19144729)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (19159738)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x76d39efc
+07:54:00.0 (19174113)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C36000000ipqeEAA","Name":"Koloboc","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x6e2413d7
+07:54:00.0 (19191365)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C36000000ipqeEAA","Name":"Koloboc","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Approved","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x76d39efc
+07:54:00.0 (19198227)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (19215137)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x6e2413d7"}|0x76d39efc
+07:54:00.0 (19221209)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (19224607)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (19230620)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x76d39efc
+07:54:00.0 (19239606)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19251050)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (19259359)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19276741)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19281124)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19333685)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19339079)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (19366977)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C36000000iqFYEAY","Name":"fsdfsd","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Waiting for submit","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x5cbf3899
+07:54:00.0 (19371127)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (19372370)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (19392258)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (19401092)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (19409117)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19413323)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (19426067)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x4247fb4d
+07:54:00.0 (19428363)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (19443117)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C36000000iqFYEAY","Name":"fsdfsd","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Waiting for submit","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x5cbf3899
+07:54:00.0 (19447413)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (19448841)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (19449947)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (19460049)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (19461684)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (19476854)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x4247fb4d
+07:54:00.0 (19491258)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C36000000iqFYEAY","Name":"fsdfsd","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Waiting for submit","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x5cbf3899
+07:54:00.0 (19508016)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C36000000iqFYEAY","Name":"fsdfsd","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Waiting for submit","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x4247fb4d
+07:54:00.0 (19515437)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (19532452)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0x5cbf3899"}|0x4247fb4d
+07:54:00.0 (19538587)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (19541964)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (19547975)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x4247fb4d
+07:54:00.0 (19557053)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19568403)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (19576692)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19594135)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19598361)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19650868)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.next()
+07:54:00.0 (19656230)|VARIABLE_SCOPE_BEGIN|[10]|c|Employee_Skills__c|true|false
+07:54:00.0 (19676212)|VARIABLE_ASSIGNMENT|[10]|c|{"s":1,"v":{"Id":"a0C36000000iqCUEAY","Name":"Tools","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0xc33e279
+07:54:00.0 (19679794)|STATEMENT_EXECUTE|[12]
+07:54:00.0 (19681320)|STATEMENT_EXECUTE|[14]
+07:54:00.0 (19699913)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (19708651)|HEAP_ALLOCATE|[14]|Bytes:12
+07:54:00.0 (19716412)|CONSTRUCTOR_ENTRY|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19720309)|VARIABLE_SCOPE_BEGIN|[66]|this|WrapperEmployeeSkills.wEmployee|true|false
+07:54:00.0 (19732419)|VARIABLE_ASSIGNMENT|[66]|this|{}|0x66fda97d
+07:54:00.0 (19734782)|VARIABLE_SCOPE_BEGIN|[66]|s|Employee_Skills__c|true|false
+07:54:00.0 (19748716)|VARIABLE_ASSIGNMENT|[66]|s|{"s":1,"v":{"Id":"a0C36000000iqCUEAY","Name":"Tools","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0xc33e279
+07:54:00.0 (19752866)|STATEMENT_EXECUTE|[61]
+07:54:00.0 (19754115)|STATEMENT_EXECUTE|[62]
+07:54:00.0 (19755190)|STATEMENT_EXECUTE|[63]
+07:54:00.0 (19765076)|STATEMENT_EXECUTE|[66]
+07:54:00.0 (19766734)|STATEMENT_EXECUTE|[67]
+07:54:00.0 (19781858)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{}|0x66fda97d
+07:54:00.0 (19796576)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|{"s":1,"v":{"Id":"a0C36000000iqCUEAY","Name":"Tools","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0xc33e279
+07:54:00.0 (19813770)|VARIABLE_ASSIGNMENT|[62]|this.skill|{"s":1,"v":{"Id":"a0C36000000iqCUEAY","Name":"Tools","Employee__c":"a0A36000001ygYkEAI","Project__c":"a0736000000Ew01AAC","Status__c":"Pending approval","Employee__r":{"s":2,"v":{"Name":"Andriy Lokotosh","Id":"a0A36000001ygYkEAI"}},"Project__r":{"s":3,"v":{"Name":"eBank","Id":"a0736000000Ew01AAC"}}}}|0x66fda97d
+07:54:00.0 (19820700)|STATEMENT_EXECUTE|[68]
+07:54:00.0 (19837989)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skill":"0xc33e279"}|0x66fda97d
+07:54:00.0 (19844070)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|false
+07:54:00.0 (19848266)|HEAP_ALLOCATE|[63]|Bytes:5
+07:54:00.0 (19854217)|VARIABLE_ASSIGNMENT|[63]|this.selected|false|0x66fda97d
+07:54:00.0 (19863090)|CONSTRUCTOR_EXIT|[14]|01p360000072SS3|<init>(Employee_Skills__c)
+07:54:00.0 (19874744)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+07:54:00.0 (19883413)|METHOD_ENTRY|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19895825)|METHOD_EXIT|[10]||Database.QueryLocatorIterator.hasNext()
+07:54:00.0 (19903131)|VARIABLE_ASSIGNMENT|[10]|c|null|
+07:54:00.0 (19926631)|STATEMENT_EXECUTE|[17]
+07:54:00.0 (19958383)|VARIABLE_ASSIGNMENT|[EXTERNAL]|this|{"skillsList":"0x452b9eae"}|0x10769e74
+07:54:00.0 (19971091)|SYSTEM_MODE_EXIT|false
+07:54:00.0 (19981506)|CODE_UNIT_FINISHED|WrapperEmployeeSkills invoke(getEmployeeSkills)
+07:54:00.0 (19997673)|CODE_UNIT_FINISHED|WrapperEmployeeSkills get(EmployeeSkills)
+07:54:00.0 (20461732)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (20475086)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (76016518)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (76047320)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (78828512)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (78842196)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (78932556)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (78944563)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (80829362)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (80842798)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (80932881)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (80944423)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (82805138)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (82818309)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (82907483)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (82918773)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (84737802)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (84751104)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (84840833)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (84852221)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (86651248)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (86664470)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (86753598)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (86764955)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (88560386)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (88573400)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (88662128)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (88673697)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (90467601)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (90480651)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (90569535)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (90580754)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (92367669)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (92380675)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (92469666)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (92481211)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (94268904)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (94282162)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (94378110)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (94389921)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (96189578)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (96202771)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (96291758)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (96303236)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (98125220)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (98138440)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (98228010)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (98239674)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (100049119)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (100062361)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (100151395)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (100163139)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (102045030)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (102058227)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (102146982)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (102158351)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (103987751)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (104000954)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (104090106)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (104101462)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (105892608)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|selected
+07:54:00.0 (105905351)|CODE_UNIT_FINISHED|selected
+07:54:00.0 (105994293)|CODE_UNIT_STARTED|[EXTERNAL]|01p360000072SS3|skill
+07:54:00.0 (106005579)|CODE_UNIT_FINISHED|skill
+07:54:00.0 (110745228)|VF_SERIALIZE_VIEWSTATE_BEGIN|06636000001VcbV
+07:54:00.0 (124304611)|VF_SERIALIZE_VIEWSTATE_END
+07:54:00.0 (143215107)|CODE_UNIT_STARTED|[EXTERNAL]|Generate Metadata
+07:54:00.0 (149710360)|CODE_UNIT_FINISHED|Generate Metadata
+07:54:00.154 (154996089)|CUMULATIVE_LIMIT_USAGE
+07:54:00.154 (154996089)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 16 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+07:54:00.154 (154996089)|CUMULATIVE_LIMIT_USAGE_END
+
+07:54:00.0 (155055619)|CODE_UNIT_FINISHED|VF: /apex/AprooveWraper
+07:54:00.0 (156085406)|EXECUTION_FINISHED

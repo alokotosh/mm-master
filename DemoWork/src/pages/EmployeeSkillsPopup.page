@@ -1,0 +1,29 @@
+<apex:page showHeader="false" sidebar="false" standardController="Employee__c" extensions="PopUpExtension">
+    <apex:form >
+        <apex:pageBlock title="{!Employee__c.Name}" id="pageBlock">
+            Approving Employee Skills:
+            
+            
+
+            
+            
+             <apex:pageBlockButtons >
+			<apex:commandButton value="Save" action="{!save}"/>
+            <apex:commandButton value="Cancel" action="{!cancel}"/>
+        </apex:pageBlockButtons>
+            
+            <apex:actionStatus id="actionStatus">
+                <apex:facet name="start"> 
+                    <img src="/img/loading.gif"/>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        function closeAndRefresh(){
+            console.log('clicked on the button');
+            window.top.location = '/{!$CurrentPage.parameters.id}';
+        }
+    </script>
+    
+</apex:page>

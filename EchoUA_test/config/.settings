@@ -1,0 +1,19 @@
+{
+    "username": "andriy.lokotosh@osf-global.com", 
+    "environment": "developer", 
+    "project_name": "EchoUA_test", 
+    "workspace": "/Users/kepler23/Downloads/mm-master", 
+    "org_url": "", 
+    "namespace": "whosf", 
+    "id": "LL97UFRGO86ME1G0TAJ2CW9NUUMY53HD", 
+    "metadata_container": "1dc36000000HHKGAA4", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContactSearch",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000002lA0nAAE",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000002lA0nAAE",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "searchForContacts",
+            "parameters": [
+                {
+                    "name": "NameC",
+                    "type": "String"
+                },
+                {
+                    "name": "PostageCode",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "ContactSearch",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ContactSearch",
+        "references": [],
+        "type": "ContactSearch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "NameC",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "PostageCode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

@@ -1,0 +1,238 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p360000072SS3AAM",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 66
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "wEmployee",
+                    "parameters": [
+                        {
+                            "name": "s",
+                            "type": "whosf__Employee_Skills__c"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "wEmployee",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 62
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "skill",
+                    "references": [],
+                    "type": "whosf__Employee_Skills__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 63
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "selected",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 19,
+                    "line": 61
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "wEmployee",
+                "references": [],
+                "type": "wEmployee"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 46,
+                        "line": 66
+                    },
+                    "modifiers": [],
+                    "name": "s",
+                    "references": [],
+                    "type": "whosf__Employee_Skills__c"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p360000072SS3AAM",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getEmployeeSkills",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "processSelected",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "WrapperEmployeeSkills",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "skillsList",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "WrapperEmployeeSkills",
+        "references": [],
+        "type": "WrapperEmployeeSkills"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "whosf__Employee_Skills__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "selectedSkills",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "wEmp",
+            "references": [],
+            "type": "wEmployee"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "es",
+            "references": [],
+            "type": "whosf__Employee_Skills__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "ProcessSubmitRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "ProcessResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

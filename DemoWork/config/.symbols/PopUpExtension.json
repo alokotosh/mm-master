@@ -1,0 +1,100 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "PopUpExtension",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003QMmZAAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003QMmZAAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "PopUpExtension",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "PopUpExtension",
+        "references": [],
+        "type": "PopUpExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        }
+    ]
+}

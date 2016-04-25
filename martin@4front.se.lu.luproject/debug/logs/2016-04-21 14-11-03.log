@@ -1,0 +1,49 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: List<Account> a= [SELECT id, Active_Start_Date__c  FROM Account WHERE CALENDAR_MONTH(Active_Start_Date__c) = 1];
+Execute Anonymous: System.debug(a);
+13:11:03.2 (2088053)|EXECUTION_STARTED
+13:11:03.2 (2107685)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+13:11:03.2 (2396472)|VARIABLE_SCOPE_BEGIN|[3]|a|List<Account>|true|false
+13:11:03.2 (2568520)|HEAP_ALLOCATE|[72]|Bytes:3
+13:11:03.2 (2635064)|HEAP_ALLOCATE|[77]|Bytes:152
+13:11:03.2 (2660564)|HEAP_ALLOCATE|[342]|Bytes:408
+13:11:03.2 (2683036)|HEAP_ALLOCATE|[355]|Bytes:408
+13:11:03.2 (2704233)|HEAP_ALLOCATE|[467]|Bytes:48
+13:11:03.2 (2752786)|HEAP_ALLOCATE|[139]|Bytes:6
+13:11:03.2 (2784800)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+13:11:03.2 (18684325)|STATEMENT_EXECUTE|[1]
+13:11:03.2 (18698002)|STATEMENT_EXECUTE|[3]
+13:11:03.2 (18714517)|HEAP_ALLOCATE|[3]|Bytes:91
+13:11:03.2 (18751579)|HEAP_ALLOCATE|[3]|Bytes:4
+13:11:03.2 (18845865)|HEAP_ALLOCATE|[50]|Bytes:5
+13:11:03.2 (18893181)|HEAP_ALLOCATE|[56]|Bytes:5
+13:11:03.2 (18906696)|HEAP_ALLOCATE|[64]|Bytes:7
+13:11:03.2 (19537432)|SOQL_EXECUTE_BEGIN|[3]|Aggregations:0|SELECT id, Active_Start_Date__c FROM Account WHERE CALENDAR_MONTH(Active_Start_Date__c) = 1
+13:11:03.2 (41623581)|SOQL_EXECUTE_END|[3]|Rows:0
+13:11:03.2 (41661881)|HEAP_ALLOCATE|[3]|Bytes:4
+13:11:03.2 (41687719)|HEAP_ALLOCATE|[3]|Bytes:0
+13:11:03.2 (41764963)|HEAP_ALLOCATE|[3]|Bytes:4
+13:11:03.2 (41850441)|VARIABLE_ASSIGNMENT|[3]|a|{"s":1,"v":[]}|0x1f913179
+13:11:03.2 (41857170)|STATEMENT_EXECUTE|[4]
+13:11:03.2 (41949736)|USER_DEBUG|[4]|DEBUG|()
+13:11:03.42 (42017805)|CUMULATIVE_LIMIT_USAGE
+13:11:03.42 (42017805)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:11:03.42 (42017805)|CUMULATIVE_LIMIT_USAGE_END
+
+13:11:03.2 (42072389)|CODE_UNIT_FINISHED|execute_anonymous_apex
+13:11:03.2 (43589321)|EXECUTION_FINISHED

@@ -1,0 +1,33 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+20:16:24.3 (3047067)|EXECUTION_STARTED
+20:16:24.3 (3080164)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+20:16:24.3 (12575953)|HEAP_ALLOCATE|[72]|Bytes:3
+20:16:24.3 (12636676)|HEAP_ALLOCATE|[77]|Bytes:152
+20:16:24.3 (12655530)|HEAP_ALLOCATE|[342]|Bytes:408
+20:16:24.3 (12673573)|HEAP_ALLOCATE|[355]|Bytes:408
+20:16:24.3 (12691137)|HEAP_ALLOCATE|[467]|Bytes:48
+20:16:24.3 (12733017)|HEAP_ALLOCATE|[139]|Bytes:6
+20:16:24.3 (16954454)|CODE_UNIT_FINISHED|VisualForce View State
+20:16:24.3 (19278696)|EXECUTION_FINISHED
+20:16:24.775 (775195108)|SYSTEM_MODE_ENTER|true
+20:16:24.775 (775280204)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:120
+20:16:24.775 (775296926)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+20:16:24.775 (775323218)|SYSTEM_METHOD_ENTRY|[1]|pagemessagecomponentcontroller.pagemessagecomponentcontroller()
+20:16:24.775 (775329268)|STATEMENT_EXECUTE|[1]
+20:16:24.902 (902809659)|CUMULATIVE_LIMIT_USAGE
+20:16:24.902 (902809659)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:16:24.902 (902809659)|CUMULATIVE_LIMIT_USAGE_END
+

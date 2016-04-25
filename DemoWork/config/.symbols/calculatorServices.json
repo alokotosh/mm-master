@@ -1,0 +1,1222 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XJHgAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doDivideResponse",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 5
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "return_x",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 6
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "return_x_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 7
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 8
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 4
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doDivideResponse",
+                "references": [],
+                "type": "doDivideResponse"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doMultiply",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 11
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 12
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 13
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg0_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 14
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg1_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 15
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 16
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 10
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doMultiply",
+                "references": [],
+                "type": "doMultiply"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doAdd",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 19
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 20
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 21
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg0_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 22
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg1_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 23
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 24
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 18
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doAdd",
+                "references": [],
+                "type": "doAdd"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doAddResponse",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 27
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "return_x",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 28
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "return_x_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 29
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 30
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 26
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doAddResponse",
+                "references": [],
+                "type": "doAddResponse"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doDivide",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 33
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 34
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 35
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg0_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 36
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg1_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 37
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 38
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 32
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doDivide",
+                "references": [],
+                "type": "doDivide"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doSubtract",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 41
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 42
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 43
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg0_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 44
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "arg1_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 45
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 46
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 40
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doSubtract",
+                "references": [],
+                "type": "doSubtract"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doSubtractResponse",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 49
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "return_x",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 50
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "return_x_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 51
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 52
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 48
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doSubtractResponse",
+                "references": [],
+                "type": "doSubtractResponse"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "doMultiplyResponse",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 55
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "return_x",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 56
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "return_x_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 57
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "apex_schema_type_info",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 58
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "field_order_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 54
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "doMultiplyResponse",
+                "references": [],
+                "type": "doMultiplyResponse"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 69
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "doDivide",
+                    "parameters": [
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 91
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "doSubtract",
+                    "parameters": [
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 113
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "doMultiply",
+                    "parameters": [
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 135
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "doAdd",
+                    "parameters": [
+                        {
+                            "name": "arg0",
+                            "type": "Double"
+                        },
+                        {
+                            "name": "arg1",
+                            "type": "Double"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Double",
+                    "type": null
+                }
+            ],
+            "name": "CalculatorImplPort",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 61
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "endpoint_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 62
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "inputHttpHeaders_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 63
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "outputHttpHeaders_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 64
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "clientCertName_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 65
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "clientCert_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 66
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "clientCertPasswd_x",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 67
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "timeout_x",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 68
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "ns_map_type_info",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 60
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "CalculatorImplPort",
+                "references": [],
+                "type": "CalculatorImplPort"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 39,
+                        "line": 69
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 69
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 70
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doDivide"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 73
+                    },
+                    "modifiers": [],
+                    "name": "response_x",
+                    "references": [],
+                    "type": "doDivideResponse"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 62,
+                        "line": 74
+                    },
+                    "modifiers": [],
+                    "name": "response_map_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 91
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 91
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 92
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doSubtract"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 95
+                    },
+                    "modifiers": [],
+                    "name": "response_x",
+                    "references": [],
+                    "type": "doSubtractResponse"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 64,
+                        "line": 96
+                    },
+                    "modifiers": [],
+                    "name": "response_map_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 113
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 113
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 114
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doMultiply"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 117
+                    },
+                    "modifiers": [],
+                    "name": "response_x",
+                    "references": [],
+                    "type": "doMultiplyResponse"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 64,
+                        "line": 118
+                    },
+                    "modifiers": [],
+                    "name": "response_map_x",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 135
+                    },
+                    "modifiers": [],
+                    "name": "arg0",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 48,
+                        "line": 135
+                    },
+                    "modifiers": [],
+                    "name": "arg1",
+                    "references": [],
+                    "type": "Double"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 136
+                    },
+                    "modifiers": [],
+                    "name": "request_x",
+                    "references": [],
+                    "type": "doAdd"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 46,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "response_x",
+                    "references": [],
+                    "type": "doAddResponse"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 140
+                    },
+                    "modifiers": [],
+                    "name": "response_map_x",
+                    "references": [],
+                    "type": "Map"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000004XJHgAAO",
+    "methods": [],
+    "name": "calculatorServices",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 3
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "calculatorServices",
+        "references": [],
+        "type": "calculatorServices"
+    },
+    "variables": []
+}

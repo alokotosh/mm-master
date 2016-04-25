@@ -1,0 +1,170 @@
+34.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+12:05:48.0 (331643)|EXECUTION_STARTED
+12:05:48.0 (408507)|CODE_UNIT_STARTED|[EXTERNAL]|01p4E0000008wRC|SaveStatus_Test.saveStatusTrigger_test
+12:05:48.0 (690260)|HEAP_ALLOCATE|[72]|Bytes:3
+12:05:48.0 (753910)|HEAP_ALLOCATE|[77]|Bytes:152
+12:05:48.0 (778265)|HEAP_ALLOCATE|[342]|Bytes:408
+12:05:48.0 (803562)|HEAP_ALLOCATE|[355]|Bytes:408
+12:05:48.0 (826429)|HEAP_ALLOCATE|[467]|Bytes:48
+12:05:48.0 (874220)|HEAP_ALLOCATE|[139]|Bytes:6
+12:05:48.0 (909086)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:31
+12:05:48.0 (929580)|METHOD_ENTRY|[2]|01p4E0000008wRC|SaveStatus_Test.SaveStatus_Test()
+12:05:48.0 (934765)|STATEMENT_EXECUTE|[2]
+12:05:48.0 (942221)|STATEMENT_EXECUTE|[2]
+12:05:48.0 (950884)|METHOD_EXIT|[2]|SaveStatus_Test
+12:05:48.0 (995296)|HEAP_ALLOCATE|[50]|Bytes:5
+12:05:48.0 (1023205)|HEAP_ALLOCATE|[56]|Bytes:5
+12:05:48.0 (1034365)|HEAP_ALLOCATE|[64]|Bytes:7
+12:05:48.0 (1085402)|STATEMENT_EXECUTE|[4]
+12:05:48.0 (1087881)|STATEMENT_EXECUTE|[6]
+12:05:48.0 (1137484)|HEAP_ALLOCATE|[6]|Bytes:4
+12:05:48.0 (1286798)|VARIABLE_SCOPE_BEGIN|[6]|account|Account|true|false
+12:05:48.0 (1331501)|VARIABLE_ASSIGNMENT|[6]|account|{}|0x7a7fd078
+12:05:48.0 (1335016)|STATEMENT_EXECUTE|[7]
+12:05:48.0 (1339144)|HEAP_ALLOCATE|[7]|Bytes:12
+12:05:48.0 (1390598)|VARIABLE_ASSIGNMENT|[7]|this.Name|"Test account"|0x7a7fd078
+12:05:48.0 (1394336)|STATEMENT_EXECUTE|[8]
+12:05:48.0 (1397967)|HEAP_ALLOCATE|[8]|Bytes:6
+12:05:48.0 (1431115)|VARIABLE_ASSIGNMENT|[8]|this.Project_Status__c|"Active"|0x7a7fd078
+12:05:48.0 (1434413)|STATEMENT_EXECUTE|[9]
+12:05:48.0 (1487008)|HEAP_ALLOCATE|[9]|Bytes:8
+12:05:48.0 (1506719)|DML_BEGIN|[9]|Op:Insert|Type:Account|Rows:1
+12:05:48.0 (1529707)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:05:48.719 (719034430)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:05:48.719 (719072771)|ENTERING_MANAGED_PKG|dupcheck
+12:05:48.719 (722962641)|VARIABLE_SCOPE_BEGIN|[99]|dc3Trigger.disableStore|Map<String,Boolean>|true|true
+12:05:48.719 (722979531)|VARIABLE_SCOPE_BEGIN|[60]|dc3Trigger.identifier|String|false|true
+12:05:48.719 (722991684)|VARIABLE_SCOPE_BEGIN|[61]|dc3Trigger.indexContainer|Map<String,Map<String,Set<String>>>|true|true
+12:05:48.719 (723006630)|VARIABLE_SCOPE_BEGIN|[58]|dc3Trigger.indexMap|Map<Id,Map<String,Set<String>>>|true|true
+12:05:48.719 (723015599)|VARIABLE_SCOPE_BEGIN|[510]|dc3Trigger.startObject|String|false|true
+12:05:48.719 (723095122)|VARIABLE_SCOPE_BEGIN|[36]|dc3Trigger.triggerIds|Set<Id>|true|true
+12:05:48.719 (723126815)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:05:48.719 (723143994)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:05:48.719 (723229466)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x20b0991c
+12:05:48.719 (728275088)|SOQL_EXECUTE_BEGIN|[35]|Aggregations:0|SELECT Id, Name, dupcheck__Value__c FROM dupcheck__dcSettings__c LIMIT 1000
+12:05:48.719 (730801706)|SOQL_EXECUTE_END|[35]|Rows:0
+12:05:48.732 (732367280)|CUMULATIVE_LIMIT_USAGE
+12:05:48.732 (732367280)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:05:48.732 (732367280)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:05:48.732 (732367280)|CUMULATIVE_LIMIT_USAGE_END
+
+12:05:48.0 (756928565)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:05:48.0 (756944342)|VARIABLE_SCOPE_BEGIN|[1]|this|CreateCaseID|true|false
+12:05:48.0 (757022119)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x6c9006de
+12:05:48.0 (757031154)|STATEMENT_EXECUTE|[1]
+12:05:48.0 (757033184)|STATEMENT_EXECUTE|[3]
+12:05:48.0 (757105065)|HEAP_ALLOCATE|[3]|Bytes:4
+12:05:48.0 (757158314)|HEAP_ALLOCATE|[3]|Bytes:4
+12:05:48.0 (757172848)|VARIABLE_ASSIGNMENT|[3]|this.currentYear|2016|0x6c9006de
+12:05:48.0 (757176021)|STATEMENT_EXECUTE|[4]
+12:05:48.0 (757190193)|VARIABLE_ASSIGNMENT|[4]|this.projName|""|0x6c9006de
+12:05:48.0 (757192813)|STATEMENT_EXECUTE|[5]
+12:05:48.0 (757201991)|VARIABLE_ASSIGNMENT|[5]|this.folderId|""|0x6c9006de
+12:05:48.0 (757204229)|STATEMENT_EXECUTE|[6]
+12:05:48.0 (757212980)|VARIABLE_ASSIGNMENT|[6]|this.caseId|""|0x6c9006de
+12:05:48.0 (757215611)|STATEMENT_EXECUTE|[8]
+12:05:48.0 (757222119)|HEAP_ALLOCATE|[8]|Bytes:4
+12:05:48.0 (757226862)|HEAP_ALLOCATE|[8]|Bytes:81
+12:05:48.0 (757230777)|HEAP_ALLOCATE|[8]|Bytes:4
+12:05:48.0 (757433788)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Id, Name, Short_Name__c, Project_Count__c, Folder_Id__c FROM University__c
+12:05:48.0 (760783539)|SOQL_EXECUTE_END|[8]|Rows:0
+12:05:48.0 (760804793)|HEAP_ALLOCATE|[8]|Bytes:4
+12:05:48.0 (760817279)|HEAP_ALLOCATE|[8]|Bytes:0
+12:05:48.0 (760866638)|HEAP_ALLOCATE|[8]|Bytes:4
+12:05:48.0 (760951183)|VARIABLE_ASSIGNMENT|[8]|this.universitiesMap|{"s":1,"v":{}}|0x6c9006de
+12:05:48.0 (761226058)|HEAP_ALLOCATE|[11]|Bytes:5
+12:05:48.0 (761261032)|HEAP_ALLOCATE|[11]|Bytes:4
+12:05:48.0 (761280141)|VARIABLE_SCOPE_BEGIN|[11]|project|Account|true|false
+12:05:48.0 (763193191)|VARIABLE_ASSIGNMENT|[11]|project|{"IsDeleted":false,"OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","Research_Agreement__ (1 more) ...":false,"Prospect__c":false,"slpf__IsActive__c":true,"Project_Status__c":"Active","Name":"Test account","dupcheck__dc3Disable (17 more) ...":false}|0x51dae658
+12:05:48.0 (763202545)|STATEMENT_EXECUTE|[11]
+12:05:48.0 (763291009)|STATEMENT_EXECUTE|[13]
+12:05:48.0 (763305518)|HEAP_ALLOCATE|[11]|Bytes:5
+12:05:48.0 (763321511)|VARIABLE_ASSIGNMENT|[11]|project|null|
+12:05:48.0 (763367444)|STATEMENT_EXECUTE|[29]
+12:05:48.763 (763381076)|CUMULATIVE_LIMIT_USAGE
+12:05:48.763 (763381076)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:05:48.763 (763381076)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:05:48.763 (763381076)|CUMULATIVE_LIMIT_USAGE_END
+
+12:05:48.0 (764385213)|CODE_UNIT_FINISHED|CreateCaseID on Account trigger event BeforeInsert for [new]
+12:05:48.0 (781766817)|DML_END|[9]
+12:05:48.0 (781864944)|VF_PAGE_MESSAGE|Required fields are missing: [University__c]
+12:05:48.0 (781945893)|EXCEPTION_THROWN|[9]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [University__c]: [University__c]
+12:05:48.0 (782245237)|HEAP_ALLOCATE|[9]|Bytes:143
+12:05:48.0 (782315624)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [University__c]: [University__c]
+
+Class.SaveStatus_Test.saveStatusTrigger_test: line 9, column 1
+12:05:48.0 (782329250)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [University__c]: [University__c]
+
+Class.SaveStatus_Test.saveStatusTrigger_test: line 9, column 1
+12:05:48.782 (782336191)|CUMULATIVE_LIMIT_USAGE
+12:05:48.782 (782336191)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 1 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:05:48.782 (782336191)|CUMULATIVE_LIMIT_USAGE_END
+
+12:05:48.0 (782369501)|CODE_UNIT_FINISHED|SaveStatus_Test.saveStatusTrigger_test
+12:05:48.0 (783875883)|EXECUTION_FINISHED

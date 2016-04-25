@@ -1,0 +1,67 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<AggregateResult> results = 
+Execute Anonymous:     new List<AggregateResult>([SELECT  CALENDAR_MONTH(Active_Start_Date__c), 
+Execute Anonymous:                                		COUNT(id)  
+Execute Anonymous:                                       FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c)=2016
+Execute Anonymous: 									Group by CALENDAR_MONTH(Active_Start_Date__c)                                 
+Execute Anonymous:                                      ]);
+Execute Anonymous: String str = String.valueOf(results[0].get('exp'));
+Execute Anonymous: Integer I = Integer.valueOf(str) ;
+Execute Anonymous: 
+Execute Anonymous: System.debug(I);
+11:40:20.2 (2296169)|EXECUTION_STARTED
+11:40:20.2 (2307143)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+11:40:20.2 (2455488)|VARIABLE_SCOPE_BEGIN|[8]|I|Integer|false|false
+11:40:20.2 (2570683)|VARIABLE_SCOPE_BEGIN|[1]|results|List<AggregateResult>|true|false
+11:40:20.2 (2589297)|VARIABLE_SCOPE_BEGIN|[7]|str|String|false|false
+11:40:20.2 (2729194)|HEAP_ALLOCATE|[72]|Bytes:3
+11:40:20.2 (2789401)|HEAP_ALLOCATE|[77]|Bytes:152
+11:40:20.2 (2809752)|HEAP_ALLOCATE|[342]|Bytes:408
+11:40:20.2 (2829755)|HEAP_ALLOCATE|[355]|Bytes:408
+11:40:20.2 (2849025)|HEAP_ALLOCATE|[467]|Bytes:48
+11:40:20.2 (2885754)|HEAP_ALLOCATE|[139]|Bytes:6
+11:40:20.2 (2914146)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:10
+11:40:20.2 (3062570)|STATEMENT_EXECUTE|[1]
+11:40:20.2 (3066454)|STATEMENT_EXECUTE|[1]
+11:40:20.2 (3074720)|HEAP_ALLOCATE|[2]|Bytes:4
+11:40:20.2 (3190577)|HEAP_ALLOCATE|[2]|Bytes:162
+11:40:20.2 (3204191)|HEAP_ALLOCATE|[2]|Bytes:4
+11:40:20.2 (3249588)|HEAP_ALLOCATE|[50]|Bytes:5
+11:40:20.2 (3276365)|HEAP_ALLOCATE|[56]|Bytes:5
+11:40:20.2 (3285716)|HEAP_ALLOCATE|[64]|Bytes:7
+11:40:20.2 (3759637)|SOQL_EXECUTE_BEGIN|[2]|Aggregations:0|SELECT CALENDAR_MONTH(Active_Start_Date__c), COUNT(id) FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c) = 2016 GROUP BY CALENDAR_MONTH(Active_Start_Date__c)
+11:40:20.2 (19921179)|SOQL_EXECUTE_END|[2]|Rows:1
+11:40:20.2 (19939954)|HEAP_ALLOCATE|[2]|Bytes:8
+11:40:20.2 (19957419)|HEAP_ALLOCATE|[2]|Bytes:31
+11:40:20.2 (19998155)|HEAP_ALLOCATE|[2]|Bytes:8
+11:40:20.2 (20045765)|HEAP_ALLOCATE|[2]|Bytes:12
+11:40:20.2 (20054473)|HEAP_ALLOCATE|[2]|Bytes:12
+11:40:20.2 (20057417)|HEAP_ALLOCATE|[2]|Bytes:4
+11:40:20.2 (20073802)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:40:20.2 (20137546)|VARIABLE_ASSIGNMENT|[1]|results|{"s":1,"v":[{"s":2,"v":{"expr0":4,"expr1":2}}]}|0x3e06939a
+11:40:20.2 (20143183)|STATEMENT_EXECUTE|[7]
+11:40:20.2 (20162679)|HEAP_ALLOCATE|[7]|Bytes:12
+11:40:20.2 (20170429)|HEAP_ALLOCATE|[7]|Bytes:3
+11:40:20.2 (20352474)|HEAP_ALLOCATE|[7]|Bytes:41
+11:40:20.2 (20429674)|FATAL_ERROR|System.SObjectException: Invalid field exp for AggregateResult
+
+AnonymousBlock: line 7, column 1
+11:40:20.20 (20464592)|CUMULATIVE_LIMIT_USAGE
+11:40:20.20 (20464592)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:40:20.20 (20464592)|CUMULATIVE_LIMIT_USAGE_END
+
+11:40:20.2 (20510758)|CODE_UNIT_FINISHED|execute_anonymous_apex
+11:40:20.2 (21782452)|EXECUTION_FINISHED

@@ -1,0 +1,661 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "myMap", 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 37, 
+                "line": 3
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "results", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 65
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "cresults", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 67
+            }, 
+            "type": "LIST"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "active_S", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 76
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "pending_S", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 77
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "closed_S", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 78
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "contact_P", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 79
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "idea_P", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 80
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "verif_p", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 81
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "dev_p", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 82
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "comer_p", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 83
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "licen_p", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 84
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "active_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 86
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "pending_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 87
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "closed_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 88
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "contact_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 89
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "idea_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 90
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "verif_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 91
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "dev_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 92
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "comer_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 93
+            }, 
+            "type": "Map"
+        }, 
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "licen_F", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 94
+            }, 
+            "type": "Map"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "testPLIS", 
+    "tableDeclaration": {
+        "type": "testPLIS", 
+        "modifiers": [
+            "public"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 1
+        }, 
+        "name": "testPLIS"
+    }, 
+    "key": "01p4E0000008xmfQAA", 
+    "variables": [
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 116
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 123
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 131
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 13, 
+                "line": 139
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 147
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 155
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 161
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 168
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 175
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 182
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 189
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 196
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 203
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 211
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 218
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 226
+            }, 
+            "name": "ind"
+        }, 
+        {
+            "type": "AggregateResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 233
+            }, 
+            "name": "ar"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 240
+            }, 
+            "name": "ind"
+        }
+    ], 
+    "id": "01p4E0000008xmfQAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 12
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getMonth", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 19
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getlistAll", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 37, 
+                "line": 98
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getActiveStatus", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 114
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getPendingStatus", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 128
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getClosedStatus", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 145
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getContactPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 159
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getIdeaPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 173
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getVerificPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 187
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getDevelopmentPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 201
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getComercialPhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 216
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "getLicensePhase", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 231
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004aWiqAAE",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004aWiqAAE",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOpportunities",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOpportunity",
+            "parameters": [
+                {
+                    "name": "id",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 33
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "saveExpense",
+            "parameters": [
+                {
+                    "name": "expense",
+                    "type": "Opportunity"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 39
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteExpense",
+            "parameters": [
+                {
+                    "name": "expense",
+                    "type": "Opportunity"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        }
+    ],
+    "name": "OpportunityController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "OpportunityController",
+        "references": [],
+        "type": "OpportunityController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "opportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "opportunity",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "expense",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "expense",
+            "references": [],
+            "type": "Opportunity"
+        }
+    ]
+}

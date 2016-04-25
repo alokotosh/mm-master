@@ -1,0 +1,88 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XJMHAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004XJMHAA4",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testCallout",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AwesomeCalculatorTest",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "AwesomeCalculatorTest",
+        "references": [],
+        "type": "AwesomeCalculatorTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "x",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "y",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "Double"
+        }
+    ]
+}

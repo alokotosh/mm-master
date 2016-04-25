@@ -1,0 +1,57 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: List<AggregateResult> results = 
+Execute Anonymous:     new List<AggregateResult>([SELECT  CALENDAR_MONTH(Active_Start_Date__c), 
+Execute Anonymous:                                		COUNT(id)  
+Execute Anonymous:                                       FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c)=2016
+Execute Anonymous: 									Group by CALENDAR_MONTH(Active_Start_Date__c)                                 
+Execute Anonymous:                                      ]);
+Execute Anonymous: System.debug(results);
+11:34:28.1 (1382017)|EXECUTION_STARTED
+11:34:28.1 (1398427)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+11:34:28.1 (1648559)|VARIABLE_SCOPE_BEGIN|[1]|results|List<AggregateResult>|true|false
+11:34:28.1 (1799320)|HEAP_ALLOCATE|[72]|Bytes:3
+11:34:28.1 (1859578)|HEAP_ALLOCATE|[77]|Bytes:152
+11:34:28.1 (1879191)|HEAP_ALLOCATE|[342]|Bytes:408
+11:34:28.1 (1897989)|HEAP_ALLOCATE|[355]|Bytes:408
+11:34:28.1 (1921149)|HEAP_ALLOCATE|[467]|Bytes:48
+11:34:28.1 (1961659)|HEAP_ALLOCATE|[139]|Bytes:6
+11:34:28.1 (1989396)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+11:34:28.1 (2110109)|STATEMENT_EXECUTE|[1]
+11:34:28.1 (2115388)|STATEMENT_EXECUTE|[1]
+11:34:28.1 (2123871)|HEAP_ALLOCATE|[2]|Bytes:4
+11:34:28.1 (2228115)|HEAP_ALLOCATE|[2]|Bytes:162
+11:34:28.1 (2240066)|HEAP_ALLOCATE|[2]|Bytes:4
+11:34:28.1 (2284000)|HEAP_ALLOCATE|[50]|Bytes:5
+11:34:28.1 (2310794)|HEAP_ALLOCATE|[56]|Bytes:5
+11:34:28.1 (2319566)|HEAP_ALLOCATE|[64]|Bytes:7
+11:34:28.1 (2972621)|SOQL_EXECUTE_BEGIN|[2]|Aggregations:0|SELECT CALENDAR_MONTH(Active_Start_Date__c), COUNT(id) FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c) = 2016 GROUP BY CALENDAR_MONTH(Active_Start_Date__c)
+11:34:28.1 (10781091)|SOQL_EXECUTE_END|[2]|Rows:1
+11:34:28.1 (10802061)|HEAP_ALLOCATE|[2]|Bytes:8
+11:34:28.1 (10819589)|HEAP_ALLOCATE|[2]|Bytes:31
+11:34:28.1 (10857083)|HEAP_ALLOCATE|[2]|Bytes:8
+11:34:28.1 (10905156)|HEAP_ALLOCATE|[2]|Bytes:12
+11:34:28.1 (10917475)|HEAP_ALLOCATE|[2]|Bytes:12
+11:34:28.1 (10920447)|HEAP_ALLOCATE|[2]|Bytes:4
+11:34:28.1 (10937658)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:34:28.1 (10997408)|VARIABLE_ASSIGNMENT|[1]|results|{"s":1,"v":[{"s":2,"v":{"expr0":4,"expr1":2}}]}|0x5f309b24
+11:34:28.1 (11002723)|STATEMENT_EXECUTE|[7]
+11:34:28.1 (11069845)|USER_DEBUG|[7]|DEBUG|(AggregateResult:{expr0=4, expr1=2})
+11:34:28.11 (11120944)|CUMULATIVE_LIMIT_USAGE
+11:34:28.11 (11120944)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:34:28.11 (11120944)|CUMULATIVE_LIMIT_USAGE_END
+
+11:34:28.1 (11162282)|CODE_UNIT_FINISHED|execute_anonymous_apex
+11:34:28.1 (12177346)|EXECUTION_FINISHED

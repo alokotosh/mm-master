@@ -1,0 +1,67 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003OVREAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003OVREAA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateOlderAccounts",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "OlderAccountsUtility",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "OlderAccountsUtility",
+        "references": [],
+        "type": "OlderAccountsUtility"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "oldAccounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "acct",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

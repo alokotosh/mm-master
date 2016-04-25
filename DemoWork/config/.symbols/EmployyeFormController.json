@@ -1,0 +1,87 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "EmployyeFormController",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003Pi2pAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003Pi2pAAC",
+    "methods": [],
+    "name": "EmployyeFormController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 48
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "empl",
+            "references": [],
+            "type": "whosf__Employee__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 49
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 47
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "EmployyeFormController",
+        "references": [],
+        "type": "EmployyeFormController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        }
+    ]
+}

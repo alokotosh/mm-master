@@ -1,0 +1,207 @@
+<apex:page standardController="Account" showHeader="false" standardStylesheets="false" sidebar="false"  extensions="AccountControllerExtension"  docType="html-5.0">
+
+<script
+	src="//code.jquery.com/jquery-2.2.2.js"
+	integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="
+	crossorigin="anonymous">
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/build/jquery.datetimepicker.full.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/jquery.datetimepicker.min.css"/>
+
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+
+<script type="text/javascript">
+$j = jQuery.noConflict();
+	window.onload = function(){
+        // alert('Im here');
+
+    };
+
+    function jsUpdatePhase() {
+    	callToUpdatePhase();
+    }
+    
+    
+    function resizeWin() {
+        window.resizeTo(500,500);
+		var windowWidth = 500;
+        var windowHeight = 500;
+        var xPos = (screen.width/2) - (windowWidth/2);
+        var yPos = (screen.height/2) - (windowHeight/2);
+            window.moveTo(xPos, yPos);                               
+    		window.focus(); 
+}
+    
+
+ //    $j(function(){
+	// 	$j( "[id$=datepicker]" ).datepicker();
+	// 	// //Pass the user selected date format
+	// 	// $j( "#format" ).change(function() {
+	// 	// 	$j( "#datepicker" ).datepicker( "option", "dateFormat", $j(this).val() );
+	// 	// });
+	// });
+</script>
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <head>
+
+              <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+            </head>
+<body onload="resizeWin()">
+    <div class="slds">
+	<apex:form >  
+		<apex:actionFunction name="callToUpdatePhase" action="{!updatePhase}" reRender="update">
+		</apex:actionFunction>
+		<apex:outputPanel id="update">
+			<!-- <script type="text/javascript">
+				$j = jQuery.noConflict();
+				    $j(function(){
+						jsUpdatePhase();
+					});
+			</script> -->
+		</apex:outputPanel>
+        
+        
+        <div align="center">
+    <div aria-hidden="false" role="dialog" class="slds-modal slds-modal--form slds-fade-in-open">
+      <div class="slds-modal__container slds-modal--form">
+        <div class="slds-modal__header">
+ 			  <apex:commandButton value="Cancel" action="{!cancel}" styleClass="slds-button slds-button--neutral slds-button--small" onclick="window.close();"/>
+              <apex:commandButton value="Save" styleClass="slds-button slds-button--neutral slds-button--small slds-button--brand" action="{!saveStatus}" onclick="window.close();"/>
+          <h2 class="slds-text-heading--medium">Change Status:</h2>
+        </div>
+        <div class="slds-modal__content">
+          <h3 class="slds-section-title--divider" align="left">Main Information</h3>
+          <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+              
+                            	<div class="slds-form-element slds-m-top--medium large" align="left">
+                                    <label class="slds-form-element__label" for="select-01">Project Status:</label>
+                                    <div class="slds-form-element__control">
+                                      <div class="slds-select_container">
+                                          <apex:inputField id="statusList" styleClass="slds-select" value="{!project.Project_Status__c}" > </apex:inputField>
+                                          </div>
+                                        </div>
+                             	</div>
+              
+                 <div class="slds-form-element slds-m-top--medium large" align="left">
+                        <label class="slds-form-element__label" for="select-01">Project Phase:</label>
+                        <div class="slds-form-element__control">
+                          <div class="slds-select_container">
+                              <apex:inputField id="phaseList" styleClass="slds-select" value="{!project.Project_Phase__c}" > 
+                              <apex:actionSupport event="onchange" action="{!updatePhase}" reRender="phase1, dates, companyName, companyNumber, inputDate">
+								</apex:actionSupport>
+                              </apex:inputField>
+                              </div>
+                            </div>
+                 </div>
+              
+            <div class="slds-form-element" align="left">
+                				<apex:outputPanel id="companyName">
+					<apex:outputPanel rendered="{!IF(phase == 'Commercial', true, false)}">
+						
+                          <label class="slds-form-element__label" for="projStatus">Company Name:</label>
+                        <div class="slds-form-element__control">
+						<apex:inputField value="{!company.Name}" styleClass="slds-input"/>
+                             </div>
+					</apex:outputPanel>
+				</apex:outputPanel>
+            </div>
+              
+              
+                          <div class="slds-form-element" align="left">
+                 <apex:outputPanel id="companyNumber">
+					<apex:outputPanel rendered="{!IF(phase == 'Commercial', true, false)}">
+						
+                         <label class="slds-form-element__label" for="projStatus">Org. Number:</label>
+                          <div class="slds-form-element__control">
+						<apex:inputField value="{!company.Organization_Number__c}" styleClass="slds-input"/>
+                               </div>
+					</apex:outputPanel>
+				</apex:outputPanel>
+            </div>
+              
+
+             
+
+              
+              
+          </div>
+          <h3 class="slds-section-title--divider" align="left">Date Information</h3>
+          <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small" align="left">
+ 
+            <div class="slds-form-element">
+             <apex:outputPanel id="dates">
+<!-- Idea date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Idea', true, false)}">
+					
+                           <label class="slds-form-element__label" for="projStatus">Idea Date:</label>
+					</apex:outputPanel>
+<!-- Verification date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Verification', true, false)}">
+				
+                        <label class="slds-form-element__label" for="projStatus">Verification Date:</label>
+					</apex:outputPanel>
+<!-- Development date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Development', true, false)}">
+						
+                        <label class="slds-form-element__label" for="projStatus">Development Date:</label>
+					</apex:outputPanel>
+<!-- Commercial date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Commercial', true, false)}">
+						
+                        <label class="slds-form-element__label" for="projStatus">Company Date:</label>
+					</apex:outputPanel>
+<!-- License date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'License', true, false)}">
+						
+                        <label class="slds-form-element__label" for="projStatus">License Date:</label>
+					</apex:outputPanel>
+
+				</apex:outputPanel>
+              <div class="slds-form-element__control">
+              <apex:outputPanel id="inputDate">
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase != 'Contact', true, false)}">
+						<apex:inputText id="datepicker" styleClass="slds-input" value="{!tempDate }">
+							<apex:actionSupport event="onclick" reRender="calendar, phase1, againUpdatePhase" >
+							</apex:actionSupport>
+							<apex:outputPanel id="calendar">
+								<script type="text/javascript">
+									//$j = jQuery.noConflict();
+								    jQuery(function(){
+										jQuery( "[id$=datepicker]" ).datetimepicker();
+									});
+								</script>
+							</apex:outputPanel>
+							<apex:outputPanel id="againUpdatePhase">
+								<script type="text/javascript">
+									jQuery(function(){
+										jsUpdatePhase();
+									});
+								</script>
+							</apex:outputPanel>
+						</apex:inputText>
+					</apex:outputPanel>
+				</apex:outputPanel>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="slds-backdrop slds-backdrop--open"></div> 
+  </div>
+        
+	  
+       
+		
+     
+         
+       
+	</apex:form>
+    </div>
+    
+     </body>
+     </html>
+</apex:page>

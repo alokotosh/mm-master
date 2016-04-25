@@ -1,0 +1,72 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003OMBaAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003OMBaAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getTaskPriority",
+            "parameters": [
+                {
+                    "name": "leadState",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "TaskUtil",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "TaskUtil",
+        "references": [],
+        "type": "TaskUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "leadState",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "taskPriority",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p360000086r0xAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p360000086r0xAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOpportunities",
+            "parameters": [
+                {
+                    "name": "daysSinceLastModified",
+                    "type": "Decimal"
+                },
+                {
+                    "name": "oppStage",
+                    "type": "String"
+                },
+                {
+                    "name": "hasOpen",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "OpportunityAlertController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "OpportunityAlertController",
+        "references": [],
+        "type": "OpportunityAlertController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "daysSinceLastModified",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "oppStage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "hasOpen",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "t",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "opportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "oppMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "tasks",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "opps_with_tasks",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "ta",
+            "references": [],
+            "type": "Task"
+        }
+    ]
+}

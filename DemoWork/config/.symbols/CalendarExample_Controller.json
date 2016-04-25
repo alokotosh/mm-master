@@ -1,0 +1,342 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CalendarExample_Controller",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p360000075SADAA2",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "calEvent",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 161
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "title",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 163
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "allDay",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 165
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "startString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 167
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "endString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 169
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "url",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 171
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "className",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 159
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "calEvent",
+                "references": [],
+                "type": "calEvent"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p360000075SADAA2",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pageLoad",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 133
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "toggleMyEvents",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "CalendarExample_Controller",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "includeMyEvents",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "events",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 13
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "dtFormat",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "CalendarExample_Controller",
+        "references": [],
+        "type": "CalendarExample_Controller"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "startDT",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "bday",
+            "references": [],
+            "type": "calEvent"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "camp",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "startDT",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "endDT",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "campEvent",
+            "references": [],
+            "type": "calEvent"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "evnt",
+            "references": [],
+            "type": "Event"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "startDT",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "endDT",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "myEvent",
+            "references": [],
+            "type": "calEvent"
+        }
+    ]
+}

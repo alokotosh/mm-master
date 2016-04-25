@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>36.0</apiVersion>
+    <availableInTouch>false</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>Page will display two pick lists: Status and Phase. Users can change current values to new ones. There are some validation rules on their values.</description>
+    <label>Change Status Phase</label>
+</ApexPage>

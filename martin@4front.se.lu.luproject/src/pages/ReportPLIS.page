@@ -1,0 +1,235 @@
+<apex:page controller="testPLIS"  showHeader="false" standardStylesheets="true" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+     <!--
+            @author Andriy Lokotosh
+            Description: Custom Overided CSS in Minified Form
+       -->
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>Salesforce Employee applications</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+</head>
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+</apex:remoteObjects>
+
+<body>
+
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds">
+
+    <!-- MASTHEAD -->
+
+    <!-- / MASTHEAD -->
+
+<!-- PAGE HEADER -->
+
+
+
+-<div class="myapp">
+
+<!--
+                <table class="slds-table slds-table--bordered">
+                    <tr class="slds-text-heading--label">
+                      <apex:repeat value="{!Phase}" var="ac">
+                        <th class="slds-is-sortable" scope="col">
+
+                         <div class="slds-truncate">{!ac}
+                            <button class="slds-button slds-button--icon-bare">
+                              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+                              </svg>
+                              <span class="slds-assistive-text">Sort</span>
+                            </button>
+                          </div>
+                        </th>
+                      </apex:repeat>
+                    </tr>
+                    <apex:repeat value="{!RowWrappers}" var="row">
+                       <tr  class="slds-truncate" scope="row">
+                             <apex:repeat value="{!row.values}" var="value">
+                               <td class="slds-truncate">
+                                 {!value}
+                               </td>
+                             </apex:repeat>
+                       </tr>
+                    </apex:repeat>
+                  </table> -->
+
+
+
+            <!--        <apex:repeat value="{!myMap}" var="key">
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!myMap[key]}" var="listItem">
+                <apex:column value="{!listItem}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:repeat>
+
+ <apex:pageblock title="Map Usage On VF">
+ <apex:pageBlockTable value="{!myMap}" var="key">
+     <apex:column headerValue="Account Name">
+         {!key}
+     </apex:column>
+     <apex:repeat value="{!myMap[key]}" var="c">
+     <apex:column headerValue="Duplicate Count">
+          c
+     </apex:column>
+         </apex:repeat>
+ </apex:pageBlockTable>
+</apex:pageblock> -->
+
+  <div class="slds-grid slds-wrap slds-grid--pull-padded">
+      <div class="slds-col--padded slds-size--1-of-12 slds-medium-size--1-of-12 slds-large-size--1-of-12">
+        <table class="slds-table slds-table--bordered">
+     <tr class="slds-text-heading--label">
+      
+         <th class="slds-is-sortable" scope="col">
+
+          <div class="slds-truncate">
+             <button class="slds-button slds-button--icon-bare">
+               <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                 <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+               </svg>
+               <span class="slds-assistive-text">Sort</span>
+             </button>
+           </div>
+         </th>
+   
+     </tr>
+
+  
+
+     <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Active </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Pending </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Closed </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Contact </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Idea </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Verifications </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Developing </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> Comercial </td>
+ </tr>
+ <tr  class="slds-truncate" scope="row">
+ <td class="slds-truncate"> License </td>
+ </tr>
+      
+   </table>
+
+
+      </div>
+
+
+            <div class="slds-col--padded slds-size--11-of-12 slds-medium-size--11-of-12 slds-large-size--11-of-12">
+
+<table class="slds-table slds-table--bordered">
+     <tr class="slds-text-heading--label">
+       <apex:repeat value="{!phase}" var="p">
+         <th class="slds-is-sortable" scope="col">
+
+          <div class="slds-truncate">{!p}
+             <button class="slds-button slds-button--icon-bare">
+               <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                 <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+               </svg>
+               <span class="slds-assistive-text">Sort</span>
+             </button>
+           </div>
+         </th>
+       </apex:repeat>
+     </tr>
+
+     <apex:repeat value="{!listAll}" var="list">
+
+     <tr  class="slds-truncate" scope="row">
+
+
+              <apex:repeat value="{!list}" var="value">
+
+ <td class="slds-truncate">
+
+                  {!list[value]}
+   </td>
+
+              </apex:repeat>
+
+
+      </tr>
+
+       </apex:repeat>
+   </table>
+
+      </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+</div>
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer role="contentinfo" class="slds-p-around--large">
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid slds-grid--align-spread">
+    <p class="slds-col">Salesforce Lightning Design System </p>
+    <p class="slds-col">&copy; Andrew Lokotosh</p>
+  </div>
+  <!-- / LAYOUT GRID -->
+</footer>
+<!-- / FOOTER -->
+
+
+  </div>
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+</body>
+
+<!-- JAVASCRIPT -->
+
+<!-- / JAVASCRIPT -->
+
+
+</html>
+
+
+
+
+</apex:page>

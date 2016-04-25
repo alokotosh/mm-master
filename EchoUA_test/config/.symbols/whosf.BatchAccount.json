@@ -1,0 +1,257 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private"
+            ], 
+            "name": "failedUpdates", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 10, 
+                "line": 3
+            }, 
+            "type": "Double"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [
+        "Database.Batchable"
+    ], 
+    "constructors": [], 
+    "namespace": "whosf", 
+    "name": "BatchAccount", 
+    "tableDeclaration": {
+        "type": "BatchAccount", 
+        "modifiers": [
+            "global"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 1
+        }, 
+        "name": "BatchAccount"
+    }, 
+    "key": "01p36000009LlPNAA0", 
+    "variables": [
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 63, 
+                "line": 6
+            }, 
+            "name": "BC"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 51, 
+                "line": 11
+            }, 
+            "name": "BC"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 69, 
+                "line": 11
+            }, 
+            "name": "scope"
+        }, 
+        {
+            "type": "Long", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 13
+            }, 
+            "name": "count"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 14
+            }, 
+            "name": "accs"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 15
+            }, 
+            "name": "con"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 16
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 18
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 37, 
+                "line": 30
+            }, 
+            "name": "dsrs"
+        }, 
+        {
+            "type": "SaveResult", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 33, 
+                "line": 31
+            }, 
+            "name": "dsr"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 47, 
+                "line": 38
+            }, 
+            "name": "ctx"
+        }, 
+        {
+            "type": "AsyncApexJob", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 40
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 47
+            }, 
+            "name": "emailMessage"
+        }, 
+        {
+            "type": "SingleEmailMessage", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 59
+            }, 
+            "name": "mail"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 61
+            }, 
+            "name": "toAddresses"
+        }
+    ], 
+    "id": "01p36000009LlPNAA0", 
+    "methods": [
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "start", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "BC"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 31, 
+                "line": 6
+            }, 
+            "returnType": "QueryLocator", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "execute", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "BC"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "scope"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 11
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "finish", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "ctx"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 38
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

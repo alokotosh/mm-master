@@ -1,0 +1,121 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003xQlVAAU",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003xQlVAAU",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 34,
+                "line": 60
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "addNewEmployeeSkills",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "TestEmplSkillEmail",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 49
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "TestEmplSkillEmail",
+        "references": [],
+        "type": "TestEmplSkillEmail"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "e",
+            "references": [],
+            "type": "whosf__Employee__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "temp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "proj",
+            "references": [],
+            "type": "whosf__Project__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "es",
+            "references": [],
+            "type": "whosf__Employee_Skills__c"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+<apex:page standardController="Account"  showHeader="false" standardStylesheets="true" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style>
+     
+      .activeTab {    
+  background-color: #EDEDED;
+  color: #54698d;
+  background-image:none;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+     }
+      .inactiveTab {     
+  background-color: white; 
+  font-size: 0.75rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  color: #54698d;
+  background-image:none;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;}
+          
+   </style>
+<head>
+  
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+</head>
+
+
+  <body>
+    
+         <apex:tabPanel switchType="client" selectedTab="tabdetails" 
+                  id="AccountTabPanel" tabClass="activeTab" 
+                  inactiveTabClass="inactiveTab">   
+      <apex:tab label="Details" name="AccDetails" id="tabdetails">
+         <apex:detail relatedList="false" title="true"/>
+      </apex:tab>
+      <apex:tab label="Contacts" name="Contacts" id="tabContact">
+         <apex:relatedList subject="{!account}" list="contacts" />
+      </apex:tab>
+      <apex:tab label="Opportunities" name="Opportunities" 
+                id="tabOpp">
+         <apex:relatedList subject="{!account}" 
+                           list="opportunities" />
+      </apex:tab>
+      <apex:tab label="Open Activities" name="OpenActivities" 
+                id="tabOpenAct">
+         <apex:relatedList subject="{!account}" 
+                           list="OpenActivities" />
+      </apex:tab>
+      <apex:tab label="Notes and Attachments" 
+                name="NotesAndAttachments" id="tabNoteAtt">
+         <apex:relatedList subject="{!account}" 
+                           list="CombinedAttachments" />
+      </apex:tab>
+   </apex:tabPanel>
+      
+  
+   
+ 
+        
+    
+   
+        
+  
+            
+            
+            
+            
+    
+      
+      
+      
+  </body>
+
+<!-- JAVASCRIPT -->
+<script>
+
+
+      
+</script>
+<!-- / JAVASCRIPT -->
+
+
+</html>
+</apex:page>

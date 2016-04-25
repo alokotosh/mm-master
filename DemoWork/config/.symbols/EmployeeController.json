@@ -1,0 +1,295 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 62
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "EmployeeController",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003OzZaAAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003OzZaAAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 77
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getEmployee",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 123
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getDisablePrevious",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 142
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getDisableNext",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 160
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Next",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 175
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Previous",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 189
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPageNumber",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 202
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTotal_size",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 215
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTotalPages",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        }
+    ],
+    "name": "EmployeeController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CountTotalRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "OffsetSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "QueryLimit",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 56
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "employee",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 57
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "returns",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 58
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "empl",
+            "references": [],
+            "type": "whosf__Employee__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 59
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 50
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "EmployeeController",
+        "references": [],
+        "type": "EmployeeController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "e",
+            "references": [],
+            "type": "whosf__Employee__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "es",
+            "references": [],
+            "type": "whosf__Employee_Skills__c"
+        }
+    ]
+}

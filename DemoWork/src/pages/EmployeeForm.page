@@ -1,0 +1,75 @@
+<!--
+
+File: EmployeeForm.page
+
+Project: Project Name
+
+Date: Creation Date (e.g.: January 10, 2016)
+
+Created By: Developer Name
+
+*************************************************************************
+Description: This page rewriting standars new page for Employee.
+
+*************************************************************************
+
+History: Used for any changes added to the page after first release.
+
+Date(same format as above) - Developer Name - what components were modified/added, what are the changes
+
+-->
+
+<apex:page standardController="Employee__c" extensions="EmployeeController">
+    <apex:form >
+    	<apex:pageMessages />
+            <apex:pageBlock title="Employee Edit">
+                <apex:pageBlock title="Information ">
+                    <apex:pageBlockSection columns="2">
+
+                          <apex:pageBlockSection columns="1">
+
+                               <apex:inputField value="{! Employee__c.Name }"/>
+                               <apex:inputField value="{! Employee__c.Email__c }"/>
+                               <apex:inputField value="{! Employee__c.Mother_Language__c }"/>
+                               <apex:inputField value="{! Employee__c.International_Languages_Speaker__c }"/>
+                               <apex:inputField value="{! Employee__c.Description__c }"/>
+
+                          </apex:pageBlockSection>  
+
+                                <apex:pageBlockSection columns="1">
+                                    <apex:inputField label="Owner" value="{!Employee__c.OwnerId}"/>
+              		              </apex:pageBlockSection>  
+              		  </apex:pageBlockSection>                  
+              	</apex:pageBlock>
+
+
+      <apex:pageBlock title="Address Information ">
+          <apex:pageBlockSection columns="2">
+
+                  <apex:pageBlockSection columns="1">
+                 			  <apex:inputField value="{! Employee__c.Mailing_Street__c }"/>
+                        <apex:inputField value="{! Employee__c.Mailing_City__c }"/>
+                        <apex:inputField value="{! Employee__c.Mailing_StateProvince__c }"/>
+                        <apex:inputField value="{! Employee__c.Mailing_Zip_Postal_Code__c }"/>
+                        <apex:inputField value="{! Employee__c.Mailing_Country__c }"/>
+                  </apex:pageBlockSection>
+
+                        <apex:pageBlockSection columns="1">
+                              <apex:inputField value="{! Employee__c.Shipping_Street__c }"/>
+                             	<apex:inputField value="{! Employee__c.Shipping_City__c }"/>
+                              <apex:inputField value="{! Employee__c.Shipping_State_Province__c }"/>
+                            	<apex:inputField value="{! Employee__c.Shipping_Zip_Postal_Code__c }"/>
+                              <apex:inputField value="{! Employee__c.Shipping_Country__c }"/>  
+                         </apex:pageBlockSection>
+
+    	   	</apex:pageBlockSection>
+		</apex:pageBlock>
+
+                 <apex:pageBlockButtons >
+        			         <apex:commandButton value="Save" action="{!save}"/>
+                       <apex:commandButton value="Cancel" action="{!cancel}"/>
+                </apex:pageBlockButtons>
+                
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

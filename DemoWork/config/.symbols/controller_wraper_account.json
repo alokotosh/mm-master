@@ -1,0 +1,339 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "controller_wraper_account",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p360000072dQmAAI",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 38
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accountWrapper",
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "type": "Account"
+                        },
+                        {
+                            "name": "rowCounter",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "accountWrapper",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 35
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "act",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 36
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "numberOfRow",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 19,
+                    "line": 34
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "accountWrapper",
+                "references": [],
+                "type": "accountWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 40,
+                        "line": 38
+                    },
+                    "modifiers": [],
+                    "name": "a",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 38
+                    },
+                    "modifiers": [],
+                    "name": "rowCounter",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p360000072dQmAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getRecordsToDisplay",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 44
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getCurrentSize",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 48
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPrevSize",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 52
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNextSize",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        }
+    ],
+    "name": "controller_wraper_account",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "display_list",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "current_list",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "next_list",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "previous_list",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 7
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "list_size",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "controller_wraper_account",
+        "references": [],
+        "type": "controller_wraper_account"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "record_counter",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "record_ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "records_added",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "counter",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

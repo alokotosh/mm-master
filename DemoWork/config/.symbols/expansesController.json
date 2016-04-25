@@ -1,0 +1,78 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000005H3V7AAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005H3V7AAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getExpenses",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "saveExpense",
+            "parameters": [
+                {
+                    "name": "expense",
+                    "type": "whosf__Expense__c"
+                }
+            ],
+            "references": [],
+            "returnType": "whosf__Expense__c",
+            "type": null
+        }
+    ],
+    "name": "expansesController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "expansesController",
+        "references": [],
+        "type": "expansesController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "expense",
+            "references": [],
+            "type": "whosf__Expense__c"
+        }
+    ]
+}

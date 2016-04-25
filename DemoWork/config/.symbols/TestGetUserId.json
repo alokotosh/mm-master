@@ -1,0 +1,77 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003xMtYAAU",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003xMtYAAU",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 55
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testIdITQueue",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "TestGetUserId",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 52
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "TestGetUserId",
+        "references": [],
+        "type": "TestGetUserId"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "idOgj",
+            "references": [],
+            "type": "GetUserId"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        }
+    ]
+}

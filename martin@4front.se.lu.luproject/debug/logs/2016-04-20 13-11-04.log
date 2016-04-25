@@ -1,0 +1,1126 @@
+34.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+12:11:00.0 (336565)|EXECUTION_STARTED
+12:11:00.0 (441462)|CODE_UNIT_STARTED|[EXTERNAL]|01p4E0000008wRC|SaveStatus_Test.saveStatusTriggerNegative_test
+12:11:00.0 (749363)|HEAP_ALLOCATE|[72]|Bytes:3
+12:11:00.0 (810844)|HEAP_ALLOCATE|[77]|Bytes:152
+12:11:00.0 (837298)|HEAP_ALLOCATE|[342]|Bytes:408
+12:11:00.0 (864510)|HEAP_ALLOCATE|[355]|Bytes:408
+12:11:00.0 (888465)|HEAP_ALLOCATE|[467]|Bytes:48
+12:11:00.0 (932995)|HEAP_ALLOCATE|[139]|Bytes:6
+12:11:00.0 (958110)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:97
+12:11:00.0 (978311)|METHOD_ENTRY|[2]|01p4E0000008wRC|SaveStatus_Test.SaveStatus_Test()
+12:11:00.0 (983697)|STATEMENT_EXECUTE|[2]
+12:11:00.0 (992839)|STATEMENT_EXECUTE|[2]
+12:11:00.0 (1001452)|METHOD_EXIT|[2]|SaveStatus_Test
+12:11:00.0 (1049166)|HEAP_ALLOCATE|[50]|Bytes:5
+12:11:00.0 (1077356)|HEAP_ALLOCATE|[56]|Bytes:5
+12:11:00.0 (1087812)|HEAP_ALLOCATE|[64]|Bytes:7
+12:11:00.0 (1139668)|STATEMENT_EXECUTE|[29]
+12:11:00.0 (1142955)|STATEMENT_EXECUTE|[31]
+12:11:00.0 (1191921)|HEAP_ALLOCATE|[31]|Bytes:4
+12:11:00.0 (1335761)|VARIABLE_SCOPE_BEGIN|[31]|un|University__c|true|false
+12:11:00.0 (1382609)|VARIABLE_ASSIGNMENT|[31]|un|{}|0x223cfb7b
+12:11:00.0 (1386816)|STATEMENT_EXECUTE|[32]
+12:11:00.0 (1390665)|HEAP_ALLOCATE|[32]|Bytes:15
+12:11:00.0 (1446794)|VARIABLE_ASSIGNMENT|[32]|this.Name|"Test University"|0x223cfb7b
+12:11:00.0 (1450397)|STATEMENT_EXECUTE|[33]
+12:11:00.0 (1454060)|HEAP_ALLOCATE|[33]|Bytes:3
+12:11:00.0 (1487774)|VARIABLE_ASSIGNMENT|[33]|this.Short_name__c|"NTA"|0x223cfb7b
+12:11:00.0 (1491073)|STATEMENT_EXECUTE|[34]
+12:11:00.0 (1547842)|HEAP_ALLOCATE|[34]|Bytes:8
+12:11:00.0 (1564477)|DML_BEGIN|[34]|Op:Insert|Type:University__c|Rows:1
+12:11:00.0 (1588583)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (59566738)|DML_END|[34]
+12:11:00.0 (59604577)|STATEMENT_EXECUTE|[36]
+12:11:00.0 (59657766)|HEAP_ALLOCATE|[36]|Bytes:4
+12:11:00.0 (59764820)|VARIABLE_SCOPE_BEGIN|[36]|account|Account|true|false
+12:11:00.0 (59798075)|VARIABLE_ASSIGNMENT|[36]|account|{}|0x7ca43c5a
+12:11:00.0 (59802900)|STATEMENT_EXECUTE|[37]
+12:11:00.0 (59808445)|HEAP_ALLOCATE|[37]|Bytes:12
+12:11:00.0 (59881503)|VARIABLE_ASSIGNMENT|[37]|this.Name|"Test account"|0x7ca43c5a
+12:11:00.0 (59885410)|STATEMENT_EXECUTE|[38]
+12:11:00.0 (59966725)|VARIABLE_ASSIGNMENT|[38]|this.University__c|"a004E000007aenPQAQ"|0x7ca43c5a
+12:11:00.0 (59970572)|STATEMENT_EXECUTE|[39]
+12:11:00.0 (59974387)|HEAP_ALLOCATE|[39]|Bytes:6
+12:11:00.0 (60025886)|VARIABLE_ASSIGNMENT|[39]|this.Project_Status__c|"Active"|0x7ca43c5a
+12:11:00.0 (60032398)|STATEMENT_EXECUTE|[40]
+12:11:00.0 (60097119)|HEAP_ALLOCATE|[40]|Bytes:8
+12:11:00.0 (60119692)|DML_BEGIN|[40]|Op:Insert|Type:Account|Rows:1
+12:11:00.0 (60152509)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.83 (83729297)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.83 (83772257)|ENTERING_MANAGED_PKG|dupcheck
+12:11:00.83 (629054327)|VARIABLE_SCOPE_BEGIN|[99]|dc3Trigger.disableStore|Map<String,Boolean>|true|true
+12:11:00.83 (629076110)|VARIABLE_SCOPE_BEGIN|[60]|dc3Trigger.identifier|String|false|true
+12:11:00.83 (629087300)|VARIABLE_SCOPE_BEGIN|[61]|dc3Trigger.indexContainer|Map<String,Map<String,Set<String>>>|true|true
+12:11:00.83 (629096743)|VARIABLE_SCOPE_BEGIN|[58]|dc3Trigger.indexMap|Map<Id,Map<String,Set<String>>>|true|true
+12:11:00.83 (629104613)|VARIABLE_SCOPE_BEGIN|[510]|dc3Trigger.startObject|String|false|true
+12:11:00.83 (629209836)|VARIABLE_SCOPE_BEGIN|[36]|dc3Trigger.triggerIds|Set<Id>|true|true
+12:11:00.83 (629245858)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:00.83 (629266122)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:00.83 (629366069)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x4a4061ef
+12:11:00.83 (636782099)|SOQL_EXECUTE_BEGIN|[35]|Aggregations:0|SELECT Id, Name, dupcheck__Value__c FROM dupcheck__dcSettings__c LIMIT 1000
+12:11:00.83 (638659464)|SOQL_EXECUTE_END|[35]|Rows:0
+12:11:00.640 (640238120)|CUMULATIVE_LIMIT_USAGE
+12:11:00.640 (640238120)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.640 (640238120)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.640 (640238120)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (648738350)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:00.0 (648752819)|VARIABLE_SCOPE_BEGIN|[1]|this|CreateCaseID|true|false
+12:11:00.0 (648830266)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x33505177
+12:11:00.0 (648837758)|STATEMENT_EXECUTE|[1]
+12:11:00.0 (648840059)|STATEMENT_EXECUTE|[3]
+12:11:00.0 (648898788)|HEAP_ALLOCATE|[3]|Bytes:4
+12:11:00.0 (648949480)|HEAP_ALLOCATE|[3]|Bytes:4
+12:11:00.0 (648963579)|VARIABLE_ASSIGNMENT|[3]|this.currentYear|2016|0x33505177
+12:11:00.0 (648966593)|STATEMENT_EXECUTE|[4]
+12:11:00.0 (648979379)|VARIABLE_ASSIGNMENT|[4]|this.projName|""|0x33505177
+12:11:00.0 (648981742)|STATEMENT_EXECUTE|[5]
+12:11:00.0 (648989884)|VARIABLE_ASSIGNMENT|[5]|this.folderId|""|0x33505177
+12:11:00.0 (648992049)|STATEMENT_EXECUTE|[6]
+12:11:00.0 (648999947)|VARIABLE_ASSIGNMENT|[6]|this.caseId|""|0x33505177
+12:11:00.0 (649003186)|STATEMENT_EXECUTE|[8]
+12:11:00.0 (649010491)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:00.0 (649014889)|HEAP_ALLOCATE|[8]|Bytes:81
+12:11:00.0 (649019173)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:00.0 (649225946)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Id, Name, Short_Name__c, Project_Count__c, Folder_Id__c FROM University__c
+12:11:00.0 (652124678)|SOQL_EXECUTE_END|[8]|Rows:1
+12:11:00.0 (652142791)|HEAP_ALLOCATE|[8]|Bytes:8
+12:11:00.0 (652163575)|HEAP_ALLOCATE|[8]|Bytes:128
+12:11:00.0 (652198204)|HEAP_ALLOCATE|[8]|Bytes:8
+12:11:00.0 (652267396)|HEAP_ALLOCATE|[8]|Bytes:20
+12:11:00.0 (652278485)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:00.0 (652336967)|VARIABLE_ASSIGNMENT|[8]|this.universitiesMap|{"s":1,"v":{"a004E000007aenPQAQ":{"s":2,"v":{"Id":"a004E000007aenPQAQ","Name":"Test University","Short_name__c":"NTA","Project_Count__c":1}}}}|0x33505177
+12:11:00.0 (652611363)|HEAP_ALLOCATE|[11]|Bytes:5
+12:11:00.0 (652634535)|HEAP_ALLOCATE|[11]|Bytes:4
+12:11:00.0 (652645881)|VARIABLE_SCOPE_BEGIN|[11]|project|Account|true|false
+12:11:00.0 (654178992)|VARIABLE_ASSIGNMENT|[11]|project|{"IsDeleted":false,"OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","Research_Agreement__ (1 more) ...":false,"Prospect__c":false,"slpf__IsActive__c":true,"University__c":"a004E000007aenPQAQ","Project_Status__c":"Active","Name":"Test account","dupcheck__dc3Disable (17 more) ...":false}|0x33ede3d6
+12:11:00.0 (654188200)|STATEMENT_EXECUTE|[11]
+12:11:00.0 (654283921)|STATEMENT_EXECUTE|[13]
+12:11:00.0 (654289471)|STATEMENT_EXECUTE|[14]
+12:11:00.0 (654430624)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:00.0 (654436003)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:00.0 (654494052)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:00.0 (654498232)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:00.0 (654557102)|VARIABLE_ASSIGNMENT|[14]|this.Project_Count__c|2|0x54a38dad
+12:11:00.0 (654561471)|STATEMENT_EXECUTE|[15]
+12:11:00.0 (654642158)|HEAP_ALLOCATE|[15]|Bytes:1
+12:11:00.0 (654677126)|HEAP_ALLOCATE|[15]|Bytes:4
+12:11:00.0 (654743860)|HEAP_ALLOCATE|[16]|Bytes:28
+12:11:00.0 (654762959)|HEAP_ALLOCATE|[16]|Bytes:1
+12:11:00.0 (654783022)|HEAP_ALLOCATE|[15]|Bytes:10
+12:11:00.0 (654799472)|VARIABLE_ASSIGNMENT|[15]|this.caseId|"NTA-2016-2"|0x33505177
+12:11:00.0 (654802746)|STATEMENT_EXECUTE|[17]
+12:11:00.0 (654838677)|VARIABLE_ASSIGNMENT|[17]|this.projName|"Test account"|0x33505177
+12:11:00.0 (654842396)|STATEMENT_EXECUTE|[18]
+12:11:00.0 (654909094)|VARIABLE_ASSIGNMENT|[18]|this.folderId|null|0x33505177
+12:11:00.0 (654913400)|STATEMENT_EXECUTE|[19]
+12:11:00.0 (655534319)|VARIABLE_ASSIGNMENT|[19]|this.Case_Id__c|"NTA-2016-2"|0x33ede3d6
+12:11:00.0 (655539931)|STATEMENT_EXECUTE|[21]
+12:11:00.0 (655591666)|HEAP_ALLOCATE|[21]|Bytes:4
+12:11:00.0 (655702829)|VARIABLE_SCOPE_BEGIN|[21]|ff|idan_dm__Folder__c|true|false
+12:11:00.0 (655717096)|VARIABLE_ASSIGNMENT|[21]|ff|{}|0x25c47b62
+12:11:00.0 (655720255)|STATEMENT_EXECUTE|[22]
+12:11:00.0 (655800726)|VARIABLE_ASSIGNMENT|[22]|this.idan_dm__Title__c|"Test account"|0x25c47b62
+12:11:00.0 (655804814)|STATEMENT_EXECUTE|[23]
+12:11:00.0 (655867119)|VARIABLE_ASSIGNMENT|[23]|this.idan_dm__ParentFolderId__c|null|0x25c47b62
+12:11:00.0 (655870972)|STATEMENT_EXECUTE|[24]
+12:11:00.0 (655908182)|HEAP_ALLOCATE|[24]|Bytes:8
+12:11:00.0 (655930323)|DML_BEGIN|[24]|Op:Insert|Type:idan_dm__Folder__c|Rows:1
+12:11:00.0 (655954221)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (672327230)|DML_END|[24]
+12:11:00.0 (672389272)|HEAP_ALLOCATE|[11]|Bytes:5
+12:11:00.0 (672416096)|VARIABLE_ASSIGNMENT|[11]|project|null|
+12:11:00.0 (672487562)|STATEMENT_EXECUTE|[29]
+12:11:00.0 (672490642)|STATEMENT_EXECUTE|[30]
+12:11:00.0 (672544305)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (672564160)|HEAP_ALLOCATE|[30]|Bytes:135
+12:11:00.0 (672636634)|DML_BEGIN|[30]|Op:Update|Type:University__c|Rows:1
+12:11:00.0 (672661178)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (689337278)|DML_END|[30]
+12:11:00.0 (689506156)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.689 (689544720)|CUMULATIVE_LIMIT_USAGE
+12:11:00.689 (689544720)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.689 (689544720)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.689 (689544720)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (690842186)|CODE_UNIT_FINISHED|CreateCaseID on Account trigger event BeforeInsert for [new]
+12:11:00.767 (767728201)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.767 (767805739)|ENTERING_MANAGED_PKG|dupcheck
+12:11:00.767 (767888213)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:00.767 (767903126)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:00.767 (767983016)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x63ebee71
+12:11:00.768 (768609029)|CUMULATIVE_LIMIT_USAGE
+12:11:00.768 (768609029)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.768 (768609029)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.768 (768609029)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (770622559)|DML_END|[40]
+12:11:00.0 (770649444)|STATEMENT_EXECUTE|[41]
+12:11:00.0 (770777085)|STATEMENT_EXECUTE|[43]
+12:11:00.0 (770784833)|HEAP_ALLOCATE|[43]|Bytes:75
+12:11:00.0 (770798411)|HEAP_ALLOCATE|[43]|Bytes:4
+12:11:00.0 (771180516)|SOQL_EXECUTE_BEGIN|[43]|Aggregations:0|SELECT Id, Name, Project_Status__c FROM Account WHERE Name = 'Test account'
+12:11:00.0 (792444819)|SOQL_EXECUTE_END|[43]|Rows:1
+12:11:00.0 (792468536)|HEAP_ALLOCATE|[43]|Bytes:8
+12:11:00.0 (792487646)|HEAP_ALLOCATE|[43]|Bytes:76
+12:11:00.0 (792509472)|HEAP_ALLOCATE|[43]|Bytes:8
+12:11:00.0 (792522128)|HEAP_ALLOCATE|[43]|Bytes:33
+12:11:00.0 (792565758)|HEAP_ALLOCATE|[43]|Bytes:16
+12:11:00.0 (792579401)|VARIABLE_SCOPE_BEGIN|[43]|acc|Account|true|false
+12:11:00.0 (792612986)|VARIABLE_ASSIGNMENT|[43]|acc|{"s":1,"v":{"Id":"0014E000003NPadQAG","Name":"Test account","Project_Status__c":"Active"}}|0x7105e46b
+12:11:00.0 (792617596)|STATEMENT_EXECUTE|[44]
+12:11:00.0 (792621921)|HEAP_ALLOCATE|[44]|Bytes:19
+12:11:00.0 (792680107)|VARIABLE_ASSIGNMENT|[44]|this.Project_Status__c|"External proceeding"|0x7105e46b
+12:11:00.0 (792684031)|STATEMENT_EXECUTE|[45]
+12:11:00.0 (792738042)|HEAP_ALLOCATE|[45]|Bytes:4
+12:11:00.0 (792762321)|VARIABLE_SCOPE_BEGIN|[45]|phaseDate|Date|false|false
+12:11:00.0 (792799884)|VARIABLE_ASSIGNMENT|[45]|phaseDate|"2016-04-20T00:00:00.000Z"
+12:11:00.0 (792804042)|STATEMENT_EXECUTE|[46]
+12:11:00.0 (792845337)|HEAP_ALLOCATE|[46]|Bytes:8
+12:11:00.0 (792861015)|DML_BEGIN|[46]|Op:Update|Type:Account|Rows:1
+12:11:00.0 (792880471)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.801 (801420028)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.801 (801453269)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.801 (801480135)|ENTERING_MANAGED_PKG|dupcheck
+12:11:00.801 (801527035)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:00.801 (801534362)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:00.801 (801586904)|VARIABLE_ASSIGNMENT|[1]|this|{}|0xf018eda
+12:11:00.802 (802207250)|CUMULATIVE_LIMIT_USAGE
+12:11:00.802 (802207250)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.802 (802207250)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.802 (802207250)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (809121583)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:00.0 (809133185)|VARIABLE_SCOPE_BEGIN|[1]|this|savePhaseDate|true|false
+12:11:00.0 (809167537)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x31bbffcf
+12:11:00.0 (809173304)|STATEMENT_EXECUTE|[1]
+12:11:00.0 (809175052)|STATEMENT_EXECUTE|[3]
+12:11:00.0 (809194589)|VARIABLE_ASSIGNMENT|[3]|this.startField|null|0x31bbffcf
+12:11:00.0 (809197435)|STATEMENT_EXECUTE|[4]
+12:11:00.0 (809206843)|VARIABLE_ASSIGNMENT|[4]|this.endField|null|0x31bbffcf
+12:11:00.0 (809209195)|STATEMENT_EXECUTE|[5]
+12:11:00.0 (809216750)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:00.0 (809262370)|HEAP_ALLOCATE|[5]|Bytes:7
+12:11:00.0 (809273244)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:00.0 (809278166)|HEAP_ALLOCATE|[5]|Bytes:12
+12:11:00.0 (809282465)|HEAP_ALLOCATE|[5]|Bytes:11
+12:11:00.0 (809286328)|HEAP_ALLOCATE|[5]|Bytes:10
+12:11:00.0 (809290297)|HEAP_ALLOCATE|[5]|Bytes:7
+12:11:00.0 (809332880)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+12:11:00.0 (809362742)|VARIABLE_ASSIGNMENT|[5]|this.phaseList|{"s":1,"v":"List of size 6 too large to display"}|0x31bbffcf
+12:11:00.0 (809366952)|STATEMENT_EXECUTE|[6]
+12:11:00.0 (809395093)|HEAP_ALLOCATE|[6]|Bytes:4
+12:11:00.0 (810219921)|VARIABLE_ASSIGNMENT|[6]|this.projectNew|{"LastModifiedDate":"2016-04-20T10:11:01.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenPQAQ","SystemModstamp":"2016-04-20T10:11:01.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:01.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPadQAG","slpf__IsActive__c":true,"Project_Status__c":"External proceeding","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x31bbffcf
+12:11:00.0 (810230248)|STATEMENT_EXECUTE|[7]
+12:11:00.0 (811164677)|VARIABLE_ASSIGNMENT|[7]|this.projectOld|{"LastModifiedDate":"2016-04-20T10:11:01.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenPQAQ","SystemModstamp":"2016-04-20T10:11:01.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:01.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPadQAG","slpf__IsActive__c":true,"Project_Status__c":"Active","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x31bbffcf
+12:11:00.0 (811175146)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811183835)|VARIABLE_SCOPE_BEGIN|[9]|i|Integer|false|false
+12:11:00.0 (811189820)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811196663)|VARIABLE_ASSIGNMENT|[9]|i|0
+12:11:00.0 (811255655)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811297149)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:00.0 (811328749)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811346641)|HEAP_ALLOCATE|[11]|Bytes:7
+12:11:00.0 (811367223)|STATEMENT_EXECUTE|[11]
+12:11:00.0 (811371263)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811379318)|VARIABLE_ASSIGNMENT|[9]|i|1
+12:11:00.0 (811398066)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811409300)|HEAP_ALLOCATE|[10]|Bytes:4
+12:11:00.0 (811418415)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811420978)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811426789)|VARIABLE_ASSIGNMENT|[9]|i|2
+12:11:00.0 (811441217)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811451052)|HEAP_ALLOCATE|[10]|Bytes:12
+12:11:00.0 (811459415)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811461745)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811467272)|VARIABLE_ASSIGNMENT|[9]|i|3
+12:11:00.0 (811480665)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811490302)|HEAP_ALLOCATE|[10]|Bytes:11
+12:11:00.0 (811498924)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811501255)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811506349)|VARIABLE_ASSIGNMENT|[9]|i|4
+12:11:00.0 (811519857)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811546667)|HEAP_ALLOCATE|[10]|Bytes:10
+12:11:00.0 (811565565)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811570918)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811581222)|VARIABLE_ASSIGNMENT|[9]|i|5
+12:11:00.0 (811601039)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (811612334)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:00.0 (811621446)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (811623860)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (811629510)|VARIABLE_ASSIGNMENT|[9]|i|6
+12:11:00.811 (811650866)|CUMULATIVE_LIMIT_USAGE
+12:11:00.811 (811650866)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.811 (811650866)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.811 (811650866)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (812979676)|CODE_UNIT_FINISHED|savePhaseDate on Account trigger event BeforeUpdate for [0014E000003NPad]
+12:11:00.0 (818060064)|CODE_UNIT_STARTED|[EXTERNAL]|01q4E0000008SMb|saveStatusDate on Account trigger event BeforeUpdate for [0014E000003NPad]
+12:11:00.0 (818078405)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (818085587)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:00.0 (818183486)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:11
+12:11:00.0 (818205895)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:00.0 (818217765)|VARIABLE_SCOPE_BEGIN|[1]|this|saveStatusDate|true|false
+12:11:00.0 (818249981)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x47305836
+12:11:00.0 (818309613)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:00.0 (818318698)|VARIABLE_SCOPE_BEGIN|[1]|this|saveStatusDate|true|false
+12:11:00.0 (818342486)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x47305836
+12:11:00.0 (818347822)|STATEMENT_EXECUTE|[1]
+12:11:00.0 (818349603)|STATEMENT_EXECUTE|[3]
+12:11:00.0 (818371240)|VARIABLE_ASSIGNMENT|[3]|this.startField|null|0x47305836
+12:11:00.0 (818374281)|STATEMENT_EXECUTE|[4]
+12:11:00.0 (818384150)|VARIABLE_ASSIGNMENT|[4]|this.endField|null|0x47305836
+12:11:00.0 (818386522)|STATEMENT_EXECUTE|[5]
+12:11:00.0 (818391478)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:00.0 (818443253)|HEAP_ALLOCATE|[5]|Bytes:7
+12:11:00.0 (818483571)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+12:11:00.0 (818510194)|VARIABLE_ASSIGNMENT|[5]|this.statusList|{"s":1,"v":["Active","Pending","External proceeding"]}|0x47305836
+12:11:00.0 (818516753)|STATEMENT_EXECUTE|[6]
+12:11:00.0 (818547256)|HEAP_ALLOCATE|[6]|Bytes:4
+12:11:00.0 (819413143)|VARIABLE_ASSIGNMENT|[6]|this.projectNew|{"LastModifiedDate":"2016-04-20T10:11:01.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenPQAQ","SystemModstamp":"2016-04-20T10:11:01.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:01.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPadQAG","slpf__IsActive__c":true,"Project_Status__c":"External proceeding","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x47305836
+12:11:00.0 (819424218)|STATEMENT_EXECUTE|[7]
+12:11:00.0 (820112032)|VARIABLE_ASSIGNMENT|[7]|this.projectOld|{"LastModifiedDate":"2016-04-20T10:11:01.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenPQAQ","SystemModstamp":"2016-04-20T10:11:01.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:01.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPadQAG","slpf__IsActive__c":true,"Project_Status__c":"Active","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x47305836
+12:11:00.0 (820121896)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (820127574)|VARIABLE_SCOPE_BEGIN|[9]|i|Integer|false|false
+12:11:00.0 (820131855)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (820138534)|VARIABLE_ASSIGNMENT|[9]|i|0
+12:11:00.0 (820191929)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (820228170)|HEAP_ALLOCATE|[10]|Bytes:6
+12:11:00.0 (820246097)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (820249471)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (820256997)|VARIABLE_ASSIGNMENT|[9]|i|1
+12:11:00.0 (820275772)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (820287075)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:00.0 (820296252)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (820298684)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (820304581)|VARIABLE_ASSIGNMENT|[9]|i|2
+12:11:00.0 (820319310)|STATEMENT_EXECUTE|[9]
+12:11:00.0 (820329159)|HEAP_ALLOCATE|[10]|Bytes:19
+12:11:00.0 (820344709)|STATEMENT_EXECUTE|[10]
+12:11:00.0 (820363743)|HEAP_ALLOCATE|[11]|Bytes:19
+12:11:00.0 (820374369)|STATEMENT_EXECUTE|[11]
+12:11:00.0 (820381955)|HEAP_ALLOCATE|[12]|Bytes:19
+12:11:00.0 (820396236)|STATEMENT_EXECUTE|[12]
+12:11:00.0 (820400839)|STATEMENT_EXECUTE|[13]
+12:11:00.0 (820404124)|HEAP_ALLOCATE|[13]|Bytes:33
+12:11:00.0 (820419998)|VARIABLE_ASSIGNMENT|[13]|this.startField|"External_Proceeding_ (13 more) ..."|0x47305836
+12:11:00.0 (820423001)|STATEMENT_EXECUTE|[14]
+12:11:00.0 (820425754)|HEAP_ALLOCATE|[14]|Bytes:31
+12:11:00.0 (820437378)|VARIABLE_ASSIGNMENT|[14]|this.endField|"External_Proceeding_ (11 more) ..."|0x47305836
+12:11:00.0 (820440749)|STATEMENT_EXECUTE|[21]
+12:11:00.0 (820442012)|STATEMENT_EXECUTE|[21]
+12:11:00.0 (820443114)|STATEMENT_EXECUTE|[22]
+12:11:00.0 (820489637)|HEAP_ALLOCATE|[22]|Bytes:4
+12:11:00.0 (820563745)|EXCEPTION_THROWN|[22]|System.SObjectException: Invalid field External_Proceeding_Start_Date__c for Account
+12:11:00.0 (820695901)|HEAP_ALLOCATE|[22]|Bytes:63
+12:11:00.0 (820759767)|VARIABLE_SCOPE_BEGIN|[24]|e|Exception|true|false
+12:11:00.0 (820877841)|VARIABLE_ASSIGNMENT|[24]|e|"common.apex.runtime.impl.ExecutionException: Invalid field External_Proceeding_Start_Date__c for Account"|0x17ea17ee
+12:11:00.0 (820885569)|STATEMENT_EXECUTE|[24]
+12:11:00.0 (820888027)|STATEMENT_EXECUTE|[25]
+12:11:00.0 (820909031)|HEAP_ALLOCATE|[25]|Bytes:82
+12:11:00.0 (820930140)|HEAP_ALLOCATE|[25]|Bytes:115
+12:11:00.0 (821378892)|VF_PAGE_MESSAGE|External_Proceeding_Start_Date__c API does not exist. Please, create it and then try to change Project Status again
+12:11:00.0 (821406807)|STATEMENT_EXECUTE|[26]
+12:11:00.0 (821472516)|HEAP_ALLOCATE|[26]|Bytes:59
+12:11:00.0 (821513275)|USER_DEBUG|[26]|DEBUG|Invalid field External_Proceeding_Start_Date__c for Account
+12:11:00.0 (821526553)|STATEMENT_EXECUTE|[28]
+12:11:00.0 (821529412)|STATEMENT_EXECUTE|[28]
+12:11:00.0 (821531395)|STATEMENT_EXECUTE|[29]
+12:11:00.0 (821590058)|HEAP_ALLOCATE|[29]|Bytes:4
+12:11:00.0 (821654288)|EXCEPTION_THROWN|[29]|System.SObjectException: Invalid field External_Proceeding_End_Date__c for Account
+12:11:00.0 (821705714)|HEAP_ALLOCATE|[29]|Bytes:61
+12:11:00.0 (821755862)|VARIABLE_SCOPE_BEGIN|[31]|e|Exception|true|false
+12:11:00.0 (821827521)|VARIABLE_ASSIGNMENT|[31]|e|"common.apex.runtime.impl.ExecutionException: Invalid field External_Proceeding_End_Date__c for Account"|0x5d0a54f8
+12:11:00.0 (821835342)|STATEMENT_EXECUTE|[31]
+12:11:00.0 (821837632)|STATEMENT_EXECUTE|[32]
+12:11:00.0 (821862229)|HEAP_ALLOCATE|[32]|Bytes:113
+12:11:00.0 (822282844)|VF_PAGE_MESSAGE|External_Proceeding_End_Date__c API does not exist. Please, create it and then try to change Project Status again
+12:11:00.0 (822307870)|STATEMENT_EXECUTE|[33]
+12:11:00.0 (822368993)|HEAP_ALLOCATE|[33]|Bytes:57
+12:11:00.0 (822396421)|USER_DEBUG|[33]|DEBUG|Invalid field External_Proceeding_End_Date__c for Account
+12:11:00.0 (822407035)|STATEMENT_EXECUTE|[36]
+12:11:00.0 (822413601)|HEAP_ALLOCATE|[36]|Bytes:15
+12:11:00.0 (822432704)|HEAP_ALLOCATE|[36]|Bytes:48
+12:11:00.0 (822474251)|USER_DEBUG|[36]|DEBUG|!!!Start Date: External_Proceeding_Start_Date__c
+12:11:00.0 (822483263)|STATEMENT_EXECUTE|[37]
+12:11:00.0 (822487742)|HEAP_ALLOCATE|[37]|Bytes:13
+12:11:00.0 (822499850)|HEAP_ALLOCATE|[37]|Bytes:44
+12:11:00.0 (822528630)|USER_DEBUG|[37]|DEBUG|!!!End Date: External_Proceeding_End_Date__c
+12:11:00.0 (822537500)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:00.0 (822545876)|VARIABLE_ASSIGNMENT|[9]|i|3
+12:11:00.822 (822576513)|CUMULATIVE_LIMIT_USAGE
+12:11:00.822 (822576513)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.822 (822576513)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.822 (822576513)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (823552535)|CODE_UNIT_FINISHED|saveStatusDate on Account trigger event BeforeUpdate for [0014E000003NPad]
+12:11:00.0 (824709065)|DML_END|[46]
+12:11:00.0 (824825544)|EXCEPTION_THROWN|[46]|System.DmlException: Update failed. First exception on row 0 with id 0014E000003NPadQAG; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, External_Proceeding_End_Date__c API does not exist. Please, create it and then try to change Project Status again: []
+12:11:00.0 (825158535)|HEAP_ALLOCATE|[46]|Bytes:237
+12:11:00.0 (825220639)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id 0014E000003NPadQAG; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, External_Proceeding_End_Date__c API does not exist. Please, create it and then try to change Project Status again: []
+
+Class.SaveStatus_Test.saveStatusTriggerNegative_test: line 46, column 1
+12:11:00.0 (825234466)|FATAL_ERROR|System.DmlException: Update failed. First exception on row 0 with id 0014E000003NPadQAG; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, External_Proceeding_End_Date__c API does not exist. Please, create it and then try to change Project Status again: []
+
+Class.SaveStatus_Test.saveStatusTriggerNegative_test: line 46, column 1
+12:11:00.825 (825242528)|CUMULATIVE_LIMIT_USAGE
+12:11:00.825 (825242528)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.825 (825242528)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:00.825 (825242528)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:00.0 (825302189)|CODE_UNIT_FINISHED|SaveStatus_Test.saveStatusTriggerNegative_test
+12:11:00.0 (826164757)|EXECUTION_FINISHED
+12:11:01.918 (1918200405)|EXECUTION_STARTED
+12:11:01.918 (1918219363)|CODE_UNIT_STARTED|[EXTERNAL]|01p4E0000008wRC|SaveStatus_Test.saveStatusTriggerPositive_test
+12:11:01.918 (1918415284)|HEAP_ALLOCATE|[72]|Bytes:3
+12:11:01.918 (1918463491)|HEAP_ALLOCATE|[77]|Bytes:152
+12:11:01.918 (1918490500)|HEAP_ALLOCATE|[342]|Bytes:408
+12:11:01.918 (1918517895)|HEAP_ALLOCATE|[355]|Bytes:408
+12:11:01.918 (1918541739)|HEAP_ALLOCATE|[467]|Bytes:48
+12:11:01.918 (1918586945)|HEAP_ALLOCATE|[139]|Bytes:6
+12:11:01.918 (1918612547)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:97
+12:11:01.918 (1918632277)|METHOD_ENTRY|[2]|01p4E0000008wRC|SaveStatus_Test.SaveStatus_Test()
+12:11:01.918 (1918638894)|STATEMENT_EXECUTE|[2]
+12:11:01.918 (1918648226)|STATEMENT_EXECUTE|[2]
+12:11:01.918 (1918657121)|METHOD_EXIT|[2]|SaveStatus_Test
+12:11:01.918 (1918687685)|HEAP_ALLOCATE|[50]|Bytes:5
+12:11:01.918 (1918710723)|HEAP_ALLOCATE|[56]|Bytes:5
+12:11:01.918 (1918721257)|HEAP_ALLOCATE|[64]|Bytes:7
+12:11:01.918 (1918763242)|STATEMENT_EXECUTE|[4]
+12:11:01.918 (1918765964)|STATEMENT_EXECUTE|[6]
+12:11:01.918 (1918789774)|HEAP_ALLOCATE|[6]|Bytes:4
+12:11:01.918 (1918820982)|VARIABLE_SCOPE_BEGIN|[6]|un|University__c|true|false
+12:11:01.918 (1918860075)|VARIABLE_ASSIGNMENT|[6]|un|{}|0x5489c3d1
+12:11:01.918 (1918863961)|STATEMENT_EXECUTE|[7]
+12:11:01.918 (1918867788)|HEAP_ALLOCATE|[7]|Bytes:15
+12:11:01.918 (1918922151)|VARIABLE_ASSIGNMENT|[7]|this.Name|"Test University"|0x5489c3d1
+12:11:01.918 (1918926059)|STATEMENT_EXECUTE|[8]
+12:11:01.918 (1918929524)|HEAP_ALLOCATE|[8]|Bytes:3
+12:11:01.918 (1918964652)|VARIABLE_ASSIGNMENT|[8]|this.Short_name__c|"NTA"|0x5489c3d1
+12:11:01.918 (1918968882)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (1919010464)|HEAP_ALLOCATE|[9]|Bytes:8
+12:11:01.918 (1919024228)|DML_BEGIN|[9]|Op:Insert|Type:University__c|Rows:1
+12:11:01.918 (1919044871)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (1935490111)|DML_END|[9]
+12:11:01.918 (1935512980)|STATEMENT_EXECUTE|[11]
+12:11:01.918 (1935532650)|HEAP_ALLOCATE|[11]|Bytes:4
+12:11:01.918 (1935560160)|VARIABLE_SCOPE_BEGIN|[11]|account|Account|true|false
+12:11:01.918 (1935576772)|VARIABLE_ASSIGNMENT|[11]|account|{}|0x1db4e7c9
+12:11:01.918 (1935579916)|STATEMENT_EXECUTE|[12]
+12:11:01.918 (1935584440)|HEAP_ALLOCATE|[12]|Bytes:12
+12:11:01.918 (1935630680)|VARIABLE_ASSIGNMENT|[12]|this.Name|"Test account"|0x1db4e7c9
+12:11:01.918 (1935634510)|STATEMENT_EXECUTE|[13]
+12:11:01.918 (1935685593)|VARIABLE_ASSIGNMENT|[13]|this.University__c|"a004E000007aenQQAQ"|0x1db4e7c9
+12:11:01.918 (1935689321)|STATEMENT_EXECUTE|[14]
+12:11:01.918 (1935693147)|HEAP_ALLOCATE|[14]|Bytes:6
+12:11:01.918 (1935723553)|VARIABLE_ASSIGNMENT|[14]|this.Project_Status__c|"Active"|0x1db4e7c9
+12:11:01.918 (1935727402)|STATEMENT_EXECUTE|[15]
+12:11:01.918 (1935762785)|HEAP_ALLOCATE|[15]|Bytes:8
+12:11:01.918 (1935774382)|DML_BEGIN|[15]|Op:Insert|Type:Account|Rows:1
+12:11:01.918 (1935791969)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.939 (1939262516)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.939 (1939290977)|ENTERING_MANAGED_PKG|dupcheck
+12:11:01.939 (1939350224)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:01.939 (1939362356)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:01.939 (1939417515)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x1f69a1c5
+12:11:01.939 (1941472737)|SOQL_EXECUTE_BEGIN|[35]|Aggregations:0|SELECT Id, Name, dupcheck__Value__c FROM dupcheck__dcSettings__c LIMIT 1000
+12:11:01.939 (1942981152)|SOQL_EXECUTE_END|[35]|Rows:0
+12:11:01.943 (1943619302)|CUMULATIVE_LIMIT_USAGE
+12:11:01.943 (1943619302)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 2 out of 150
+  Number of DML rows: 2 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:01.943 (1943619302)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:01.943 (1943619302)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (1947131789)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:01.918 (1947141195)|VARIABLE_SCOPE_BEGIN|[1]|this|CreateCaseID|true|false
+12:11:01.918 (1947175858)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x28eb103b
+12:11:01.918 (1947181763)|STATEMENT_EXECUTE|[1]
+12:11:01.918 (1947183570)|STATEMENT_EXECUTE|[3]
+12:11:01.918 (1947214788)|HEAP_ALLOCATE|[3]|Bytes:4
+12:11:01.918 (1947263118)|HEAP_ALLOCATE|[3]|Bytes:4
+12:11:01.918 (1947275321)|VARIABLE_ASSIGNMENT|[3]|this.currentYear|2016|0x28eb103b
+12:11:01.918 (1947278454)|STATEMENT_EXECUTE|[4]
+12:11:01.918 (1947289872)|VARIABLE_ASSIGNMENT|[4]|this.projName|""|0x28eb103b
+12:11:01.918 (1947292315)|STATEMENT_EXECUTE|[5]
+12:11:01.918 (1947299784)|VARIABLE_ASSIGNMENT|[5]|this.folderId|""|0x28eb103b
+12:11:01.918 (1947302032)|STATEMENT_EXECUTE|[6]
+12:11:01.918 (1947309297)|VARIABLE_ASSIGNMENT|[6]|this.caseId|""|0x28eb103b
+12:11:01.918 (1947311518)|STATEMENT_EXECUTE|[8]
+12:11:01.918 (1947319561)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:01.918 (1947323607)|HEAP_ALLOCATE|[8]|Bytes:81
+12:11:01.918 (1947327332)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:01.918 (1947525119)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT Id, Name, Short_Name__c, Project_Count__c, Folder_Id__c FROM University__c
+12:11:01.918 (1950012847)|SOQL_EXECUTE_END|[8]|Rows:1
+12:11:01.918 (1950029229)|HEAP_ALLOCATE|[8]|Bytes:8
+12:11:01.918 (1950046928)|HEAP_ALLOCATE|[8]|Bytes:128
+12:11:01.918 (1950067781)|HEAP_ALLOCATE|[8]|Bytes:8
+12:11:01.918 (1950100961)|HEAP_ALLOCATE|[8]|Bytes:20
+12:11:01.918 (1950111213)|HEAP_ALLOCATE|[8]|Bytes:4
+12:11:01.918 (1950165730)|VARIABLE_ASSIGNMENT|[8]|this.universitiesMap|{"s":1,"v":{"a004E000007aenQQAQ":{"s":2,"v":{"Id":"a004E000007aenQQAQ","Name":"Test University","Short_name__c":"NTA","Project_Count__c":1}}}}|0x28eb103b
+12:11:01.918 (1950219043)|HEAP_ALLOCATE|[11]|Bytes:5
+12:11:01.918 (1950237937)|HEAP_ALLOCATE|[11]|Bytes:4
+12:11:01.918 (1950247593)|VARIABLE_SCOPE_BEGIN|[11]|project|Account|true|false
+12:11:01.918 (1951183627)|VARIABLE_ASSIGNMENT|[11]|project|{"IsDeleted":false,"OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","Research_Agreement__ (1 more) ...":false,"Prospect__c":false,"slpf__IsActive__c":true,"University__c":"a004E000007aenQQAQ","Project_Status__c":"Active","Name":"Test account","dupcheck__dc3Disable (17 more) ...":false}|0x3db3a4f5
+12:11:01.918 (1951192156)|STATEMENT_EXECUTE|[11]
+12:11:01.918 (1951229867)|STATEMENT_EXECUTE|[13]
+12:11:01.918 (1951234685)|STATEMENT_EXECUTE|[14]
+12:11:01.918 (1951320710)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:01.918 (1951325653)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:01.918 (1951387551)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:01.918 (1951391811)|HEAP_ALLOCATE|[14]|Bytes:28
+12:11:01.918 (1951449536)|VARIABLE_ASSIGNMENT|[14]|this.Project_Count__c|2|0x4027ad52
+12:11:01.918 (1951453684)|STATEMENT_EXECUTE|[15]
+12:11:01.918 (1951489033)|HEAP_ALLOCATE|[15]|Bytes:1
+12:11:01.918 (1951518844)|HEAP_ALLOCATE|[15]|Bytes:4
+12:11:01.918 (1951557626)|HEAP_ALLOCATE|[16]|Bytes:28
+12:11:01.918 (1951574481)|HEAP_ALLOCATE|[16]|Bytes:1
+12:11:01.918 (1951594211)|HEAP_ALLOCATE|[15]|Bytes:10
+12:11:01.918 (1951611298)|VARIABLE_ASSIGNMENT|[15]|this.caseId|"NTA-2016-2"|0x28eb103b
+12:11:01.918 (1951614593)|STATEMENT_EXECUTE|[17]
+12:11:01.918 (1951632626)|VARIABLE_ASSIGNMENT|[17]|this.projName|"Test account"|0x28eb103b
+12:11:01.918 (1951635576)|STATEMENT_EXECUTE|[18]
+12:11:01.918 (1951669103)|VARIABLE_ASSIGNMENT|[18]|this.folderId|null|0x28eb103b
+12:11:01.918 (1951672558)|STATEMENT_EXECUTE|[19]
+12:11:01.918 (1952275745)|VARIABLE_ASSIGNMENT|[19]|this.Case_Id__c|"NTA-2016-2"|0x3db3a4f5
+12:11:01.918 (1952281395)|STATEMENT_EXECUTE|[21]
+12:11:01.918 (1952303113)|HEAP_ALLOCATE|[21]|Bytes:4
+12:11:01.918 (1952334127)|VARIABLE_SCOPE_BEGIN|[21]|ff|idan_dm__Folder__c|true|false
+12:11:01.918 (1952346906)|VARIABLE_ASSIGNMENT|[21]|ff|{}|0x24987a74
+12:11:01.918 (1952349942)|STATEMENT_EXECUTE|[22]
+12:11:01.918 (1952423415)|VARIABLE_ASSIGNMENT|[22]|this.idan_dm__Title__c|"Test account"|0x24987a74
+12:11:01.918 (1952427569)|STATEMENT_EXECUTE|[23]
+12:11:01.918 (1952487722)|VARIABLE_ASSIGNMENT|[23]|this.idan_dm__ParentFolderId__c|null|0x24987a74
+12:11:01.918 (1952492185)|STATEMENT_EXECUTE|[24]
+12:11:01.918 (1952521679)|HEAP_ALLOCATE|[24]|Bytes:8
+12:11:01.918 (1952542808)|DML_BEGIN|[24]|Op:Insert|Type:idan_dm__Folder__c|Rows:1
+12:11:01.918 (1952561701)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (1966241299)|DML_END|[24]
+12:11:01.918 (1966280595)|HEAP_ALLOCATE|[11]|Bytes:5
+12:11:01.918 (1966300076)|VARIABLE_ASSIGNMENT|[11]|project|null|
+12:11:01.918 (1966330696)|STATEMENT_EXECUTE|[29]
+12:11:01.918 (1966333329)|STATEMENT_EXECUTE|[30]
+12:11:01.918 (1966362706)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (1966378716)|HEAP_ALLOCATE|[30]|Bytes:135
+12:11:01.918 (1966435607)|DML_BEGIN|[30]|Op:Update|Type:University__c|Rows:1
+12:11:01.918 (1966454440)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (1981514040)|DML_END|[30]
+12:11:01.918 (1981546638)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.981 (1981568049)|CUMULATIVE_LIMIT_USAGE
+12:11:01.981 (1981568049)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:01.981 (1981568049)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:01.981 (1981568049)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (1982745921)|CODE_UNIT_FINISHED|CreateCaseID on Account trigger event BeforeInsert for [new]
+12:11:02.18 (2018296525)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.18 (2018336175)|ENTERING_MANAGED_PKG|dupcheck
+12:11:02.18 (2018395535)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:02.18 (2018403833)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:02.18 (2018462528)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5fa01afd
+12:11:02.18 (2018934109)|CUMULATIVE_LIMIT_USAGE
+12:11:02.18 (2018934109)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 4 out of 150
+  Number of DML rows: 4 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.18 (2018934109)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.18 (2018934109)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2020406611)|DML_END|[15]
+12:11:01.918 (2020431324)|STATEMENT_EXECUTE|[16]
+12:11:01.918 (2020527115)|STATEMENT_EXECUTE|[18]
+12:11:01.918 (2020533787)|HEAP_ALLOCATE|[18]|Bytes:75
+12:11:01.918 (2020542067)|HEAP_ALLOCATE|[18]|Bytes:4
+12:11:01.918 (2020921744)|SOQL_EXECUTE_BEGIN|[18]|Aggregations:0|SELECT Id, Name, Project_Status__c FROM Account WHERE Name = 'Test account'
+12:11:01.918 (2035596964)|SOQL_EXECUTE_END|[18]|Rows:1
+12:11:01.918 (2035619520)|HEAP_ALLOCATE|[18]|Bytes:8
+12:11:01.918 (2035637194)|HEAP_ALLOCATE|[18]|Bytes:76
+12:11:01.918 (2035654222)|HEAP_ALLOCATE|[18]|Bytes:8
+12:11:01.918 (2035665246)|HEAP_ALLOCATE|[18]|Bytes:33
+12:11:01.918 (2035697337)|HEAP_ALLOCATE|[18]|Bytes:16
+12:11:01.918 (2035707750)|VARIABLE_SCOPE_BEGIN|[18]|acc|Account|true|false
+12:11:01.918 (2035741150)|VARIABLE_ASSIGNMENT|[18]|acc|{"s":1,"v":{"Id":"0014E000003NPaeQAG","Name":"Test account","Project_Status__c":"Active"}}|0x14a58601
+12:11:01.918 (2035745247)|STATEMENT_EXECUTE|[19]
+12:11:01.918 (2035749003)|HEAP_ALLOCATE|[19]|Bytes:7
+12:11:01.918 (2035793613)|VARIABLE_ASSIGNMENT|[19]|this.Project_Status__c|"Pending"|0x14a58601
+12:11:01.918 (2035797166)|STATEMENT_EXECUTE|[20]
+12:11:01.918 (2035847828)|HEAP_ALLOCATE|[20]|Bytes:4
+12:11:01.918 (2035866685)|VARIABLE_SCOPE_BEGIN|[20]|phaseDate|Date|false|false
+12:11:01.918 (2035913044)|VARIABLE_ASSIGNMENT|[20]|phaseDate|"2016-04-20T00:00:00.000Z"
+12:11:01.918 (2035917006)|STATEMENT_EXECUTE|[21]
+12:11:01.918 (2035957249)|HEAP_ALLOCATE|[21]|Bytes:8
+12:11:01.918 (2035971179)|DML_BEGIN|[21]|Op:Update|Type:Account|Rows:1
+12:11:01.918 (2035990441)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.44 (2044070578)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.44 (2044099054)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.44 (2044125466)|ENTERING_MANAGED_PKG|dupcheck
+12:11:02.44 (2044163128)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:02.44 (2044169673)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:02.44 (2044213015)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x72b863bd
+12:11:02.44 (2044693614)|CUMULATIVE_LIMIT_USAGE
+12:11:02.44 (2044693614)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.44 (2044693614)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.44 (2044693614)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2048475342)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:01.918 (2048483775)|VARIABLE_SCOPE_BEGIN|[1]|this|savePhaseDate|true|false
+12:11:01.918 (2048513805)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x9588cec
+12:11:01.918 (2048519333)|STATEMENT_EXECUTE|[1]
+12:11:01.918 (2048521628)|STATEMENT_EXECUTE|[3]
+12:11:01.918 (2048540023)|VARIABLE_ASSIGNMENT|[3]|this.startField|null|0x9588cec
+12:11:01.918 (2048542832)|STATEMENT_EXECUTE|[4]
+12:11:01.918 (2048551927)|VARIABLE_ASSIGNMENT|[4]|this.endField|null|0x9588cec
+12:11:01.918 (2048554235)|STATEMENT_EXECUTE|[5]
+12:11:01.918 (2048562075)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:01.918 (2048583750)|HEAP_ALLOCATE|[5]|Bytes:7
+12:11:01.918 (2048591818)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:01.918 (2048596459)|HEAP_ALLOCATE|[5]|Bytes:12
+12:11:01.918 (2048601183)|HEAP_ALLOCATE|[5]|Bytes:11
+12:11:01.918 (2048605827)|HEAP_ALLOCATE|[5]|Bytes:10
+12:11:01.918 (2048609960)|HEAP_ALLOCATE|[5]|Bytes:7
+12:11:01.918 (2048634279)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:28
+12:11:01.918 (2048657339)|VARIABLE_ASSIGNMENT|[5]|this.phaseList|{"s":1,"v":"List of size 6 too large to display"}|0x9588cec
+12:11:01.918 (2048661048)|STATEMENT_EXECUTE|[6]
+12:11:01.918 (2048683909)|HEAP_ALLOCATE|[6]|Bytes:4
+12:11:01.918 (2049577584)|VARIABLE_ASSIGNMENT|[6]|this.projectNew|{"LastModifiedDate":"2016-04-20T10:11:02.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenQQAQ","SystemModstamp":"2016-04-20T10:11:02.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:02.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPaeQAG","slpf__IsActive__c":true,"Project_Status__c":"Pending","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x9588cec
+12:11:01.918 (2049588209)|STATEMENT_EXECUTE|[7]
+12:11:01.918 (2050331829)|VARIABLE_ASSIGNMENT|[7]|this.projectOld|{"LastModifiedDate":"2016-04-20T10:11:02.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenQQAQ","SystemModstamp":"2016-04-20T10:11:02.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:02.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPaeQAG","slpf__IsActive__c":true,"Project_Status__c":"Active","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x9588cec
+12:11:01.918 (2050341657)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050349467)|VARIABLE_SCOPE_BEGIN|[9]|i|Integer|false|false
+12:11:01.918 (2050358435)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050364877)|VARIABLE_ASSIGNMENT|[9]|i|0
+12:11:01.918 (2050391718)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050409826)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:01.918 (2050432781)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050450617)|HEAP_ALLOCATE|[11]|Bytes:7
+12:11:01.918 (2050466173)|STATEMENT_EXECUTE|[11]
+12:11:01.918 (2050469796)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050476648)|VARIABLE_ASSIGNMENT|[9]|i|1
+12:11:01.918 (2050493370)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050503955)|HEAP_ALLOCATE|[10]|Bytes:4
+12:11:01.918 (2050512674)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050515433)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050521178)|VARIABLE_ASSIGNMENT|[9]|i|2
+12:11:01.918 (2050536445)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050546109)|HEAP_ALLOCATE|[10]|Bytes:12
+12:11:01.918 (2050554364)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050556895)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050562268)|VARIABLE_ASSIGNMENT|[9]|i|3
+12:11:01.918 (2050575860)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050585148)|HEAP_ALLOCATE|[10]|Bytes:11
+12:11:01.918 (2050593018)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050595386)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050600522)|VARIABLE_ASSIGNMENT|[9]|i|4
+12:11:01.918 (2050613652)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050623023)|HEAP_ALLOCATE|[10]|Bytes:10
+12:11:01.918 (2050632413)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050634811)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050640282)|VARIABLE_ASSIGNMENT|[9]|i|5
+12:11:01.918 (2050653747)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2050663229)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:01.918 (2050670885)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2050673201)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2050678617)|VARIABLE_ASSIGNMENT|[9]|i|6
+12:11:02.50 (2050699439)|CUMULATIVE_LIMIT_USAGE
+12:11:02.50 (2050699439)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.50 (2050699439)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.50 (2050699439)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2051683725)|CODE_UNIT_FINISHED|savePhaseDate on Account trigger event BeforeUpdate for [0014E000003NPae]
+12:11:01.918 (2054101361)|CODE_UNIT_STARTED|[EXTERNAL]|01q4E0000008SMb|saveStatusDate on Account trigger event BeforeUpdate for [0014E000003NPae]
+12:11:01.918 (2054118389)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (2054124608)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:01.918 (2054178523)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:11
+12:11:01.918 (2054190468)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:01.918 (2054195117)|VARIABLE_SCOPE_BEGIN|[1]|this|saveStatusDate|true|false
+12:11:01.918 (2054222505)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2f52a7e0
+12:11:01.918 (2054260837)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:24
+12:11:01.918 (2054267132)|VARIABLE_SCOPE_BEGIN|[1]|this|saveStatusDate|true|false
+12:11:01.918 (2054288892)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x2f52a7e0
+12:11:01.918 (2054294475)|STATEMENT_EXECUTE|[1]
+12:11:01.918 (2054296097)|STATEMENT_EXECUTE|[3]
+12:11:01.918 (2054312749)|VARIABLE_ASSIGNMENT|[3]|this.startField|null|0x2f52a7e0
+12:11:01.918 (2054315552)|STATEMENT_EXECUTE|[4]
+12:11:01.918 (2054324877)|VARIABLE_ASSIGNMENT|[4]|this.endField|null|0x2f52a7e0
+12:11:01.918 (2054327183)|STATEMENT_EXECUTE|[5]
+12:11:01.918 (2054332264)|HEAP_ALLOCATE|[5]|Bytes:4
+12:11:01.918 (2054361316)|HEAP_ALLOCATE|[5]|Bytes:19
+12:11:01.918 (2054385306)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:16
+12:11:01.918 (2054403559)|VARIABLE_ASSIGNMENT|[5]|this.statusList|{"s":1,"v":["Active","Pending","External proceeding"]}|0x2f52a7e0
+12:11:01.918 (2054407242)|STATEMENT_EXECUTE|[6]
+12:11:01.918 (2054429459)|HEAP_ALLOCATE|[6]|Bytes:4
+12:11:01.918 (2055046665)|VARIABLE_ASSIGNMENT|[6]|this.projectNew|{"LastModifiedDate":"2016-04-20T10:11:02.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenQQAQ","SystemModstamp":"2016-04-20T10:11:02.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:02.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPaeQAG","slpf__IsActive__c":true,"Project_Status__c":"Pending","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x2f52a7e0
+12:11:01.918 (2055055563)|STATEMENT_EXECUTE|[7]
+12:11:01.918 (2055670742)|VARIABLE_ASSIGNMENT|[7]|this.projectOld|{"LastModifiedDate":"2016-04-20T10:11:02.000Z","IsDeleted":false,"Case_Id__c":"NTA-2016-2","Prospect__c":false,"University__c":"a004E000007aenQQAQ","SystemModstamp":"2016-04-20T10:11:02.000Z","Name":"Test account","CreatedById":"00558000000LPqZAAW","OwnerId":"00558000000LPqZAAW","Project_Phase__c":"Contact","CreatedDate":"2016-04-20T10:11:02.000Z","Research_Agreement__ (1 more) ...":false,"Id":"0014E000003NPaeQAG","slpf__IsActive__c":true,"Project_Status__c":"Active","LastModifiedById":"00558000000LPqZAAW","dupcheck__dc3Disable (17 more) ...":false}|0x2f52a7e0
+12:11:01.918 (2055679894)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2055684991)|VARIABLE_SCOPE_BEGIN|[9]|i|Integer|false|false
+12:11:01.918 (2055688836)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2055694972)|VARIABLE_ASSIGNMENT|[9]|i|0
+12:11:01.918 (2055722623)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2055739317)|HEAP_ALLOCATE|[10]|Bytes:6
+12:11:01.918 (2055755442)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2055758662)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2055765634)|VARIABLE_ASSIGNMENT|[9]|i|1
+12:11:01.918 (2055782298)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2055792686)|HEAP_ALLOCATE|[10]|Bytes:7
+12:11:01.918 (2055803440)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2055817355)|HEAP_ALLOCATE|[11]|Bytes:7
+12:11:01.918 (2055827144)|STATEMENT_EXECUTE|[11]
+12:11:01.918 (2055834651)|HEAP_ALLOCATE|[12]|Bytes:7
+12:11:01.918 (2055843944)|STATEMENT_EXECUTE|[16]
+12:11:01.918 (2055845602)|STATEMENT_EXECUTE|[17]
+12:11:01.918 (2055853043)|HEAP_ALLOCATE|[17]|Bytes:7
+12:11:01.918 (2055857815)|HEAP_ALLOCATE|[17]|Bytes:14
+12:11:01.918 (2055868827)|HEAP_ALLOCATE|[17]|Bytes:21
+12:11:01.918 (2055884266)|VARIABLE_ASSIGNMENT|[17]|this.startField|"Pending_Start_Date__ (1 more) ..."|0x2f52a7e0
+12:11:01.918 (2055887677)|STATEMENT_EXECUTE|[18]
+12:11:01.918 (2055950042)|HEAP_ALLOCATE|[18]|Bytes:6
+12:11:01.918 (2055965218)|HEAP_ALLOCATE|[18]|Bytes:12
+12:11:01.918 (2055972091)|HEAP_ALLOCATE|[18]|Bytes:18
+12:11:01.918 (2055988113)|VARIABLE_ASSIGNMENT|[18]|this.endField|"Active_End_Date__c"|0x2f52a7e0
+12:11:01.918 (2055991893)|STATEMENT_EXECUTE|[21]
+12:11:01.918 (2055993149)|STATEMENT_EXECUTE|[21]
+12:11:01.918 (2055994289)|STATEMENT_EXECUTE|[22]
+12:11:01.918 (2056019445)|HEAP_ALLOCATE|[22]|Bytes:4
+12:11:01.918 (2056098739)|STATEMENT_EXECUTE|[28]
+12:11:01.918 (2056101496)|STATEMENT_EXECUTE|[28]
+12:11:01.918 (2056102634)|STATEMENT_EXECUTE|[29]
+12:11:01.918 (2056126009)|HEAP_ALLOCATE|[29]|Bytes:4
+12:11:01.918 (2056182238)|STATEMENT_EXECUTE|[36]
+12:11:01.918 (2056187226)|HEAP_ALLOCATE|[36]|Bytes:15
+12:11:01.918 (2056199885)|HEAP_ALLOCATE|[36]|Bytes:36
+12:11:01.918 (2056222030)|USER_DEBUG|[36]|DEBUG|!!!Start Date: Pending_Start_Date__c
+12:11:01.918 (2056229047)|STATEMENT_EXECUTE|[37]
+12:11:01.918 (2056232505)|HEAP_ALLOCATE|[37]|Bytes:13
+12:11:01.918 (2056241742)|HEAP_ALLOCATE|[37]|Bytes:31
+12:11:01.918 (2056252719)|USER_DEBUG|[37]|DEBUG|!!!End Date: Active_End_Date__c
+12:11:01.918 (2056259377)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2056266776)|VARIABLE_ASSIGNMENT|[9]|i|2
+12:11:01.918 (2056283395)|STATEMENT_EXECUTE|[9]
+12:11:01.918 (2056294626)|HEAP_ALLOCATE|[10]|Bytes:19
+12:11:01.918 (2056304402)|STATEMENT_EXECUTE|[10]
+12:11:01.918 (2056306908)|HEAP_ALLOCATE|[9]|Bytes:4
+12:11:01.918 (2056312703)|VARIABLE_ASSIGNMENT|[9]|i|3
+12:11:02.56 (2056334015)|CUMULATIVE_LIMIT_USAGE
+12:11:02.56 (2056334015)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.56 (2056334015)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.56 (2056334015)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2057814096)|CODE_UNIT_FINISHED|saveStatusDate on Account trigger event BeforeUpdate for [0014E000003NPae]
+12:11:02.80 (2080099215)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.80 (2080144440)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:11:02.80 (2080187679)|ENTERING_MANAGED_PKG|dupcheck
+12:11:02.80 (2080255244)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+12:11:02.80 (2080267828)|VARIABLE_SCOPE_BEGIN|[1]|this|dupcheck.dc3AccountTrigger|true|false
+12:11:02.80 (2080339555)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x3e94f20a
+12:11:02.81 (2081021004)|CUMULATIVE_LIMIT_USAGE
+12:11:02.81 (2081021004)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 2 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.81 (2081021004)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.81 (2081021004)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2082462950)|DML_END|[21]
+12:11:01.918 (2082484465)|STATEMENT_EXECUTE|[23]
+12:11:01.918 (2082495222)|HEAP_ALLOCATE|[23]|Bytes:99
+12:11:01.918 (2082505009)|HEAP_ALLOCATE|[23]|Bytes:4
+12:11:01.918 (2082803234)|SOQL_EXECUTE_BEGIN|[23]|Aggregations:0|SELECT Id, Name, Active_End_Date__c, Pending_Start_Date__c FROM Account WHERE Name = 'Test account'
+12:11:01.918 (2096647192)|SOQL_EXECUTE_END|[23]|Rows:1
+12:11:01.918 (2096665089)|HEAP_ALLOCATE|[23]|Bytes:8
+12:11:01.918 (2096682363)|HEAP_ALLOCATE|[23]|Bytes:104
+12:11:01.918 (2096697644)|HEAP_ALLOCATE|[23]|Bytes:8
+12:11:01.918 (2096736127)|HEAP_ALLOCATE|[23]|Bytes:20
+12:11:01.918 (2096747226)|VARIABLE_SCOPE_BEGIN|[23]|acc1|Account|true|false
+12:11:01.918 (2096823458)|VARIABLE_ASSIGNMENT|[23]|acc1|{"s":1,"v":{"Id":"0014E000003NPaeQAG","Name":"Test account","Active_End_Date__c":"2016-04-20T00:00:00.000Z","Pending_Start_Date__ (1 more) ...":"2016-04-20T00:00:00.000Z"}}|0x3f32bbab
+12:11:01.918 (2096828913)|STATEMENT_EXECUTE|[24]
+12:11:01.918 (2096924039)|STATEMENT_EXECUTE|[25]
+12:11:02.96 (2096997367)|CUMULATIVE_LIMIT_USAGE
+12:11:02.96 (2096997367)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 3 out of 100
+  Number of query rows: 3 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 5 out of 150
+  Number of DML rows: 5 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.96 (2096997367)|LIMIT_USAGE_FOR_NS|dupcheck|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:11:02.96 (2096997367)|CUMULATIVE_LIMIT_USAGE_END
+
+12:11:01.918 (2097059591)|CODE_UNIT_FINISHED|SaveStatus_Test.saveStatusTriggerPositive_test
+12:11:01.918 (2097948970)|EXECUTION_FINISHED

@@ -1,0 +1,158 @@
+<apex:page standardController="Account"  showHeader="false" sidebar="false" standardStylesheets="true"  extensions="AccountControllerExtension"  docType="html-5.0"
+      tabStyle="account" >
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <style>
+     
+      .activeTab {    
+  background-color: #EDEDED;
+  color: #54698d;
+  background-image:none;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+     }
+      .inactiveTab {     
+  background-color: white; 
+  font-size: 0.75rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  color: #54698d;
+  background-image:none;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;}
+          
+   </style>
+                <head>
+
+              <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+            </head>
+        <body>
+ <div class="slds">
+   
+     
+           
+         <div class="slds-tabs--scoped">
+    <ul class="slds-tabs--scoped__nav" role="tablist">    
+         <apex:tabPanel switchType="client" selectedTab="tabdetails" 
+                  id="AccountTabPanel" tabClass="activeTab" 
+                  inactiveTabClass="inactiveTab">   
+      <apex:tab style="background-color: white; " label="Details  Tab" name="AccDetails" id="tabdetails">
+          
+      <!--    <apex:form >
+                   <div class="slds-modal__header">
+ 			  <apex:commandButton value="Cancel" styleClass="slds-button slds-button--neutral slds-button--small" onComplete="window.close();"/>
+              <apex:commandButton value="Save" styleClass="slds-button slds-button--neutral slds-button--small slds-button--brand"  onComplete="window.close();"/>
+          <h2 class="slds-text-heading--medium">Change Status:</h2>
+        </div>
+           
+          </apex:form> -->
+          
+          <apex:detail relatedList="false" title="true"/>
+         
+        
+      </apex:tab>
+      <apex:tab label="Project Markers" name="Contacts" id="tabContact">
+         <apex:relatedList subject="{!account}" list="Project_Markers__r" />
+      </apex:tab>
+           
+             
+                 <apex:tab label="Project Support" name="Opportunities" 
+                id="tabOpp">
+         <apex:relatedList subject="{!account}" 
+                           list="Project_Support__r" />
+      </apex:tab>
+             \
+  
+      <apex:tab label="Project Members" name="OpenActivities" 
+                id="tabOpenAct">
+         <apex:relatedList subject="{!account}" 
+                           list="Contacts" />
+      </apex:tab>
+             
+                   <apex:tab label="Files Tab" name="Files Tab" 
+                id="tabFiles">
+         <apex:relatedList subject="{!account.id}" 
+                           list="AttachedContentDocuments" />
+      </apex:tab>
+             
+             
+      <apex:tab label="Notes and Attachments" 
+                name="NotesAndAttachments" id="tabNoteAtt">
+         <apex:relatedList subject="{!account}" 
+                           list="CombinedAttachments" />
+      </apex:tab>
+             
+                <!-- <apex:tab label="Notes" 
+                name="Notes" id="tabNotes">
+         <apex:relatedList subject="{!account}" 
+                           list="Notes" />
+      </apex:tab> -->
+             
+                              <apex:tab label="Patents  Tab" 
+                name="Patents" id="tabPatents">
+         <apex:relatedList subject="{!account}" 
+                           list="Patents__r" />
+      </apex:tab>
+             
+             
+             
+                              <apex:tab label="Companies  Tab" 
+                name="Companies " id="tabCompan">
+         <apex:relatedList subject="{!account}" 
+                           list="Companies__r" />
+      </apex:tab>
+             
+             
+                              <apex:tab label="Events  Tab" 
+                name="Events" id="tabEvents">
+         <apex:relatedList subject="{!account}" 
+                           list="Events__r" />
+      </apex:tab>
+             
+             
+                              <apex:tab label="Content Versions" 
+                name="ContentVersions" id="tabContentVersions">
+         <apex:relatedList subject="{!account}" 
+                           list="Content_Versions__r" />
+      </apex:tab>
+             
+             
+             
+                              <apex:tab label="Related Content" 
+                name="RelatedContent" id="tabRelatedContent">
+         <apex:relatedList subject="{!account}" 
+                           list="RelatedContentDistributionList" />
+      </apex:tab>
+             
+             
+             
+             
+                              <apex:tab label="Links Tab" 
+                name="Links " id="tabLinks">
+         <apex:relatedList subject="{!account}" 
+                           list="Links__r" />
+      </apex:tab>
+             
+             
+   </apex:tabPanel>
+    </ul>
+  </div>
+      </div>
+
+        </body>
+        
+    </html>
+              
+ 
+            
+    
+    
+
+</apex:page>

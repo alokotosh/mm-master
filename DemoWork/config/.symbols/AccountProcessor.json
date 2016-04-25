@@ -1,0 +1,80 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000005DGEdAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005DGEdAAO",
+    "methods": [],
+    "name": "AccountProcessor",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "g",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "f",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "h",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "AccountProcessor",
+        "references": [],
+        "type": "AccountProcessor"
+    },
+    "variables": []
+}

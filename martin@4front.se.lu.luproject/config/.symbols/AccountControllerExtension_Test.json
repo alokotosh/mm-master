@@ -1,0 +1,186 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p4E0000008nWrQAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p4E0000008nWrQAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "cancel_test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "saveStatus_test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AccountControllerExtension_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "AccountControllerExtension_Test",
+        "references": [],
+        "type": "AccountControllerExtension_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "university",
+            "references": [],
+            "type": "University__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "stdCtrl",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "AccountControllerExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "university",
+            "references": [],
+            "type": "University__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "accountCom",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "stdCtrl",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "AccountControllerExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

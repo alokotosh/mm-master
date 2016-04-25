@@ -1,0 +1,414 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000005FUHLAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005FUHLAA4",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpGet"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "getCaseById",
+            "parameters": [],
+            "references": [],
+            "returnType": "Case",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "HttpPost"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "createCase",
+            "parameters": [
+                {
+                    "name": "subject",
+                    "type": "String"
+                },
+                {
+                    "name": "status",
+                    "type": "String"
+                },
+                {
+                    "name": "origin",
+                    "type": "String"
+                },
+                {
+                    "name": "priority",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "HttpDelete"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "deleteCase",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "HttpPut"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 38
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "upsertCase",
+            "parameters": [
+                {
+                    "name": "subject",
+                    "type": "String"
+                },
+                {
+                    "name": "status",
+                    "type": "String"
+                },
+                {
+                    "name": "origin",
+                    "type": "String"
+                },
+                {
+                    "name": "priority",
+                    "type": "String"
+                },
+                {
+                    "name": "id",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "HttpPatch"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 54
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "updateCaseFields",
+            "parameters": [],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        }
+    ],
+    "name": "Trailed_REST",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Trailed_REST",
+        "references": [],
+        "type": "Trailed_REST"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "caseId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "subject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "origin",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "priority",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "thisCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "caseId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "thisCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "subject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "origin",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "priority",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "thisCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "caseId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "thisCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "params",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

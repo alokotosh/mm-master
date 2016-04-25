@@ -1,0 +1,76 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000006TxsZAAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000006TxsZAAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "getAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "getContacts",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "AngularDemoController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "AngularDemoController",
+        "references": [],
+        "type": "AngularDemoController"
+    },
+    "variables": []
+}

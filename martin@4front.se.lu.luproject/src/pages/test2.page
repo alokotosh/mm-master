@@ -1,0 +1,104 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" cache="false">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <head>
+  <title>App Title</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script type="text/babel">
+    var tabList = [
+      { 'index': 0, 'title': 'Item One', 'content':
+        <div id="tab-scoped-0" class="slds-tabs__content slds-show" role="tabpanel">
+            <h2>Item One Content</h2>
+        </div>
+      },
+      { 'index': 1, 'title': 'Item Two', 'content':
+        <div id="tab-scoped-1" class="slds-tabs__content slds-show" role="tabpanel">
+            <h2>Item Two Content</h2>
+        </div>
+            },
+      { 'index': 2, 'title': 'Item Three', 'content':
+        <div id="tab-scoped-2" class="slds-tabs__content slds-show" role="tabpanel">
+            <h2>Item Three Content</h2>
+        </div>
+      }
+    ];
+      
+    var App = React.createClass({
+      getInitialState: function () {        
+        return {
+          tabList: tabList,
+          currentTab: 0
+        };
+      },
+            
+      changeTab: function(tab) {
+        this.setState({ currentTab: tab.index });
+      },
+            
+      render: function(){
+        return(
+          <div className="slds">
+            <Tabs 
+              currentTab={this.state.currentTab}
+              tabList={this.state.tabList}
+              changeTab={this.changeTab}
+            />
+                  {this.state.tabList[this.state.currentTab].content}
+          </div>
+        )
+      }
+    });
+      
+    var Tabs = React.createClass({
+      handleClick: function(tab){
+                this.props.changeTab(tab);
+      },
+            
+      render: function(){
+        return (
+          <div className="slds-tabs--scoped">
+          <ul className="slds-tabs--scoped__nav" role="tablist">
+          {this.props.tabList.map(function(tab) {
+            return (
+              <Tab
+                handleClick={this.handleClick.bind(this, tab)} 
+                index={tab.index} 
+                title={tab.title} 
+                isCurrent={(this.props.currentTab === tab.index)}
+              />
+            );
+          }.bind(this))}
+          </ul>
+          </div>
+        );
+      }
+    });
+      
+    var Tab = React.createClass({
+      handleClick: function(e){
+        this.props.handleClick();
+      },
+            
+      render: function(){
+        var tabClass = "slds-tabs__item slds-text-heading--label";
+        tabClass += (this.props.isCurrent ? ' slds-active' : '');
+                var selected = (this.props.isCurrent ? 'true' : 'false');
+                var path = '#' + encodeURIComponent( this.props.title.toLowerCase() );
+                var controls = 'tab-scoped-' + this.props.index;
+        return (
+          <li className={tabClass} title={this.props.title} role="presentation"><a href={path} onClick={this.handleClick} role="tab" tabindex={this.props.index} aria-selected={selected} aria-controls={controls}>{this.props.title}</a></li>
+        )
+      }
+    });
+    
+    React.render(
+      <App />,
+      document.body
+    );
+    </script>
+  </head>
+  <body></body>
+</html>
+</apex:page>

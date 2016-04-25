@@ -1,0 +1,274 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContactSearchControllerExtension",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p4E0000008w7WQAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p4E0000008w7WQAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 81
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "searchContacts",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 134
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newContact",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "ContactSearchControllerExtension",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "ctt",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "hasSearched",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "resultsFound",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lastNameStartsWith",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "firstNameStartsWith",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 61
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "emailStartsWith",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 71
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "contactEmail",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ContactSearchControllerExtension",
+        "references": [],
+        "type": "ContactSearchControllerExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "soqlQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "recordType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "retURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "saveURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "accid",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "newContactPage",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

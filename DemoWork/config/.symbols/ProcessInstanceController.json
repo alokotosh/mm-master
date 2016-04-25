@@ -1,0 +1,199 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ProcessInstanceController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003RACEAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003RACEAA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Approve",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Reject",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "ProcessInstanceController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "processId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "leadId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objProcessInstance",
+            "references": [],
+            "type": "ProcessInstance"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objLead",
+            "references": [],
+            "type": "whosf__Employee_Skills__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "redirectPage",
+            "references": [],
+            "type": "PageReference"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "ProcessInstanceController",
+        "references": [],
+        "type": "ProcessInstanceController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "ProcessWorkitemRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "ProcessResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "ProcessWorkitemRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "ProcessResult"
+        }
+    ]
+}

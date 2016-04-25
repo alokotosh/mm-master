@@ -1,0 +1,365 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>New Employee</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="whosf__Employee__c" fields="Id,Name,LastModifiedDate,whosf__Email__c,whosf__Description__c"/>
+</apex:remoteObjects>
+
+<body>
+
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds">
+
+
+
+<!-- PAGE HEADER -->
+
+<div class="slds-page-header" role="banner">
+
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid">
+
+    <!-- GRID COL -->
+    <div class="slds-col">
+
+
+<!-- HEADING AREA -->
+<!-- MEDIA OBJECT = FIGURE + BODY -->
+<div class="slds-media">
+
+  <div class="slds-media__figure">
+    <span class="slds-avatar slds-avatar--large">
+      <img src="{!URLFOR($Resource.SLDS100, 'assets/images/avatar1.jpg')}" alt="portrait" />
+    </span>
+  </div>
+
+  <div class="slds-media__body">
+    <p class="slds-text-heading--label">Employee</p>
+    <h1 class="slds-text-heading--medium">New Employee</h1>
+  </div>
+
+</div>
+<!-- / MEDIA OBJECT -->
+<!-- /HEADING AREA -->
+
+
+    </div>
+
+    <!-- GRID COL -->
+    <div class="slds-col slds-no-flex slds-align-middle">
+
+     <div class="slds-button-group" role="group">
+       <button class="slds-button slds-button--neutral">Save</button>
+       <button class="slds-button slds-button--neutral">Cancel</button>
+       <button class="slds-button slds-button--icon-border-filled" aria-haspopup="true">
+         <svg aria-hidden="true" class="slds-button__icon">
+           <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+         </svg>
+         <span class="slds-assistive-text">More Actions</span>
+       </button>
+     </div>
+
+    </div>
+    <!-- / GRID COL -->
+
+  </div>
+  <!-- / LAYOUT GRID -->
+
+  <p class="slds-text-body--small slds-m-top--x-small">COUNT items</p>
+
+</div>
+<!-- / PAGE HEADER -->
+
+
+      <!-- PRIMARY CONTENT WRAPPER -->
+<div class="myapp">
+
+
+
+
+
+
+
+<h3 class="slds-section-title--divider">Main Information</h3>
+ <div class="slds-grid">
+   <div class="slds-col">
+
+    <div>
+
+          <div class="slds-modal__container slds-modal--form">
+            <div class="slds-modal__content">
+
+              <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="employeeName">Employee Name</label>
+                  <div class="slds-form-element__control">
+                    <input id="employeeName" class="slds-input" type="text" placeholder="Jon Watson" />
+                  </div>
+                </div>
+                <div class="slds-form-element">
+                  <label class="slds-form-element__label" for="employeeEmail">Email</label>
+                  <div class="slds-form-element__control">
+                    <input id="employeeEmail" class="slds-input" type="email" placeholder="example@ex.com" />
+                  </div>
+                </div>
+                <div class="slds-m-top--medium large" data-select="multi" data-scope="single" data-typeahead="true">
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="motherLangLookup">Mother Language</label>
+                    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+                      <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                      </svg>
+                      <input id="motherLangLookup" class="slds-input" type="text" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="" />
+                    </div>
+                  </div>
+                </div>
+               <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="descript">Description</label>
+                   <div class="slds-form-element__control">
+                     <textarea id="descript-input-02" class="slds-textarea" type="text" placeholder="Description"></textarea>
+                   </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   </div>
+   <div class="slds-col">
+    <div>
+          <div class="slds-modal__container slds-modal--form">
+            <div class="slds-modal__content">
+              <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+               <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                    <label class="slds-checkbox">
+                      <input type="checkbox" name="internationsl" id="intertnationalLang-01" />
+                      <span class="slds-checkbox--faux"></span>
+                      <span class="slds-form-element__label">International Languages Speaker</span>
+                    </label>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   </div>
+ </div>
+
+ <h3 class="slds-section-title--divider">Addres Information</h3>
+  <div class="slds-grid">
+    <div class="slds-col">
+
+     <div>
+
+           <div class="slds-modal__container slds-modal--form">
+             <div class="slds-modal__content">
+
+               <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+
+                <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mStreet">Mailing Street</label>
+                   <div class="slds-form-element__control">
+                     <textarea id="mStreet" class="slds-textarea" type="text" placeholder="st. Green 13"></textarea>
+                   </div>
+                </div>
+
+
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mCity">Mailing City</label>
+                   <div class="slds-form-element__control">
+                     <input id="mCity" class="slds-input" type="text" placeholder="Los Angeles" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mState">Mailing State/Province</label>
+                   <div class="slds-form-element__control">
+                     <input id="mState" class="slds-input" type="text" placeholder="California" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mZip">Mailing Zip/Postal Code</label>
+                   <div class="slds-form-element__control">
+                     <input id="mZip" class="slds-input" type="text" placeholder="78300" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mCountry">Mailing Country</label>
+                   <div class="slds-form-element__control">
+                     <input id="mCountry" class="slds-input" type="text" placeholder="USA" />
+                   </div>
+                 </div>
+
+
+
+               </div>
+
+
+
+
+             </div>
+           </div>
+         </div>
+    </div>
+    <div class="slds-col">
+     <div>
+
+           <div class="slds-modal__container slds-modal--form">
+             <div class="slds-modal__content">
+
+               <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+
+                <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="mStreet">Shipping Street</label>
+                   <div class="slds-form-element__control">
+                     <textarea id="mStreet" class="slds-textarea" type="text" placeholder="st. Green 13"></textarea>
+                   </div>
+                </div>
+
+
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="sCity">Shipping City</label>
+                   <div class="slds-form-element__control">
+                     <input id="sCity" class="slds-input" type="text" placeholder="New York" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="sState">Shipping State/Province</label>
+                   <div class="slds-form-element__control">
+                     <input id="sState" class="slds-input" type="text" placeholder="NY" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="sZip">Shipping Zip/Postal Code</label>
+                   <div class="slds-form-element__control">
+                     <input id="sZip" class="slds-input" type="text" placeholder="19800" />
+                   </div>
+                 </div>
+                 <div class="slds-form-element">
+                   <label class="slds-form-element__label" for="sCountry">Shipping Country</label>
+                   <div class="slds-form-element__control">
+                     <input id="sCountry" class="slds-input" type="text" placeholder="USA" />
+                   </div>
+                 </div>
+
+
+
+               </div>
+
+
+
+
+             </div>
+           </div>
+         </div>
+
+            <button class="slds-button slds-button--neutral">Save</button>
+
+
+    </div>
+  </div>
+
+
+
+
+
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+
+
+
+<!-- / GRID COL -->
+
+
+
+
+
+<!-- FOOTER -->
+<footer role="contentinfo" class="slds-p-around--large">
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid slds-grid--align-spread">
+    <p class="slds-col">Salesforce Lightning Design System </p>
+    <p class="slds-col">&copy; Andrew Lokotosh</p>
+  </div>
+  <!-- / LAYOUT GRID -->
+</footer>
+<!-- / FOOTER -->
+
+
+
+  <!-- / REQUIRED SLDS WRAPPER -->
+</div>
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+  var employee = new SObjectModel.Employee__c();
+  var outputDiv = document.getElementById("employeeList");
+
+
+       function updateOutputDiv() {
+  employee.retrieve(
+    {orderby: [{LastModifiedDate: 'DESC'}], },
+    function(error, records) {
+      if (error) {
+        alert(error.message);
+      } else {
+        var accountIcon = '<span class="slds-icon__container slds-icon-standard-account">';
+        accountIcon += '<svg aria-hidden="true" class="slds-icon">';
+        accountIcon += '<use xlink:href="{!URLFOR($Resource.SLDS100, 'assets/icons/standard-sprite/svg/symbols.svg#account')}"></use>';
+        accountIcon += '</svg><span class="slds-assistive-text">Account</span></span>';
+
+        var html = '<div class="slds-scrollable--x"><table class="slds-table slds-table--bordered">';
+
+        html += '<thead><tr><th scope="col">Type</th>';
+        html += '<th scope="col">Employee name</th>';
+        html += '<th scope="col">Employee ID</th>';
+        html += '<th scope="col">Email</th>';
+        html += '<th scope="col">Description</th></tr></thead><tbody>';
+
+        records.forEach(function(record) {
+            html += '<tr><td>' + accountIcon + '</td>';
+            html += '<td>' + record.get("Name") + '</td>';
+            html += '<td>' + record.get("Id") + '</td>';
+            html += '<td>' + record.get("Email__c") + '</td>';
+            html += '<td>' + record.get("Description__c") + '</td></tr>';
+        });
+        html = html + '</tbody></table></div>';
+        outputDiv.innerHTML = html;
+      }
+    }
+  );
+}
+
+    function createEmployee() {
+  var employeeName = document.getElementById("employeeName").value;
+  var employeeEmail = document.getElementById("employeeEmail").value;
+  var employeeDescription = document.getElementById("employeeDescription").value;
+  var employee = new SObjectModel.Employee__c();
+  employee.create({Name: employeeName, Email__c: employeeEmail, Description__c: employeeDescription}, function(error, records) {
+    if (error) {
+      alert(error.message);
+    } else {
+      updateOutputDiv();
+      document.getElementById("employeeName")
+
+    }
+  });
+  return false;
+}
+
+  updateOutputDiv();
+  document.getElementById("employeeName").value=='';
+</script>
+<!-- / JAVASCRIPT -->
+
+
+</html>
+</apex:page>

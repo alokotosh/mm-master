@@ -1,0 +1,73 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004adJ6AAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004adJ6AAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCaseFromId",
+            "parameters": [
+                {
+                    "name": "caseID",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Case",
+            "type": null
+        }
+    ],
+    "name": "DisplayCaseController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "DisplayCaseController",
+        "references": [],
+        "type": "DisplayCaseController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "caseID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "cases",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XJM7AAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004XJM7AAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "add",
+            "parameters": [
+                {
+                    "name": "x",
+                    "type": "Double"
+                },
+                {
+                    "name": "y",
+                    "type": "Double"
+                }
+            ],
+            "references": [],
+            "returnType": "Double",
+            "type": null
+        }
+    ],
+    "name": "AwesomeCalculator",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "AwesomeCalculator",
+        "references": [],
+        "type": "AwesomeCalculator"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "x",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "y",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "calculator",
+            "references": [],
+            "type": "CalculatorImplPort"
+        }
+    ]
+}

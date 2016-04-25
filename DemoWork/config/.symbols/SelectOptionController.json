@@ -1,0 +1,150 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SelectOptionController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003RVWUAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003RVWUAA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "show",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "SelectOptionController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "countrieLst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "hobbiesLst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "genderLst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedCountry",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedHobby",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedGender",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedValues",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "SelectOptionController",
+        "references": [],
+        "type": "SelectOptionController"
+    },
+    "variables": []
+}

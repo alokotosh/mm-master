@@ -1,0 +1,167 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>New Contact Page</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS100, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="Contact" fields="Id,Name,Email, MobilePhone,Description"/>
+</apex:remoteObjects>
+
+<body>
+  <div class="slds">
+		<div class="slds-page-header" role="banner">
+		  <div class="slds-grid">
+		    <div class="slds-col">
+				<div class="slds-media">
+				  <div class="slds-media__figure">
+				    <span class="slds-avatar slds-avatar--large">
+				      	<img src="{!URLFOR($Resource.SLDS100, 'assets/images/avatar1.jpg')}" alt="portrait" />
+				    </span>
+				  	</div>
+					  <div class="slds-media__body">
+					   	 <p class="slds-text-heading--label">Contact</p>
+					   	 <h1 class="slds-text-heading--medium">My Contact</h1>
+					  </div>
+				</div>
+		    </div>
+		    <div class="slds-col slds-no-flex slds-align-middle">
+		      <div class="slds-button-group" role="group">
+		        <button class="slds-button slds-button--neutral">
+		          New Contact
+		        </button>
+		        <button class="slds-button slds-button--neutral">
+		          More
+		        </button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- New Contact Form -->
+		<div class="addCont">
+		  <div aria-labelledby="newcontactform">
+		    <fieldset class="slds-box slds-theme--default slds-container--small">
+		      <legend id="newemployeeform" class="slds-text-heading--medium slds-p-vertical--medium">Quick Add </legend>
+		      <form class="slds-form--stacked" id="inputForm">
+		        <div class="slds-form-element">
+		          <label class="slds-form-element__label" for="contName">Name*</label>
+		          	<div class="slds-form-element__control">
+					<div class="slds-popover slds-popover--tooltip slds-nubbin--bottom" role="tooltip" id="toggleText" style="display: none">
+					  <div class="slds-popover__body">This field is required! Please add the Contact Name. </div>
+					</div>
+		           		 <input id="contName" class="slds-input" type="text" placeholder="Jon Smith"  onFocus="cancelDiv()"/>
+		            </div>
+		          <label class="slds-form-element__label" for="contEmail">Email</label>
+			          <div class="slds-form-element__control">
+			            <input id="contEmail" class="slds-input" type="email" placeholder="example@exam.com" />
+			          </div>
+		            <label class="slds-form-element__label" for="contPhone">Mobile Phone</label>
+			            <div class="slds-form-element__control">
+			         	   <input id="contPhone" class="slds-input" type="text" placeholder="+380938443456" />
+			            </div>
+
+		            <label class="slds-form-element__label" for="contDescrip">Descriprion</label>
+		            	<div class="slds-form-element__control">
+		           			 <input id="contDescrip" class="slds-input" type="text"  />
+		          	     </div>
+
+		        </div>
+		        <button class="slds-button slds-button--brand slds-m-top--medium" type="button" onClick="createContact()">Create Contact</button>
+		      </form>
+		    </fieldset>
+		  </div>
+		  <div id="employeeList" class="slds-p-vertical--medium"></div>
+		</div>
+		<!-- /New Contact Form -->
+
+  <!-- Conact LIST TABLE -->
+  <div id="contactList" class="slds-p-vertical--medium"></div>
+  <!-- / Contact LIST TABLE -->
+		<footer role="contentinfo" class="slds-p-around--large">
+		  <div class="slds-grid slds-grid--align-spread">
+		    <p class="slds-col">Test for EchoUA</p>
+		    <p class="slds-col">&copy; Andrew Lokotosh</p>
+		  </div>
+		</footer>
+		  </div>
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+  var contact = new SObjectModel.Contact();
+  var outputDiv = document.getElementById("contactList");
+  var ele = document.getElementById("toggleText");
+
+	$("#contName, #contEmail").keyup(function(){
+	    updateDescription();
+	});
+
+	function updateDescription() {
+	  $("#contDescrip").val($('#contName').val() + " " + $('#contEmail').val());
+	}
+	function cancelDiv()
+	{
+		ele.style.display = "none";
+	}
+       function updateOutputDiv() {
+  	contact.retrieve(
+    {orderby: [{Name: 'ASC'}], },
+    function(error, records) {
+      if (error) {
+        alert(error.message);
+      } else {
+        var contactIcon = '<span class="slds-icon__container slds-icon-standard-contact">';
+        contactIcon += '<svg aria-hidden="true" class="slds-icon">';
+        contactIcon += '<use xlink:href="{!URLFOR($Resource.SLDS100, 'assets/icons/standard-sprite/svg/symbols.svg#contact')}"></use>';
+        contactIcon += '</svg><span class="slds-assistive-text">contact</span></span>';
+
+        var html = '<div class="slds-scrollable--x"><table class="slds-table slds-table--bordered">';
+
+        html += '<thead><tr><th scope="col">Type</th>';
+        html += '<th scope="col">Name</th>';
+        html += '<th scope="col"> Email</th>';
+        html += '<th scope="col"> Mobile Phone</th>';
+        html += '<th scope="col">Description</th></tr></thead><tbody>';
+
+        records.forEach(function(record) {
+            html += '<tr><td>' + contactIcon + '</td>';
+            html += '<td>' + record.get("Name") + '</td>';
+            html += '<td>' + record.get("Email") + '</td>';
+            html += '<td>' + record.get("MobilePhone") + '</td>';
+            html += '<td>' + record.get("Description") + '</td></tr>';
+        });
+        html = html + '</tbody></table></div>';
+        outputDiv.innerHTML = html;
+      }
+    }
+  );
+}
+    function createContact() {
+    	
+    	  var contName = document.getElementById("contName").value;
+		  var contEmail = document.getElementById("contEmail").value;
+		  var contPhone = document.getElementById("contPhone").value;
+		  var contDescrip = document.getElementById("contDescrip").value;
+  		  var contact = new SObjectModel.Contact();
+  contact.create({LastName: contName, Email: contEmail, MobilePhone: contPhone, Description: contDescrip}, function(error, records) {
+  	document.getElementById("inputForm").reset();
+    if (error) {
+    	ele.style.display = 'block'; 
+      //alert(error.message);
+    } else {
+      updateOutputDiv();     
+     
+    }
+  }
+  );
+  return false;
+}
+  updateOutputDiv();
+	</script>
+
+	</html>
+</apex:page>

@@ -1,0 +1,28 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+12:18:14.0 (467960)|EXECUTION_STARTED
+12:18:14.0 (497900)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+12:18:14.0 (17749680)|CODE_UNIT_FINISHED|VisualForce View State
+12:18:14.0 (19771796)|EXECUTION_FINISHED
+12:18:14.23 (23177029)|EXECUTION_STARTED
+12:18:14.23 (23184649)|CODE_UNIT_STARTED|[EXTERNAL]|VF: /apex/editStaticResource.apexp
+12:18:14.27 (27240208)|SYSTEM_MODE_ENTER|false
+12:18:14.27 (97783350)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:18:14.101 (101521570)|CUMULATIVE_LIMIT_USAGE
+12:18:14.101 (101521570)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:18:14.101 (101521570)|CUMULATIVE_LIMIT_USAGE_END
+
+12:18:14.23 (101588975)|CODE_UNIT_FINISHED|VF: /apex/editStaticResource.apexp
+12:18:14.23 (102689075)|EXECUTION_FINISHED

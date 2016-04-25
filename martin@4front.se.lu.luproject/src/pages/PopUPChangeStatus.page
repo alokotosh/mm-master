@@ -1,0 +1,194 @@
+<apex:page standardController="Account" showHeader="false" standardStylesheets="false" sidebar="false"  extensions="AccountControllerExtension"  docType="html-5.0">
+
+<script
+	src="//code.jquery.com/jquery-2.2.2.js"
+	integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="
+	crossorigin="anonymous">
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/build/jquery.datetimepicker.full.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.3/jquery.datetimepicker.min.css"/>
+
+<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+
+<script type="text/javascript">
+$j = jQuery.noConflict();
+	window.onload = function(){
+        // alert('Im here');
+            
+    };
+
+    function jsUpdatePhase() {
+    	callToUpdatePhase();
+    }
+
+ //    $j(function(){
+	// 	$j( "[id$=datepicker]" ).datepicker();
+	// 	// //Pass the user selected date format
+	// 	// $j( "#format" ).change(function() {
+	// 	// 	$j( "#datepicker" ).datepicker( "option", "dateFormat", $j(this).val() );
+	// 	// });
+	// });
+</script>
+    
+
+	<apex:form >
+        
+        <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            
+            <head>
+              <title>Salesforce Employee applications</title>
+              <apex:stylesheet value="{!URLFOR($Resource.SLDS102, 'assets/styles/salesforce-lightning-design-system.css')}" />
+            </head>
+    
+    		<body>
+          <button class="slds-button">Button</button>
+            
+            
+        
+		<apex:actionFunction name="callToUpdatePhase" action="{!updatePhase}" reRender="update">
+		</apex:actionFunction>
+		<apex:outputPanel id="update">
+			<!-- <script type="text/javascript">
+				$j = jQuery.noConflict();
+				    $j(function(){
+						jsUpdatePhase();
+					});
+			</script> -->
+		</apex:outputPanel>
+
+
+	    <apex:outputPanel layout="block" style="margin-left: 20px; margin-top: 20px;">
+			<div style="display: inline-block; width: 200px;">
+				<apex:outputPanel style="display: block;">
+					<apex:outputLabel style="font-size: 15px;">Project Status:</apex:outputLabel>
+				</apex:outputPanel>
+				<apex:outputPanel style="">
+					<apex:inputField id="statusList" style="font-size: 15px; margin-top: 5px;" value="{!project.Project_Status__c}" > </apex:inputField>
+				</apex:outputPanel>
+
+			</div>
+
+			<div style="display: inline-block; width: 150px;">
+				<apex:outputPanel style="display: block;">
+					<apex:outputLabel style="font-size: 15px;">Project Phase:</apex:outputLabel>
+				</apex:outputPanel>
+				<apex:outputPanel style="">
+					<apex:inputField id="phaseList" style="font-size: 15px; margin-top: 5px;" value="{!project.Project_Phase__c}">
+						<apex:actionSupport event="onchange" action="{!updatePhase}" reRender="phase1, dates, companyName, companyNumber, inputDate">
+						</apex:actionSupport>
+
+					</apex:inputField>
+				</apex:outputPanel>
+			</div>
+
+			<div style="display: inline-block; width: 200px;">
+				<apex:outputPanel id="dates">
+<!-- Idea date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Idea', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Idea Date:</apex:outputLabel>
+					</apex:outputPanel>
+<!-- Verification date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Verification', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Verification Date:</apex:outputLabel>
+					</apex:outputPanel>
+<!-- Development date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Development', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Development Date:</apex:outputLabel>
+					</apex:outputPanel>
+<!-- Commercial date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'Commercial', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Company Date:</apex:outputLabel>
+					</apex:outputPanel>
+<!-- License date -->
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase == 'License', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">License Date:</apex:outputLabel>
+					</apex:outputPanel>
+
+				</apex:outputPanel>
+<!-- datepicker -->
+				<apex:outputPanel id="inputDate">
+					<apex:outputPanel style="display: block;" rendered="{!IF(phase != 'Contact', true, false)}">
+						<apex:inputText id="datepicker" value="{!tempDate }">
+							<apex:actionSupport event="onclick" reRender="calendar, phase1, againUpdatePhase" >
+							</apex:actionSupport>
+							<apex:outputPanel id="calendar">
+								<script type="text/javascript">
+									//$j = jQuery.noConflict();
+								    jQuery(function(){
+										jQuery( "[id$=datepicker]" ).datetimepicker();
+									});
+								</script>
+							</apex:outputPanel>
+							<apex:outputPanel id="againUpdatePhase">
+								<script type="text/javascript">
+									jQuery(function(){
+										jsUpdatePhase();
+									});
+								</script>
+							</apex:outputPanel>
+						</apex:inputText>
+					</apex:outputPanel>
+				</apex:outputPanel>
+			</div>
+
+		</apex:outputPanel>
+
+		<apex:outputPanel layout="block" style="margin-left: 20px; margin-top: 20px;">
+
+			<div style="display: inline-block; width: 200px;">
+				<!-- <apex:outputPanel>
+					<apex:outputLabel>H</apex:outputLabel>
+				</apex:outputPanel> -->
+			</div>
+
+			<div style="display: inline-block; width: 150px;">
+				<apex:outputPanel id="companyName">
+					<apex:outputPanel rendered="{!IF(phase == 'Commercial', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Company Name:</apex:outputLabel>
+						<apex:inputField value="{!company.Name}"/>
+					</apex:outputPanel>
+				</apex:outputPanel>
+			</div>
+
+			<div style="display: inline-block; width: 200px;">
+				<apex:outputPanel id="companyNumber">
+					<apex:outputPanel rendered="{!IF(phase == 'Commercial', true, false)}">
+						<apex:outputLabel style="font-size: 15px;">Org. Number:</apex:outputLabel>
+						<apex:inputField value="{!company.Organization_Number__c}"/>
+					</apex:outputPanel>
+				</apex:outputPanel>
+			</div>
+
+		<apex:outputPanel layout="block" style="margin-top: 30px; white-space: nowrap">
+			<div style="width: 350px">
+				<apex:pageBlock id="changeDates" title="Change Dates:">
+				</apex:pageBlock>
+
+			</div>
+
+		</apex:outputPanel>
+
+<!-- save or cancel -->
+			<apex:outputPanel layout="block" style="margin-top: 20px;">
+			<div style="display: inline-block; width: 200px;">
+				<apex:outputPanel style="display: inline-block;">
+					<apex:commandButton value="Save" action="{!saveStatus}"></apex:commandButton>
+				</apex:outputPanel>
+				<apex:outputPanel >
+					<apex:commandButton value="Cancel" action="{!cancel}" style="margin-top: 5px;"></apex:commandButton>
+				</apex:outputPanel>
+			</div>
+			</apex:outputPanel>
+
+			<!-- <div>
+				<apex:outputPanel id="phase1">
+					<apex:inputText value="{!phase}"> </apex:inputText>
+				</apex:outputPanel>
+			</div> -->
+		</apex:outputPanel>
+            </body>
+        </html>
+	</apex:form>
+</apex:page>

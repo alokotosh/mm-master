@@ -1,0 +1,78 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: public List<Account> contact_a{get;set;}
+Execute Anonymous: public List<Integer> con;
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 	public List<Integer> getContacts()
+Execute Anonymous: 	{
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 			Integer year =2016;
+Execute Anonymous: 					for (Integer idx=1; idx<13; idx++)
+Execute Anonymous: 					{
+Execute Anonymous: 									con.add(count_contact_phase(idx,year));
+Execute Anonymous:                         con.add(1);
+Execute Anonymous:                         			
+Execute Anonymous: 					}
+Execute Anonymous: 
+Execute Anonymous: 	System.debug(con);
+Execute Anonymous: 		return con;
+Execute Anonymous: 	}
+Execute Anonymous: 
+Execute Anonymous: 	public  Integer count_contact_phase (Integer month, Integer year)
+Execute Anonymous: 	{
+Execute Anonymous: 
+Execute Anonymous: 
+Execute Anonymous: 			contact_a= [SELECT id, Contact_Start_Date__c
+Execute Anonymous: 																FROM Account
+Execute Anonymous: 																WHERE CALENDAR_MONTH(Contact_Start_Date__c)=:month
+Execute Anonymous: 																AND CALENDAR_YEAR(Contact_Start_Date__c)=:year
+Execute Anonymous: 															];
+Execute Anonymous: 
+Execute Anonymous: 							return contact_a.size();
+Execute Anonymous: 	}
+15:42:40.1 (1391774)|EXECUTION_STARTED
+15:42:40.1 (1409097)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+15:42:40.1 (1671404)|VARIABLE_SCOPE_BEGIN|[2]|con|List<Integer>|true|false
+15:42:40.1 (1744992)|VARIABLE_SCOPE_BEGIN|[1]|contact_a|List<Account>|true|false
+15:42:40.1 (1893483)|HEAP_ALLOCATE|[72]|Bytes:3
+15:42:40.1 (1952824)|HEAP_ALLOCATE|[77]|Bytes:152
+15:42:40.1 (1973335)|HEAP_ALLOCATE|[342]|Bytes:408
+15:42:40.1 (1995579)|HEAP_ALLOCATE|[355]|Bytes:408
+15:42:40.1 (2016631)|HEAP_ALLOCATE|[467]|Bytes:48
+15:42:40.1 (2057248)|HEAP_ALLOCATE|[139]|Bytes:6
+15:42:40.1 (2085486)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:88
+15:42:40.1 (2090847)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:6
+15:42:40.1 (2093443)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+15:42:40.1 (2190718)|STATEMENT_EXECUTE|[1]
+15:42:40.1 (2193895)|STATEMENT_EXECUTE|[1]
+15:42:40.1 (2250875)|HEAP_ALLOCATE|[50]|Bytes:5
+15:42:40.1 (2277137)|HEAP_ALLOCATE|[56]|Bytes:5
+15:42:40.1 (2286687)|HEAP_ALLOCATE|[64]|Bytes:7
+15:42:40.1 (2317022)|SYSTEM_MODE_ENTER|false
+15:42:40.1 (2350207)|HEAP_ALLOCATE|[1]|Bytes:5
+15:42:40.1 (2408609)|VARIABLE_ASSIGNMENT|[EXTERNAL]|value|null|
+15:42:40.1 (2422500)|VARIABLE_ASSIGNMENT|[1]|contact_a|null|
+15:42:40.1 (2431871)|SYSTEM_MODE_EXIT|false
+15:42:40.1 (2438012)|STATEMENT_EXECUTE|[2]
+15:42:40.1 (2445325)|VARIABLE_ASSIGNMENT|[2]|con|null|
+15:42:40.2 (2484003)|CUMULATIVE_LIMIT_USAGE
+15:42:40.2 (2484003)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:42:40.2 (2484003)|CUMULATIVE_LIMIT_USAGE_END
+
+15:42:40.1 (2530357)|CODE_UNIT_FINISHED|execute_anonymous_apex
+15:42:40.1 (3382914)|EXECUTION_FINISHED

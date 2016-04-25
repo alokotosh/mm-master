@@ -1,0 +1,370 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "AccountControllerExtension",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p4E0000008nN6QAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p4E0000008nN6QAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 57
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "updatePhase",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 61
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 65
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveStatus",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 93
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createMarker",
+            "parameters": [
+                {
+                    "name": "tempSet",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AccountControllerExtension",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 13
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "projectObj",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "project",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "phase",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "tempDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "company",
+            "references": [],
+            "type": "Company__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "markersList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "uniqueMarkers",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ideaMarkers",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "verificationMarkers",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyLicenseMarkers",
+            "references": [],
+            "type": "Set"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 11
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "AccountControllerExtension",
+        "references": [],
+        "type": "AccountControllerExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "pm",
+            "references": [],
+            "type": "Project_Markers__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "projCompany",
+            "references": [],
+            "type": "Company__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Company__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "tempSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "storeMarkers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "markerToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Project_Markers__c"
+        }
+    ]
+}

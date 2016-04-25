@@ -1,0 +1,475 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "DisplayApprovedRecordsController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p36000003REUcAAO",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "ApprovalWrapper",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 183
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "description",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 184
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "id",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 185
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "name",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 186
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "objectName",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 187
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "sortOrder",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 181
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "ApprovalWrapper",
+                "references": [],
+                "type": "ApprovalWrapper"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p36000003REUcAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 45
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getApprovalWrapperList",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 67
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "FetchAllApprovalProcess",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 107
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "FindRecords",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 130
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "UpdateData",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "DisplayApprovedRecordsController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "actionList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedAction",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 40
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ApprovalProcessList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedApprovalProcess",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "recordList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 65
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "approvalMap",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 33
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "DisplayApprovedRecordsController",
+        "references": [],
+        "type": "DisplayApprovedRecordsController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "temp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "domainUrl",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "endpointUrl",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "h",
+            "references": [],
+            "type": "Http"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "ss",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "newjsondata",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "parser",
+            "references": [],
+            "type": "JSONParser"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "apr",
+            "references": [],
+            "type": "ApprovalWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "aw",
+            "references": [],
+            "type": "ApprovalWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "queryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "temp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "aw",
+            "references": [],
+            "type": "ApprovalWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "ObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "sb",
+            "references": [],
+            "type": "ProcessInstance"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "ObjectName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

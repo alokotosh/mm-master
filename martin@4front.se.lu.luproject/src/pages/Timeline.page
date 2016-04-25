@@ -1,0 +1,65 @@
+<apex:page standardController="Account">
+
+<!-- <apex:remoteObjects >
+    <apex:remoteObjectModel name="Account" jsShorthand="Project" fields="Id,Name,Idea_Date__c,Last_Update_Date__c,License_Date__c,Project_Close_Date__c,Project_Pending_Date__c,Project_Start_Date__c"></apex:remoteObjectModel>
+</apex:remoteObjects> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.0/vis.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.0/vis.min.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+body, html {
+    font-family: sans-serif;
+}
+</style>
+
+<div id="timeline"></div>
+
+<script type="text/javascript">
+    // Container for timeline
+    var container = document.getElementById('timeline');
+
+    //Fetch dates from Project
+    var currentProject = function(){
+        // Create a new Remote Object
+        var proj = new SObjectModel.Project();
+
+        // Use the Remote Object to query for 10 warehouse records
+        proj.retrieve({ where: {Id: {eq: '{!Account.Id}' }} }, function(err, records, event){
+            if(err) {
+                alert(err.message);
+            }
+            else {
+                //alert(JSON.stringify(records));
+                records.forEach(function(record) {
+                    var projectName = record.get("Name");
+                });
+            }
+        });
+    };
+
+    // Create a DataSet (allows two way data-binding)
+    var items = new vis.DataSet([
+        {id: 1, content: 'Start', start: '{!Account.Project_Start_Date__c}'},
+        {id: 2, content: 'Project Duration', start: '{!Account.Project_Start_Date__c}', end: '{!IF(Account.Project_Close_Date__c = null, Today(), Account.Project_Close_Date__c)}', type: 'range', style: 'background-color: green;'},
+        {id: 3, content: 'Closed', start: '{!Account.Project_Close_Date__c}'},
+        {id: 4, content: 'Idea', start: '{!Account.Idea_Date__c}'},
+        {id: 5, content: 'Last Update', start: '{!Account.Last_Update_Date__c}'},
+        {id: 6, content: 'License', start: '{!Account.License_Date__c}'},
+        {id: 7, content: 'Pending', start: '{!Account.Project_Pending_Date__c}'}
+    ]);
+
+    // Configuration for the Timeline
+    var options = {
+        autoResize: true,
+        editable: false,
+        height: '250px',
+        maxHeight: '250px',
+        showCurrentTime: true
+    };
+
+    // Create a Timeline
+    var timeline = new vis.Timeline(container, items, options);
+</script>
+
+</apex:page>

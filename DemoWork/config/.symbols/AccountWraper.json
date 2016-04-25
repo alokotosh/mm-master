@@ -1,0 +1,287 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "AccountWraper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p360000072VywAAE",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 48
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accountWrapper",
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "type": "Account"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "accountwrapper",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 46
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "acc",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 47
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "selected",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 45
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "accountwrapper",
+                "references": [],
+                "type": "accountwrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 48
+                    },
+                    "modifiers": [],
+                    "name": "a",
+                    "references": [],
+                    "type": "Account"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p360000072VywAAE",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Changetype",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accountWrapperObject",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 35
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getselected",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AccountWraper",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accinp",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accwrap",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedaccount",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "anacc",
+            "references": [],
+            "type": "Account"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "AccountWraper",
+        "references": [],
+        "type": "AccountWraper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "ac",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "aw",
+            "references": [],
+            "type": "accountwrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "awrap",
+            "references": [],
+            "type": "accountwrapper"
+        }
+    ]
+}

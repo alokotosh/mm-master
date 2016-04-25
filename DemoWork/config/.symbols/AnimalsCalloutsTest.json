@@ -1,0 +1,99 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000004XHB8AAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000004XHB8AAO",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testGetCallout",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AnimalsCalloutsTest",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "AnimalsCalloutsTest",
+        "references": [],
+        "type": "AnimalsCalloutsTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mock",
+            "references": [],
+            "type": "StaticResourceCalloutMock"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "animals",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

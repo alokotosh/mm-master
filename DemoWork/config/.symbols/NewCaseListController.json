@@ -1,0 +1,70 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003OFZRAA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003OFZRAA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNewCases",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "NewCaseListController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 2
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 5
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sortOrder",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "NewCaseListController",
+        "references": [],
+        "type": "NewCaseListController"
+    },
+    "variables": []
+}

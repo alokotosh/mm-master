@@ -1,0 +1,245 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003w7MJAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003w7MJAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 78
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getUserId",
+            "parameters": [
+                {
+                    "name": "groupType",
+                    "type": "String"
+                },
+                {
+                    "name": "groupName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        }
+    ],
+    "name": "GetUserId",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "idToSize",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "employoeeSize",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "userName",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 56
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "userForReturn",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 57
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 58
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "employeeName",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 59
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "userIdToEmployeeName",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 51
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "GetUserId",
+        "references": [],
+        "type": "GetUserId"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "groupType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "groupName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "queueGroups",
+            "references": [],
+            "type": "Group"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "userOrGroupIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "e",
+            "references": [],
+            "type": "whosf__Employee__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "uId",
+            "references": [],
+            "type": "Id"
+        }
+    ]
+}

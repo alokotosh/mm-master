@@ -1,0 +1,67 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p360000072UXBAA2",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p360000072UXBAA2",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 42,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRegistration",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SiteRegisterControllerTest",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 35,
+            "line": 4
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "SiteRegisterControllerTest",
+        "references": [],
+        "type": "SiteRegisterControllerTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SiteRegisterController"
+        }
+    ]
+}

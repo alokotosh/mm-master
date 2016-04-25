@@ -1,0 +1,97 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: //Account a1 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: //a1.Active_Start_Date__c = year(2016);
+Execute Anonymous: //update a1;
+Execute Anonymous: //Account a2 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: //Account a3 = [Select Id, Name, Active_Start_Date__c from Account Where Name = 'Super New 1'];
+Execute Anonymous: 
+Execute Anonymous: List<AggregateResult> results = 
+Execute Anonymous:     new List<AggregateResult>([SELECT  CALENDAR_MONTH(Active_Start_Date__c), 
+Execute Anonymous:                                		COUNT(id)  
+Execute Anonymous:                                       FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c)=2016
+Execute Anonymous: 									Group by CALENDAR_MONTH(Active_Start_Date__c)                                 
+Execute Anonymous:                                      ]);
+Execute Anonymous: 
+Execute Anonymous: List<AggregateResult> results1 = 
+Execute Anonymous: new List<AggregateResult>([SELECT  CALENDAR_MONTH(Contact_Start_Date__c), 
+Execute Anonymous:                                		COUNT(id)  
+Execute Anonymous:                                       FROM Account WHERE CALENDAR_YEAR(Contact_Start_Date__c)=2016
+Execute Anonymous: 									Group by CALENDAR_MONTH(Contact_Start_Date__c)                                 
+Execute Anonymous:                                      ]);
+Execute Anonymous: System.debug(results);
+Execute Anonymous: System.debug(results1[0].get('expr'));
+Execute Anonymous: //System.debug(a1);
+Execute Anonymous: //System.debug(a2);
+Execute Anonymous: //System.debug(a3);
+11:59:26.1 (1950332)|EXECUTION_STARTED
+11:59:26.1 (1967059)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+11:59:26.1 (2190418)|VARIABLE_SCOPE_BEGIN|[7]|results|List<AggregateResult>|true|false
+11:59:26.1 (2210690)|VARIABLE_SCOPE_BEGIN|[14]|results1|List<AggregateResult>|true|false
+11:59:26.1 (2331693)|HEAP_ALLOCATE|[72]|Bytes:3
+11:59:26.1 (2372829)|HEAP_ALLOCATE|[77]|Bytes:152
+11:59:26.1 (2399766)|HEAP_ALLOCATE|[342]|Bytes:408
+11:59:26.1 (2434837)|HEAP_ALLOCATE|[355]|Bytes:408
+11:59:26.1 (2471041)|HEAP_ALLOCATE|[467]|Bytes:48
+11:59:26.1 (2520371)|HEAP_ALLOCATE|[139]|Bytes:6
+11:59:26.1 (2564088)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:15
+11:59:26.1 (2752250)|STATEMENT_EXECUTE|[1]
+11:59:26.1 (2758440)|STATEMENT_EXECUTE|[7]
+11:59:26.1 (2766878)|HEAP_ALLOCATE|[8]|Bytes:4
+11:59:26.1 (2885755)|HEAP_ALLOCATE|[8]|Bytes:162
+11:59:26.1 (2899170)|HEAP_ALLOCATE|[8]|Bytes:4
+11:59:26.1 (2953617)|HEAP_ALLOCATE|[50]|Bytes:5
+11:59:26.1 (2985739)|HEAP_ALLOCATE|[56]|Bytes:5
+11:59:26.1 (3006005)|HEAP_ALLOCATE|[64]|Bytes:7
+11:59:26.1 (3755415)|SOQL_EXECUTE_BEGIN|[8]|Aggregations:0|SELECT CALENDAR_MONTH(Active_Start_Date__c), COUNT(id) FROM Account WHERE CALENDAR_YEAR(Active_Start_Date__c) = 2016 GROUP BY CALENDAR_MONTH(Active_Start_Date__c)
+11:59:26.1 (11377732)|SOQL_EXECUTE_END|[8]|Rows:1
+11:59:26.1 (11405504)|HEAP_ALLOCATE|[8]|Bytes:8
+11:59:26.1 (11427092)|HEAP_ALLOCATE|[8]|Bytes:31
+11:59:26.1 (11469790)|HEAP_ALLOCATE|[8]|Bytes:8
+11:59:26.1 (11746576)|HEAP_ALLOCATE|[8]|Bytes:12
+11:59:26.1 (11759818)|HEAP_ALLOCATE|[8]|Bytes:12
+11:59:26.1 (11764874)|HEAP_ALLOCATE|[8]|Bytes:4
+11:59:26.1 (11788698)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+11:59:26.1 (11866821)|VARIABLE_ASSIGNMENT|[7]|results|{"s":1,"v":[{"s":2,"v":{"expr0":4,"expr1":5}}]}|0x5a2c4bc7
+11:59:26.1 (11874973)|STATEMENT_EXECUTE|[14]
+11:59:26.1 (11883688)|HEAP_ALLOCATE|[15]|Bytes:4
+11:59:26.1 (11913720)|HEAP_ALLOCATE|[15]|Bytes:165
+11:59:26.1 (11921865)|HEAP_ALLOCATE|[15]|Bytes:4
+11:59:26.1 (12600872)|SOQL_EXECUTE_BEGIN|[15]|Aggregations:0|SELECT CALENDAR_MONTH(Contact_Start_Date__c), COUNT(id) FROM Account WHERE CALENDAR_YEAR(Contact_Start_Date__c) = 2016 GROUP BY CALENDAR_MONTH(Contact_Start_Date__c)
+11:59:26.1 (20194727)|SOQL_EXECUTE_END|[15]|Rows:2
+11:59:26.1 (20217498)|HEAP_ALLOCATE|[15]|Bytes:12
+11:59:26.1 (20237201)|HEAP_ALLOCATE|[15]|Bytes:62
+11:59:26.1 (20256667)|HEAP_ALLOCATE|[15]|Bytes:12
+11:59:26.1 (20298616)|HEAP_ALLOCATE|[15]|Bytes:12
+11:59:26.1 (20308956)|HEAP_ALLOCATE|[15]|Bytes:12
+11:59:26.1 (20325141)|HEAP_ALLOCATE|[15]|Bytes:12
+11:59:26.1 (20329360)|HEAP_ALLOCATE|[15]|Bytes:8
+11:59:26.1 (20348528)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:12
+11:59:26.1 (20386007)|VARIABLE_ASSIGNMENT|[14]|results1|{"s":1,"v":[{"s":2,"v":{"expr0":2,"expr1":2}},{"s":3,"v":{"expr0":4,"expr1":1}}]}|0x473a2aff
+11:59:26.1 (20394154)|STATEMENT_EXECUTE|[20]
+11:59:26.1 (20470682)|USER_DEBUG|[20]|DEBUG|(AggregateResult:{expr0=4, expr1=5})
+11:59:26.1 (20485088)|STATEMENT_EXECUTE|[21]
+11:59:26.1 (20506304)|HEAP_ALLOCATE|[21]|Bytes:12
+11:59:26.1 (20516480)|HEAP_ALLOCATE|[21]|Bytes:4
+11:59:26.1 (20772435)|HEAP_ALLOCATE|[21]|Bytes:42
+11:59:26.1 (20882461)|FATAL_ERROR|System.SObjectException: Invalid field expr for AggregateResult
+
+AnonymousBlock: line 21, column 1
+11:59:26.20 (20936649)|CUMULATIVE_LIMIT_USAGE
+11:59:26.20 (20936649)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 8 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:59:26.20 (20936649)|CUMULATIVE_LIMIT_USAGE_END
+
+11:59:26.1 (20992113)|CODE_UNIT_FINISHED|execute_anonymous_apex
+11:59:26.1 (22691114)|EXECUTION_FINISHED

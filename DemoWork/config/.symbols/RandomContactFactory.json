@@ -1,0 +1,110 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000003OTLrAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000003OTLrAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "generateRandomObject",
+            "parameters": [
+                {
+                    "name": "numEmpl",
+                    "type": "Integer"
+                },
+                {
+                    "name": "numOppsPerAcct",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "RandomContactFactory",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "RandomContactFactory",
+        "references": [],
+        "type": "RandomContactFactory"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "numEmpl",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "numOppsPerAcct",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "whosf__Employee__c"
+        }
+    ]
+}

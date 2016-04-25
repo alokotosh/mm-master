@@ -1,0 +1,925 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ReportPLIS_Controller",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p4E0000008wR2QAI",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 8,
+                        "line": 151
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "PhaseWrapper",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 194
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "count_idea_phase",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 207
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "count_verific_phase",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 220
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "count_develop_phase",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 235
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "count_comercial_phase",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 248
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "count_license_phase",
+                    "parameters": [
+                        {
+                            "name": "month",
+                            "type": "Integer"
+                        },
+                        {
+                            "name": "year",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                }
+            ],
+            "name": "PhaseWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 133
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "idea_a",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 134
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "verific_a",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 135
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "development_a",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 136
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "comertcial_a",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 137
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "license_a",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 139
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 140
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 145
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "ideas",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 146
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "verificaitons",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 147
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "developments",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 148
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "comertcial",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 9,
+                        "line": 149
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "license",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 14,
+                    "line": 129
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "PhaseWrapper",
+                "references": [],
+                "type": "PhaseWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 151
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 151
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 194
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 60,
+                        "line": 194
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 48,
+                        "line": 207
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 63,
+                        "line": 207
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 220
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 64,
+                        "line": 220
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 50,
+                        "line": 235
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 65,
+                        "line": 235
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 248
+                    },
+                    "modifiers": [],
+                    "name": "month",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 64,
+                        "line": 248
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 11,
+                        "line": 274
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "RowWrapper",
+                    "parameters": [],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 280
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "addValue",
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "PhaseWrapper"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "RowWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 271
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "values",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 14,
+                    "line": 268
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "RowWrapper",
+                "references": [],
+                "type": "RowWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 280
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "PhaseWrapper"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 14,
+                        "line": 292
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "HeaderWrapper",
+                    "parameters": [],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 19,
+                        "line": 298
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "addValue",
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "HeaderWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 27,
+                        "line": 289
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "values",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 16,
+                    "line": 286
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "HeaderWrapper",
+                "references": [],
+                "type": "HeaderWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 298
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p4E0000008wR2QAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getContacts",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "count_contact_phase",
+            "parameters": [
+                {
+                    "name": "month",
+                    "type": "Integer"
+                },
+                {
+                    "name": "year",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 47
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getProject",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 84
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPhase",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 89
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getRowWrappers",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "ReportPLIS_Controller",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "rows",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "head",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "month",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "contact_a",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "con",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "ReportPLIS_Controller",
+        "references": [],
+        "type": "ReportPLIS_Controller"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "idx",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "month",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "idx",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "idx",
+            "references": [],
+            "type": "Integer"
+        }
+    ]
+}

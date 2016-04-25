@@ -1,0 +1,88 @@
+36.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+11:57:02.3 (3216812)|EXECUTION_STARTED
+11:57:02.3 (3250238)|CODE_UNIT_STARTED|[EXTERNAL]|aura
+11:57:02.3 (3742175)|HEAP_ALLOCATE|[72]|Bytes:3
+11:57:02.3 (3812976)|HEAP_ALLOCATE|[77]|Bytes:152
+11:57:02.3 (3843439)|HEAP_ALLOCATE|[342]|Bytes:408
+11:57:02.3 (3866333)|HEAP_ALLOCATE|[355]|Bytes:408
+11:57:02.3 (3887822)|HEAP_ALLOCATE|[467]|Bytes:48
+11:57:02.3 (3928994)|HEAP_ALLOCATE|[139]|Bytes:6
+11:57:02.3 (3960440)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+11:57:02.3 (3978319)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+11:57:02.3 (5746436)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000006TzBn|AwesomeProductController.getProductByName
+11:57:02.3 (5919211)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:3
+11:57:02.3 (5940480)|METHOD_ENTRY|[1]|01p36000006TzBn|AwesomeProductController.AwesomeProductController()
+11:57:02.3 (5946000)|STATEMENT_EXECUTE|[1]
+11:57:02.3 (5953115)|STATEMENT_EXECUTE|[1]
+11:57:02.3 (5960414)|METHOD_EXIT|[1]|AwesomeProductController
+11:57:02.3 (5965362)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:18
+11:57:02.3 (5979036)|SYSTEM_MODE_ENTER|false
+11:57:02.3 (5990736)|VARIABLE_SCOPE_BEGIN|[8]|name|String|false|false
+11:57:02.3 (6016929)|VARIABLE_ASSIGNMENT|[8]|name|"Always Be Yourself"
+11:57:02.3 (6030930)|STATEMENT_EXECUTE|[8]
+11:57:02.3 (6032498)|STATEMENT_EXECUTE|[9]
+11:57:02.3 (6035822)|HEAP_ALLOCATE|[9]|Bytes:167
+11:57:02.3 (6050853)|HEAP_ALLOCATE|[9]|Bytes:4
+11:57:02.3 (6064325)|HEAP_ALLOCATE|[9]|Bytes:7
+11:57:02.3 (6123765)|HEAP_ALLOCATE|[50]|Bytes:5
+11:57:02.3 (6151978)|HEAP_ALLOCATE|[56]|Bytes:5
+11:57:02.3 (6162054)|HEAP_ALLOCATE|[64]|Bytes:7
+11:57:02.3 (8195208)|SOQL_EXECUTE_BEGIN|[9]|Aggregations:1|SELECT id, name, photo__c, color__c, points__c, description__c, (SELECT name FROM product_sizes__r ORDER BY name ASC NULLS FIRST) FROM product__c WHERE name = :tmpVar1
+11:57:02.3 (41204343)|SOQL_EXECUTE_END|[9]|Rows:0
+11:57:02.3 (41240955)|HEAP_ALLOCATE|[9]|Bytes:4
+11:57:02.3 (41259831)|HEAP_ALLOCATE|[9]|Bytes:0
+11:57:02.3 (41318689)|HEAP_ALLOCATE|[9]|Bytes:4
+11:57:02.3 (41334554)|HEAP_ALLOCATE|[9]|Bytes:36
+11:57:02.3 (41512112)|HEAP_ALLOCATE|[9]|Bytes:46
+11:57:02.3 (41654718)|FATAL_ERROR|System.QueryException: List has no rows for assignment to SObject
+
+Class.AwesomeProductController.getProductByName: line 9, column 1
+11:57:02.3 (41674289)|FATAL_ERROR|System.QueryException: List has no rows for assignment to SObject
+
+Class.AwesomeProductController.getProductByName: line 9, column 1
+11:57:02.41 (41687996)|CUMULATIVE_LIMIT_USAGE
+11:57:02.41 (41687996)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:57:02.41 (41687996)|CUMULATIVE_LIMIT_USAGE_END
+
+11:57:02.3 (41760400)|CODE_UNIT_FINISHED|AwesomeProductController.getProductByName
+11:57:02.3 (49628631)|CODE_UNIT_STARTED|[EXTERNAL]|01p36000006TzBn|AwesomeProductController.getProducts
+11:57:02.3 (49682400)|STATEMENT_EXECUTE|[3]
+11:57:02.3 (49685619)|STATEMENT_EXECUTE|[4]
+11:57:02.3 (49694476)|HEAP_ALLOCATE|[4]|Bytes:68
+11:57:02.3 (49704270)|HEAP_ALLOCATE|[4]|Bytes:4
+11:57:02.3 (49939322)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT id, name, photo__c, description__c, points__c FROM product__c
+11:57:02.3 (64995751)|SOQL_EXECUTE_END|[4]|Rows:1
+11:57:02.3 (65029105)|HEAP_ALLOCATE|[4]|Bytes:8
+11:57:02.3 (65059846)|HEAP_ALLOCATE|[4]|Bytes:243
+11:57:02.3 (65103195)|HEAP_ALLOCATE|[4]|Bytes:8
+11:57:02.65 (65187010)|CUMULATIVE_LIMIT_USAGE
+11:57:02.65 (65187010)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 1 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+11:57:02.65 (65187010)|CUMULATIVE_LIMIT_USAGE_END
+
+11:57:02.3 (65263683)|CODE_UNIT_FINISHED|AwesomeProductController.getProducts

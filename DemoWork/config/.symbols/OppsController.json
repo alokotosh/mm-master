@@ -1,0 +1,219 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p360000084wtWAAQ",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 34
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppWrapper",
+                    "parameters": [
+                        {
+                            "name": "opp",
+                            "type": "Opportunity"
+                        },
+                        {
+                            "name": "tabIndex",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppWrapper",
+            "namespace": "whosf",
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 32
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 33
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "tabIndex",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 31
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppWrapper",
+                "references": [],
+                "type": "OppWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 39,
+                        "line": 34
+                    },
+                    "modifiers": [],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 52,
+                        "line": 34
+                    },
+                    "modifiers": [],
+                    "name": "tabIndex",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p360000084wtWAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOpportunities",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOpportunitiesWithIndex",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "OppsController",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setCon",
+            "references": [],
+            "type": "StandardSetController"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "OppsController",
+        "references": [],
+        "type": "OppsController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "oppsWrapped",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "idex",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        }
+    ]
+}

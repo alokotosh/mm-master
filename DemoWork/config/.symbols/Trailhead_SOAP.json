@@ -1,0 +1,63 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p36000005FUIiAAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p36000005FUIiAAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "getRecord",
+            "parameters": [
+                {
+                    "name": "id",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        }
+    ],
+    "name": "Trailhead_SOAP",
+    "namespace": "whosf",
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Trailhead_SOAP",
+        "references": [],
+        "type": "Trailhead_SOAP"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}
